@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1084]encog_test.Data.SQL</TopNode>
-  <SelectedNode>[0-1001]encog_test.Neural.Networks.Training.TestCompetitive</SelectedNode>
+  <TopNode>[0-1057]encog_test.Encog.Bot.Browse.Extract.TestExtract.testWordExtract</TopNode>
+  <SelectedNode>[0-1085]encog_test.Encog.Bot.HTML.TestParseHTML</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
     <Node UniqueName="[0-1000]C:\encog-cs\encog-test\Encog-test.nunit" Expanded="true" />
-    <Node UniqueName="[0-1071]C:\encog-cs\encog-test\encog-test\bin\Release\encog-test.dll" Expanded="true" />
-    <Node UniqueName="[0-1072]encog_test" Expanded="true" />
-    <Node UniqueName="[0-1076]encog_test.Data" Expanded="true" />
-    <Node UniqueName="[0-1083]encog_test.Data.CSV" Expanded="true" />
-    <Node UniqueName="[0-1080]encog_test.Data.Market" Expanded="true" />
-    <Node UniqueName="[0-1081]encog_test.Data.Market.Loader" Expanded="true" />
-    <Node UniqueName="[0-1084]encog_test.Data.SQL" Expanded="true" />
-    <Node UniqueName="[0-1078]encog_test.Data.Temporal" Expanded="true" />
-    <Node UniqueName="[0-1077]encog_test.Data.XML" Expanded="true" />
-    <Node UniqueName="[0-1079]encog_test.Matrix" Expanded="true" />
-    <Node UniqueName="[0-1073]encog_test.Neural" Expanded="true" />
-    <Node UniqueName="[0-1074]encog_test.Neural.Networks" Expanded="true" />
-    <Node UniqueName="[0-1075]encog_test.Neural.Networks.Training" Expanded="true" />
-    <Node UniqueName="[0-1085]encog_test.Neural.Persist" Expanded="true" />
-    <Node UniqueName="[0-1069]encog_test.Neural.Persist.TestPersist" Expanded="true" />
-    <Node UniqueName="[0-1082]encog_test.Util" Expanded="true" />
-    <Node UniqueName="[0-1018]encog_test.Util.TestSerializeObject" Expanded="true" />
+    <Node UniqueName="[0-1098]C:\encog-cs\encog-test\encog-test\bin\Release\encog-test.dll" Expanded="true" />
+    <Node UniqueName="[0-1099]encog_test" Expanded="true" />
+    <Node UniqueName="[0-1106]encog_test.Data" Expanded="true" />
+    <Node UniqueName="[0-1113]encog_test.Data.CSV" Expanded="true" />
+    <Node UniqueName="[0-1112]encog_test.Data.Market" Expanded="true" />
+    <Node UniqueName="[0-1114]encog_test.Data.SQL" Expanded="true" />
+    <Node UniqueName="[0-1108]encog_test.Data.Temporal" Expanded="true" />
+    <Node UniqueName="[0-1107]encog_test.Data.XML" Expanded="true" />
+    <Node UniqueName="[0-1100]encog_test.Encog" Expanded="true" />
+    <Node UniqueName="[0-1101]encog_test.Encog.Bot" Expanded="true" />
+    <Node UniqueName="[0-1102]encog_test.Encog.Bot.Browse" Expanded="true" />
+    <Node UniqueName="[0-1111]encog_test.Encog.Bot.Browse.Extract" Expanded="true" />
+    <Node UniqueName="[0-1056]encog_test.Encog.Bot.Browse.Extract.TestExtract" Expanded="true" />
+    <Node UniqueName="[0-1001]encog_test.Encog.Bot.Browse.TestAddress" Expanded="true" />
+    <Node UniqueName="[0-1053]encog_test.Encog.Bot.Browse.TestBrowse" Expanded="true" />
+    <Node UniqueName="[0-1050]encog_test.Encog.Bot.Browse.TestWebPageData" Expanded="true" />
+    <Node UniqueName="[0-1116]encog_test.Encog.Bot.HTML" Expanded="true" />
+    <Node UniqueName="[0-1085]encog_test.Encog.Bot.HTML.TestParseHTML" Expanded="true" />
+    <Node UniqueName="[0-1103]encog_test.Neural" Expanded="true" />
+    <Node UniqueName="[0-1104]encog_test.Neural.Networks" Expanded="true" />
+    <Node UniqueName="[0-1105]encog_test.Neural.Networks.Training" Expanded="true" />
+    <Node UniqueName="[0-1003]encog_test.Neural.Networks.Training.TestCompetitive" Expanded="true" />
+    <Node UniqueName="[0-1115]encog_test.Neural.Persist" Expanded="true" />
+    <Node UniqueName="[0-1109]encog_test.TestMatrix" Expanded="true" />
+    <Node UniqueName="[0-1110]encog_test.Util" Expanded="true" />
   </Nodes>
 </VisualState>

@@ -13,6 +13,7 @@ using Encog.Neural.Networks.Training.Competitive.Neighborhood;
 using Encog.Neural.Data.Basic;
 using Encog.Neural.Activation;
 using Encog.Neural.Data;
+using Encog.Matrix;
 
 namespace encog_test.Neural.Networks.Training
 {
@@ -55,7 +56,7 @@ namespace encog_test.Neural.Networks.Training
             network.Reset();
 
             ISynapse synapse = findSynapse(network);
-            synapse.WeightMatrix = new Encog.Matrix.Matrix(MATRIX_ARRAY);
+            synapse.WeightMatrix = new Matrix(MATRIX_ARRAY);
 
             CompetitiveTraining train = new CompetitiveTraining(network, 0.4,
                    training, new NeighborhoodSingle());

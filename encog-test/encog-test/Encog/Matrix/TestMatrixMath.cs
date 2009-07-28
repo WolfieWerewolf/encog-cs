@@ -5,7 +5,7 @@ using System.Text;
 using NUnit.Framework;
 using Encog.Matrix;
 
-namespace encog_test.Matrix
+namespace encog_test.TestMatrix
 {
     [TestFixture]
     public class TestMatrixMath
@@ -20,10 +20,10 @@ namespace encog_test.Matrix
 			{4}
 		};
    
-            Encog.Matrix.Matrix matrix1 = new Encog.Matrix.Matrix(matrixData1);
-            Encog.Matrix.Matrix checkMatrix = new Encog.Matrix.Matrix(matrixData2);
+            Matrix matrix1 = new Matrix(matrixData1);
+            Matrix checkMatrix = new Matrix(matrixData2);
 
-            Encog.Matrix.Matrix matrix2 = MatrixMath.Transpose(matrix1);
+            Matrix matrix2 = MatrixMath.Transpose(matrix1);
 
             Assert.IsTrue(matrix2.Equals(checkMatrix));
         }
@@ -38,8 +38,8 @@ namespace encog_test.Matrix
 			{8}
 		};
 
-            Encog.Matrix.Matrix matrix1 = new Encog.Matrix.Matrix(matrixData1);
-            Encog.Matrix.Matrix matrix2 = new Encog.Matrix.Matrix(matrixData2);
+            Matrix matrix1 = new Matrix(matrixData1);
+            Matrix matrix2 = new Matrix(matrixData2);
 
             double dotProduct = MatrixMath.DotProduct(matrix1, matrix2);
 
@@ -48,8 +48,8 @@ namespace encog_test.Matrix
             // test dot product errors
             double[,] nonVectorData = { { 1.0, 2.0 }, { 3.0, 4.0 } };
             double[,] differentLengthData = { { 1.0 } };
-            Encog.Matrix.Matrix nonVector = new Encog.Matrix.Matrix(nonVectorData);
-            Encog.Matrix.Matrix differentLength = new Encog.Matrix.Matrix(differentLengthData);
+            Matrix nonVector = new Matrix(nonVectorData);
+            Matrix differentLength = new Matrix(differentLengthData);
 
             try
             {
@@ -97,12 +97,12 @@ namespace encog_test.Matrix
 				{81,90,99}
 		};
 
-            Encog.Matrix.Matrix matrix1 = new Encog.Matrix.Matrix(matrixData1);
-            Encog.Matrix.Matrix matrix2 = new Encog.Matrix.Matrix(matrixData2);
+            Matrix matrix1 = new Matrix(matrixData1);
+            Matrix matrix2 = new Matrix(matrixData2);
 
-            Encog.Matrix.Matrix matrix3 = new Encog.Matrix.Matrix(matrixData3);
+            Matrix matrix3 = new Matrix(matrixData3);
 
-            Encog.Matrix.Matrix result = MatrixMath.Multiply(matrix1, matrix2);
+            Matrix result = MatrixMath.Multiply(matrix1, matrix2);
 
             Assert.IsTrue(result.Equals(matrix3));
         }
@@ -113,9 +113,9 @@ namespace encog_test.Matrix
             double[,] dataBase = { { 1.0, 2.0 }, { 3.0, 4.0 } };
             double[,] dataTooManyRows = { { 1.0, 2.0 }, { 3.0, 4.0 }, { 5.0, 6.0 } };
             double[,] dataTooManyCols = { { 1.0, 2.0, 3.0 }, { 4.0, 5.0, 6.0 } };
-            Encog.Matrix.Matrix baseMatrix = new Encog.Matrix.Matrix(dataBase);
-            Encog.Matrix.Matrix tooManyRows = new Encog.Matrix.Matrix(dataTooManyRows);
-            Encog.Matrix.Matrix tooManyCols = new Encog.Matrix.Matrix(dataTooManyCols);
+            Matrix baseMatrix = new Matrix(dataBase);
+            Matrix tooManyRows = new Matrix(dataTooManyRows);
+            Matrix tooManyCols = new Matrix(dataTooManyCols);
             MatrixMath.Add(baseMatrix, baseMatrix);
             try
             {
@@ -139,8 +139,8 @@ namespace encog_test.Matrix
         public void Divide()
         {
             double[,] data = { { 2.0, 4.0 }, { 6.0, 8.0 } };
-            Encog.Matrix.Matrix matrix = new Encog.Matrix.Matrix(data);
-            Encog.Matrix.Matrix result = MatrixMath.Divide(matrix, 2.0);
+            Matrix matrix = new Matrix(data);
+            Matrix result = MatrixMath.Divide(matrix, 2.0);
             Assert.AreEqual(1.0, result[0, 0]);
         }
 
@@ -158,8 +158,8 @@ namespace encog_test.Matrix
             }
 
             double[,] checkData = { { 1, 0 }, { 0, 1 } };
-            Encog.Matrix.Matrix check = new Encog.Matrix.Matrix(checkData);
-            Encog.Matrix.Matrix matrix = MatrixMath.Identity(2);
+            Matrix check = new Matrix(checkData);
+            Matrix matrix = MatrixMath.Identity(2);
             Assert.IsTrue(check.Equals(matrix));
         }
 
@@ -167,8 +167,8 @@ namespace encog_test.Matrix
         public void MultiplyScalar()
         {
             double[,] data = { { 2.0, 4.0 }, { 6.0, 8.0 } };
-            Encog.Matrix.Matrix matrix = new Encog.Matrix.Matrix(data);
-            Encog.Matrix.Matrix result = MatrixMath.Multiply(matrix, 2.0);
+            Matrix matrix = new Matrix(data);
+            Matrix result = MatrixMath.Multiply(matrix, 2.0);
             Assert.AreEqual(4.0, result[0, 0]);
         }
 
@@ -177,9 +177,9 @@ namespace encog_test.Matrix
         {
             double[,] origData = { { 1.0, 2.0 }, { 3.0, 4.0 } };
             double[,] checkData = { { 3.0, 4.0 } };
-            Encog.Matrix.Matrix orig = new Encog.Matrix.Matrix(origData);
-            Encog.Matrix.Matrix matrix = MatrixMath.DeleteRow(orig, 0);
-            Encog.Matrix.Matrix check = new Encog.Matrix.Matrix(checkData);
+            Matrix orig = new Matrix(origData);
+            Matrix matrix = MatrixMath.DeleteRow(orig, 0);
+            Matrix check = new Matrix(checkData);
             Assert.IsTrue(check.Equals(matrix));
 
             try
@@ -197,9 +197,9 @@ namespace encog_test.Matrix
         {
             double[,] origData = { { 1.0, 2.0 }, { 3.0, 4.0 } };
             double[,] checkData = { { 2.0 }, { 4.0 } };
-            Encog.Matrix.Matrix orig = new Encog.Matrix.Matrix(origData);
-            Encog.Matrix.Matrix matrix = MatrixMath.DeleteCol(orig, 0);
-            Encog.Matrix.Matrix check = new Encog.Matrix.Matrix(checkData);
+            Matrix orig = new Matrix(origData);
+            Matrix matrix = MatrixMath.DeleteCol(orig, 0);
+            Matrix check = new Matrix(checkData);
             Assert.IsTrue(check.Equals(matrix));
 
             try
@@ -216,8 +216,8 @@ namespace encog_test.Matrix
         public void Copy()
         {
             double[,] data = { { 1.0, 2.0 }, { 3.0, 4.0 } };
-            Encog.Matrix.Matrix source = new Encog.Matrix.Matrix(data);
-            Encog.Matrix.Matrix target = new Encog.Matrix.Matrix(2, 2);
+            Matrix source = new Matrix(data);
+            Matrix target = new Matrix(2, 2);
             MatrixMath.Copy(source, target);
             Assert.IsTrue(source.Equals(target));
         }

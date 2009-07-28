@@ -6,7 +6,7 @@ using NUnit.Framework;
 using Encog.Matrix;
 
 
-namespace encog_test.Matrix
+namespace encog_test.TestMatrix
 {
     [TestFixture]
     public class TestBiPolarUtil
@@ -17,15 +17,15 @@ namespace encog_test.Matrix
             // test a 1x4
             bool[] boolData1 = { true, false, true, false };
             double[] checkData1 = { 1, -1, 1, -1 };
-            Encog.Matrix.Matrix matrix1 = Encog.Matrix.Matrix.CreateRowMatrix(BiPolarUtil.Bipolar2double(boolData1));
-            Encog.Matrix.Matrix checkMatrix1 = Encog.Matrix.Matrix.CreateRowMatrix(checkData1);
+            Matrix matrix1 = Matrix.CreateRowMatrix(BiPolarUtil.Bipolar2double(boolData1));
+            Matrix checkMatrix1 = Matrix.CreateRowMatrix(checkData1);
             Assert.IsTrue(matrix1.Equals(checkMatrix1));
 
             // test a 2x2
             bool[,] boolData2 = { { true, false }, { false, true } };
             double[,] checkData2 = { { 1, -1 }, { -1, 1 } };
-            Encog.Matrix.Matrix matrix2 = new Encog.Matrix.Matrix(BiPolarUtil.Bipolar2double(boolData2));
-            Encog.Matrix.Matrix checkMatrix2 = new Encog.Matrix.Matrix(checkData2);
+            Matrix matrix2 = new Matrix(BiPolarUtil.Bipolar2double(boolData2));
+            Matrix checkMatrix2 = new Matrix(checkData2);
             Assert.IsTrue(matrix2.Equals(checkMatrix2));
         }
 

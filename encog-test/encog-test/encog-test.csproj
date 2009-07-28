@@ -33,11 +33,11 @@
   <ItemGroup>
     <Reference Include="encog-core-cs, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\encog-core-cs.dll</HintPath>
+      <HintPath>..\dll\encog-core-cs.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\log4net.dll</HintPath>
+      <HintPath>..\dll\log4net.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework, Version=2.5.0.9122, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Encog\Bot\Browse\Extract\TestExtract.cs" />
+    <Compile Include="Encog\Bot\Browse\TestAddress.cs" />
+    <Compile Include="Encog\Bot\Browse\TestBrowse.cs" />
+    <Compile Include="Encog\Bot\Browse\TestWebPageData.cs" />
+    <Compile Include="Encog\Bot\HTML\TestParseHTML.cs" />
+    <Compile Include="Encog\Bot\TestBotUtil.cs" />
     <Compile Include="Encog\Data\Market\TestYahooLoader.cs" />
     <Compile Include="Encog\Data\SQL\TestSQLDataSet.cs" />
     <Compile Include="Encog\Data\Temporal\TestTemporal.cs" />
