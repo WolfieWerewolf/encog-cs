@@ -13,7 +13,7 @@ namespace encog_test.Encog.Bot.Browse
         [Test]
         public void testAddressFunctions()
         {
-            String a = "http://www.httprecipes.com";
+            String a = "http://www.httprecipes.com/";
             Address address = new Address(new Uri(a));
             address.ToString();
             Assert.AreEqual(address.Original, a);

@@ -30,7 +30,7 @@ namespace encog_test.Encog.Bot.Browse
             // Index 1 (tag)
             tagDU = (TagDataUnit)page.GetDataUnit(1);
             Assert.AreEqual("b", tagDU.Tag.Name);
-            Assert.AreEqual("<b>", tagDU.ToString());
+            Assert.AreEqual("<b>", tagDU.Tag.ToString());
             Assert.AreEqual(Tag.Type.BEGIN, tagDU.Tag.TagType);
             // Index 2 (text)
             textDU = (TextDataUnit)page.GetDataUnit(2);
