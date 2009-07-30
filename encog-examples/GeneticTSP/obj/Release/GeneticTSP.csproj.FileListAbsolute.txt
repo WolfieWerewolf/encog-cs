@@ -12,3 +12,10 @@ C:\encog-cs\encog-core\encog-examples\GeneticTSP\bin\Release\GeneticTSP.exe
 C:\encog-cs\encog-core\encog-examples\GeneticTSP\bin\Release\GeneticTSP.pdb
 C:\encog-cs\encog-core\encog-examples\GeneticTSP\bin\Release\Encog.dll
 C:\encog-cs\encog-core\encog-examples\GeneticTSP\bin\Release\Encog.pdb
+C:\shared\encog-cs\encog-examples\GeneticTSP\bin\Release\GeneticTSP.exe
+C:\shared\encog-cs\encog-examples\GeneticTSP\bin\Release\GeneticTSP.pdb
+C:\shared\encog-cs\encog-examples\GeneticTSP\bin\Release\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\GeneticTSP\bin\Release\log4net.dll
+C:\shared\encog-cs\encog-examples\GeneticTSP\obj\Release\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-examples\GeneticTSP\obj\Release\GeneticTSP.exe
+C:\shared\encog-cs\encog-examples\GeneticTSP\obj\Release\GeneticTSP.pdb

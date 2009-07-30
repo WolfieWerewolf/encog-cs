@@ -5,3 +5,10 @@ C:\encog-cs\encog-examples\Benchmark\bin\Release\encog-core-cs.dll
 C:\encog-cs\encog-examples\Benchmark\bin\Release\log4net.dll
 C:\encog-cs\encog-examples\Benchmark\obj\Release\Benchmark.exe
 C:\encog-cs\encog-examples\Benchmark\obj\Release\Benchmark.pdb
+C:\shared\encog-cs\encog-examples\Benchmark\bin\Release\Benchmark.exe
+C:\shared\encog-cs\encog-examples\Benchmark\bin\Release\Benchmark.pdb
+C:\shared\encog-cs\encog-examples\Benchmark\bin\Release\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\Benchmark\bin\Release\log4net.dll
+C:\shared\encog-cs\encog-examples\Benchmark\obj\Release\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-examples\Benchmark\obj\Release\Benchmark.exe
+C:\shared\encog-cs\encog-examples\Benchmark\obj\Release\Benchmark.pdb

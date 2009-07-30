@@ -12,3 +12,10 @@ C:\encog-cs\encog-core\encog-examples\EncogExamplesCS\bin\Release\EncogExamplesC
 C:\encog-cs\encog-core\encog-examples\EncogExamplesCS\bin\Release\Encog.dll
 C:\encog-cs\encog-core\encog-examples\EncogExamplesCS\obj\Release\EncogExamplesCS.exe
 C:\encog-cs\encog-core\encog-examples\EncogExamplesCS\bin\Release\Encog.pdb
+C:\shared\encog-cs\encog-examples\EncogExamplesCS\bin\Release\EncogExamplesCS.exe
+C:\shared\encog-cs\encog-examples\EncogExamplesCS\bin\Release\EncogExamplesCS.pdb
+C:\shared\encog-cs\encog-examples\EncogExamplesCS\bin\Release\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\EncogExamplesCS\bin\Release\log4net.dll
+C:\shared\encog-cs\encog-examples\EncogExamplesCS\obj\Release\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-examples\EncogExamplesCS\obj\Release\EncogExamplesCS.exe
+C:\shared\encog-cs\encog-examples\EncogExamplesCS\obj\Release\EncogExamplesCS.pdb

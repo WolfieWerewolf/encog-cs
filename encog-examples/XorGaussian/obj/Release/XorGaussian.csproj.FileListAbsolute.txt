@@ -5,3 +5,10 @@ C:\encog-cs\encog-examples\XorGaussian\bin\Release\log4net.dll
 C:\encog-cs\encog-examples\XorGaussian\obj\Release\ResolveAssemblyReference.cache
 C:\encog-cs\encog-examples\XorGaussian\obj\Release\XorGaussian.exe
 C:\encog-cs\encog-examples\XorGaussian\obj\Release\XorGaussian.pdb
+C:\shared\encog-cs\encog-examples\XorGaussian\bin\Release\XorGaussian.exe
+C:\shared\encog-cs\encog-examples\XorGaussian\bin\Release\XorGaussian.pdb
+C:\shared\encog-cs\encog-examples\XorGaussian\bin\Release\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\XorGaussian\bin\Release\log4net.dll
+C:\shared\encog-cs\encog-examples\XorGaussian\obj\Release\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-examples\XorGaussian\obj\Release\XorGaussian.exe
+C:\shared\encog-cs\encog-examples\XorGaussian\obj\Release\XorGaussian.pdb
