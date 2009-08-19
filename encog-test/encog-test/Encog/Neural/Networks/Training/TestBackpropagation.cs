@@ -41,15 +41,16 @@ namespace encog_test.Neural.Networks.Training
         public void testToString()
         {
             BasicNetwork network = CreateNetwork.createXORNetworkUntrained();
-            network.InputLayer.ToString();
+            ILayer input = network.GetLayer(BasicNetwork.TAG_INPUT);
+            input.ToString();
         }
 
         [Test]
         public void testCounts()
         {
             BasicNetwork network = CreateNetwork.createXORNetworkUntrained();
-            network.InputLayer.ToString();
-            Assert.AreEqual(1, network.HiddenLayerCount);
+            ILayer input = network.GetLayer(BasicNetwork.TAG_INPUT);
+            input.ToString();
             Assert.AreEqual(6, network.CalculateNeuronCount());
         }
 
@@ -57,9 +58,8 @@ namespace encog_test.Neural.Networks.Training
         public void testPrune()
         {
             BasicNetwork network = CreateNetwork.createXORNetworkUntrained();
-            IEnumerator<ILayer> itr = network.HiddenLayers.GetEnumerator();
-            itr.MoveNext();
-            BasicLayer hidden = (BasicLayer)itr.Current;
+            ILayer input = network.GetLayer(BasicNetwork.TAG_INPUT);
+            ILayer hidden = input.Next[0].ToLayer;
 
             Assert.AreEqual(3, hidden.NeuronCount);
 

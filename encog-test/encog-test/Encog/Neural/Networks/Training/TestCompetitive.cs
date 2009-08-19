@@ -35,7 +35,7 @@ namespace encog_test.Neural.Networks.Training
 
         private ISynapse findSynapse(BasicNetwork network)
         {
-            ILayer input = network.InputLayer;
+            ILayer input = network.GetLayer(BasicNetwork.TAG_INPUT);
             return input.Next[0];
         }
 
