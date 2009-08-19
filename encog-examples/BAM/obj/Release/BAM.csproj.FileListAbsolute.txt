@@ -1,0 +1,7 @@
+C:\shared\encog-cs\encog-examples\BAM\obj\Release\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-examples\BAM\bin\Release\BAM.exe
+C:\shared\encog-cs\encog-examples\BAM\bin\Release\BAM.pdb
+C:\shared\encog-cs\encog-examples\BAM\bin\Release\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\BAM\bin\Release\log4net.dll
+C:\shared\encog-cs\encog-examples\BAM\obj\Release\BAM.exe
+C:\shared\encog-cs\encog-examples\BAM\obj\Release\BAM.pdb

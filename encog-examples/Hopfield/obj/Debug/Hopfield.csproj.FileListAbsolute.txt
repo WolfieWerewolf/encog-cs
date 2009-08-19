@@ -5,3 +5,10 @@ C:\encog-cs\encog-core\encog-examples\Hopfield\obj\Debug\ResolveAssemblyReferenc
 C:\encog-cs\encog-core\encog-examples\Hopfield\obj\Debug\Hopfield.exe
 C:\encog-cs\encog-core\encog-examples\Hopfield\obj\Debug\Hopfield.pdb
 C:\encog-cs\encog-core\encog-examples\Hopfield\bin\Debug\Encog.pdb
+C:\shared\encog-cs\encog-examples\Hopfield\bin\Debug\Hopfield.exe
+C:\shared\encog-cs\encog-examples\Hopfield\bin\Debug\Hopfield.pdb
+C:\shared\encog-cs\encog-examples\Hopfield\bin\Debug\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\Hopfield\bin\Debug\log4net.dll
+C:\shared\encog-cs\encog-examples\Hopfield\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-examples\Hopfield\obj\Debug\Hopfield.exe
+C:\shared\encog-cs\encog-examples\Hopfield\obj\Debug\Hopfield.pdb

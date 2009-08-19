@@ -12,3 +12,10 @@ C:\encog-cs\encog-core\encog-examples\XorBackprop\obj\Debug\ResolveAssemblyRefer
 C:\encog-cs\encog-core\encog-examples\XorBackprop\obj\Debug\XorBackprop.exe
 C:\encog-cs\encog-core\encog-examples\XorBackprop\obj\Debug\XorBackprop.pdb
 C:\encog-cs\encog-core\encog-examples\XorBackprop\bin\Debug\Encog.pdb
+C:\shared\encog-cs\encog-examples\XorBackprop\bin\Debug\XorBackprop.exe
+C:\shared\encog-cs\encog-examples\XorBackprop\bin\Debug\XorBackprop.pdb
+C:\shared\encog-cs\encog-examples\XorBackprop\bin\Debug\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\XorBackprop\bin\Debug\log4net.dll
+C:\shared\encog-cs\encog-examples\XorBackprop\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-examples\XorBackprop\obj\Debug\XorBackprop.exe
+C:\shared\encog-cs\encog-examples\XorBackprop\obj\Debug\XorBackprop.pdb

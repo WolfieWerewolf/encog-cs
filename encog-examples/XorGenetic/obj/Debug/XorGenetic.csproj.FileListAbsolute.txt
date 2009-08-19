@@ -12,3 +12,10 @@ C:\encog-cs\encog-core\encog-examples\XorGenetic\obj\Debug\ResolveAssemblyRefere
 C:\encog-cs\encog-core\encog-examples\XorGenetic\obj\Debug\XorGenetic.exe
 C:\encog-cs\encog-core\encog-examples\XorGenetic\obj\Debug\XorGenetic.pdb
 C:\encog-cs\encog-core\encog-examples\XorGenetic\bin\Debug\Encog.pdb
+C:\shared\encog-cs\encog-examples\XorGenetic\bin\Debug\XorGenetic.exe
+C:\shared\encog-cs\encog-examples\XorGenetic\bin\Debug\XorGenetic.pdb
+C:\shared\encog-cs\encog-examples\XorGenetic\bin\Debug\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\XorGenetic\bin\Debug\log4net.dll
+C:\shared\encog-cs\encog-examples\XorGenetic\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-examples\XorGenetic\obj\Debug\XorGenetic.exe
+C:\shared\encog-cs\encog-examples\XorGenetic\obj\Debug\XorGenetic.pdb

@@ -5,3 +5,10 @@ C:\encog-cs\encog-examples\XORManhattan\bin\Debug\log4net.dll
 C:\encog-cs\encog-examples\XORManhattan\obj\Debug\ResolveAssemblyReference.cache
 C:\encog-cs\encog-examples\XORManhattan\obj\Debug\XORManhattan.exe
 C:\encog-cs\encog-examples\XORManhattan\obj\Debug\XORManhattan.pdb
+C:\shared\encog-cs\encog-examples\XORManhattan\bin\Debug\XORManhattan.exe
+C:\shared\encog-cs\encog-examples\XORManhattan\bin\Debug\XORManhattan.pdb
+C:\shared\encog-cs\encog-examples\XORManhattan\bin\Debug\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\XORManhattan\bin\Debug\log4net.dll
+C:\shared\encog-cs\encog-examples\XORManhattan\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-examples\XORManhattan\obj\Debug\XORManhattan.exe
+C:\shared\encog-cs\encog-examples\XORManhattan\obj\Debug\XORManhattan.pdb

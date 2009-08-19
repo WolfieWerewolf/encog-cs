@@ -5,3 +5,10 @@ C:\encog-cs\encog-examples\ElmanNetwork\bin\Debug\log4net.dll
 C:\encog-cs\encog-examples\ElmanNetwork\obj\Debug\ResolveAssemblyReference.cache
 C:\encog-cs\encog-examples\ElmanNetwork\obj\Debug\ElmanNetwork.exe
 C:\encog-cs\encog-examples\ElmanNetwork\obj\Debug\ElmanNetwork.pdb
+C:\shared\encog-cs\encog-examples\ElmanNetwork\bin\Debug\ElmanNetwork.exe
+C:\shared\encog-cs\encog-examples\ElmanNetwork\bin\Debug\ElmanNetwork.pdb
+C:\shared\encog-cs\encog-examples\ElmanNetwork\bin\Debug\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\ElmanNetwork\bin\Debug\log4net.dll
+C:\shared\encog-cs\encog-examples\ElmanNetwork\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-examples\ElmanNetwork\obj\Debug\ElmanNetwork.exe
+C:\shared\encog-cs\encog-examples\ElmanNetwork\obj\Debug\ElmanNetwork.pdb
