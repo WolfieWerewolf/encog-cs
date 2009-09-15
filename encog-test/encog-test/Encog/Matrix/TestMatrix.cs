@@ -117,11 +117,11 @@ namespace encog_test.TestMatrix
         [Test]
         public void MatrixConstruct()
         {
-            double[,] m = {
-				{1,2,3,4},
-				{5,6,7,8},
-				{9,10,11,12},
-				{13,14,15,16} };
+            double[][] m = {
+				new double[4] {1,2,3,4},
+				new double[4] {5,6,7,8},
+				new double[4] {9,10,11,12},
+				new double[4] {13,14,15,16} };
             Matrix matrix = new Matrix(m);
             Assert.AreEqual(matrix.Rows, 4);
             Assert.AreEqual(matrix.Cols, 4);
@@ -130,13 +130,13 @@ namespace encog_test.TestMatrix
         [Test]
         public void MatrixEquals()
         {
-            double[,] m1 = {
-				{1,2},
-				{3,4} };
+            double[][] m1 = {
+				new double[2] {1,2},
+				new double[2] {3,4} };
 
-            double[,] m2 = {
-				{0,2},
-				{3,4} };
+            double[][] m2 = {
+				new double[2] {0,2},
+				new double[2] {3,4} };
 
             Matrix matrix1 = new Matrix(m1);
             Matrix matrix2 = new Matrix(m1);
@@ -151,13 +151,13 @@ namespace encog_test.TestMatrix
         [Test]
         public void MatrixEqualsPrecision()
         {
-            double[,] m1 = {
-				{1.1234,2.123},
-				{3.123,4.123} };
+            double[][] m1 = {
+				new double[2] {1.1234,2.123},
+				new double[2] {3.123,4.123} };
 
-            double[,] m2 = {
-				{1.123,2.123},
-				{3.123,4.123} };
+            double[][] m2 = {
+				new double[2] {1.123,2.123},
+				new double[2] {3.123,4.123} };
 
             Matrix matrix1 = new Matrix(m1);
             Matrix matrix2 = new Matrix(m2);
@@ -165,13 +165,13 @@ namespace encog_test.TestMatrix
             Assert.IsTrue(matrix1.equals(matrix2, 3));
             Assert.IsFalse(matrix1.equals(matrix2, 4));
 
-            double[,] m3 = {
-				{1.1,2.1},
-				{3.1,4.1} };
+            double[][] m3 = {
+				new double[2] {1.1,2.1},
+				new double[2] {3.1,4.1} };
 
-            double[,] m4 = {
-				{1.2,2.1},
-				{3.1,4.1} };
+            double[][] m4 = {
+				new double[2] {1.2,2.1},
+				new double[2] {3.1,4.1} };
 
             Matrix matrix3 = new Matrix(m3);
             Matrix matrix4 = new Matrix(m4);
@@ -203,20 +203,20 @@ namespace encog_test.TestMatrix
         [Test]
         public void MatrixMultiply()
         {
-            double[,] a = {
-				{1,0,2},
-				{-1,3,1}
+            double[][] a = {
+				new double[3] {1,0,2},
+				new double[3] {-1,3,1}
 		};
 
-            double[,] b = {
-				{3,1},
-				{2,1},
-				{1,0}
+            double[][] b = {
+				new double[2] {3,1},
+				new double[2] {2,1},
+				new double[2] {1,0}
 		};
 
-            double[,] c = {
-				{5,1},
-				{4,2}
+            double[][] c = {
+				new double[2] {5,1},
+				new double[2] {4,2}
 		};
 
             Matrix matrixA = new Matrix(a);
@@ -228,21 +228,21 @@ namespace encog_test.TestMatrix
 
             Assert.IsTrue(result.Equals(matrixC));
 
-            double[,] a2 = {
-				{1,2,3,4},
-				{5,6,7,8}
+            double[][] a2 = {
+				new double[4] {1,2,3,4},
+				new double[4] {5,6,7,8}
 		};
 
-            double[,] b2 = {
-				{1,2,3},
-				{4,5,6},
-				{7,8,9},
-				{10,11,12}
+            double[][] b2 = {
+				new double[3] {1,2,3},
+				new double[3] {4,5,6},
+				new double[3] {7,8,9},
+				new double[3] {10,11,12}
 		};
 
-            double[,] c2 = {
-				{70,80,90},
-				{158,184,210}
+            double[][] c2 = {
+				new double[3] {70,80,90},
+				new double[3] {158,184,210}
 		};
 
             matrixA = new Matrix(a2);
@@ -267,14 +267,14 @@ namespace encog_test.TestMatrix
         [Test]
         public void Boolean()
         {
-            bool[,] matrixDataBoolean = { 
-				{true,false},
-				{false,true}
+            bool[][] matrixDataBoolean = { 
+				new Boolean[2] {true,false},
+				new Boolean[2] {false,true}
 		};
 
-            double[,] matrixDataDouble = {
-				{1.0,-1.0},
-				{-1.0,1.0},
+            double[][] matrixDataDouble = {
+				new double[2] {1.0,-1.0},
+				new double[2] {-1.0,1.0},
 		};
 
             Matrix matrixBoolean = new Matrix(matrixDataBoolean);
@@ -286,12 +286,12 @@ namespace encog_test.TestMatrix
         [Test]
         public void GetRow()
         {
-            double[,] matrixData1 = {
-				{1.0,2.0},
-				{3.0,4.0}
+            double[][] matrixData1 = {
+				new double[2] {1.0,2.0},
+				new double[2] {3.0,4.0}
 		};
-            double[,] matrixData2 = {
-				{3.0,4.0}
+            double[][] matrixData2 = {
+				new double[2] {3.0,4.0}
 		};
 
             Matrix matrix1 = new Matrix(matrixData1);
@@ -314,13 +314,13 @@ namespace encog_test.TestMatrix
         [Test]
         public void GetCol()
         {
-            double[,] matrixData1 = {
-				{1.0,2.0},
-				{3.0,4.0}
+            double[][] matrixData1 = {
+				new double[2] {1.0,2.0},
+				new double[2] {3.0,4.0}
 		};
-            double[,] matrixData2 = {
-				{2.0},
-				{4.0}
+            double[][] matrixData2 = {
+				new double[1] {2.0},
+				new double[1] {4.0}
 		};
 
             Matrix matrix1 = new Matrix(matrixData1);
@@ -343,7 +343,9 @@ namespace encog_test.TestMatrix
         [Test]
         public void Zero()
         {
-            double[,] doubleData = { { 0, 0 }, { 0, 0 } };
+            double[][] doubleData = { 
+                new double[2] { 0, 0 }, 
+                new double[2] { 0, 0 } };
             Matrix matrix = new Matrix(doubleData);
             Assert.IsTrue(matrix.IsZero());
         }
@@ -351,7 +353,9 @@ namespace encog_test.TestMatrix
         [Test]
         public void Sum()
         {
-            double[,] doubleData = { { 1, 2 }, { 3, 4 } };
+            double[][] doubleData = { 
+                new double[2] { 1, 2 }, 
+                new double[2] { 3, 4 } };
             Matrix matrix = new Matrix(doubleData);
             Assert.AreEqual((int)matrix.Sum(), 1 + 2 + 3 + 4);
         }
@@ -407,7 +411,9 @@ namespace encog_test.TestMatrix
             Matrix matrixRow = Matrix.CreateRowMatrix(matrixData);
             Assert.IsTrue(matrixCol.IsVector());
             Assert.IsTrue(matrixRow.IsVector());
-            double[,] matrixData2 = { { 1.0, 2.0 }, { 3.0, 4.0 } };
+            double[][] matrixData2 = { 
+                new double[2] { 1.0, 2.0 }, 
+                new double[2] { 3.0, 4.0 } };
             Matrix matrix = new Matrix(matrixData2);
             Assert.IsFalse(matrix.IsVector());
         }
@@ -427,7 +433,9 @@ namespace encog_test.TestMatrix
         [Test]
         public void PackedArray()
         {
-            double[,] matrixData = { { 1.0, 2.0 }, { 3.0, 4.0 } };
+            double[][] matrixData = { 
+                new double[2] { 1.0, 2.0 }, 
+                new double[2] { 3.0, 4.0 } };
             Matrix matrix = new Matrix(matrixData);
             Double[] matrixData2 = matrix.ToPackedArray();
             Assert.AreEqual(4, matrixData2.Length);
@@ -455,7 +463,9 @@ namespace encog_test.TestMatrix
         [Test]
         public void Size()
         {
-            double[,] data = { { 1.0, 2.0 }, { 3.0, 4.0 } };
+            double[][] data = { 
+                new double[2] { 1.0, 2.0 }, 
+                new double[2] { 3.0, 4.0 } };
             Matrix matrix = new Matrix(data);
             Assert.AreEqual(4, matrix.Size);
         }

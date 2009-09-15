@@ -54,7 +54,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Encog\Bot\Browse\Extract\TestExtract.cs" />
     <Compile Include="Encog\Bot\Browse\TestAddress.cs" />
     <Compile Include="Encog\Bot\Browse\TestBrowse.cs" />
     <Compile Include="Encog\Bot\Browse\TestWebPageData.cs" />

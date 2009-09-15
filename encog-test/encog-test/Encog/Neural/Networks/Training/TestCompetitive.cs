@@ -26,11 +26,11 @@ namespace encog_test.Neural.Networks.Training
 		new double[4] { 1.0, 1.0, 0.0, 0.0 } };
 
         // Just a random starting matrix, but it gives us a constant starting point
-        public static double[,] MATRIX_ARRAY = {
-			{0.9950675732277183, -0.09315692732658198}, 
-			{0.9840257865083011, 0.5032129897356723}, 
-			{-0.8738960119753589, -0.48043680531294997}, 
-			{-0.9455207768842442, -0.8612565984447569}
+        public static double[][] MATRIX_ARRAY = {
+			new double[2] {0.9950675732277183, -0.09315692732658198}, 
+            new double[2] {0.9840257865083011, 0.5032129897356723}, 
+			new double[2] {-0.8738960119753589, -0.48043680531294997}, 
+			new double[2] {-0.9455207768842442, -0.8612565984447569}
 			};
 
         private ISynapse findSynapse(BasicNetwork network)

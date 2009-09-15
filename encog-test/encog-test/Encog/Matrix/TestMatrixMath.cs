@@ -13,11 +13,13 @@ namespace encog_test.TestMatrix
         [Test]
         public void Inverse()
         {
-            double[,] matrixData1 = { { 1, 2, 3, 4 } };
-            double[,] matrixData2 = {{1},
-			{2},
-			{3},
-			{4}
+            double[][] matrixData1 = { 
+                new double[4] { 1, 2, 3, 4 } };
+            double[][] matrixData2 = {
+                new double[1] {1},
+			    new double[1] {2},
+			    new double[1] {3},
+			    new double[1] {4}
 		};
    
             Matrix matrix1 = new Matrix(matrixData1);
@@ -31,11 +33,11 @@ namespace encog_test.TestMatrix
         [Test]
         public void DotProduct()
         {
-            double[,] matrixData1 = { { 1, 2, 3, 4 } };
-            double[,] matrixData2 = {{5},
-			{6},
-			{7},
-			{8}
+            double[][] matrixData1 = { new double[4] { 1, 2, 3, 4 } };
+            double[][] matrixData2 = { new double[1] {5},
+			 new double[1] {6},
+			 new double[1] {7},
+			 new double[1] {8}
 		};
 
             Matrix matrix1 = new Matrix(matrixData1);
@@ -46,8 +48,11 @@ namespace encog_test.TestMatrix
             Assert.AreEqual(dotProduct, 70.0);
 
             // test dot product errors
-            double[,] nonVectorData = { { 1.0, 2.0 }, { 3.0, 4.0 } };
-            double[,] differentLengthData = { { 1.0 } };
+            double[][] nonVectorData = { 
+                new double[2] { 1.0, 2.0 }, 
+                new double[2] { 3.0, 4.0 } };
+            double[][] differentLengthData = { 
+                new double[1] { 1.0 } };
             Matrix nonVector = new Matrix(nonVectorData);
             Matrix differentLength = new Matrix(differentLengthData);
 
@@ -84,17 +89,20 @@ namespace encog_test.TestMatrix
         [Test]
         public void Multiply()
         {
-            double[,] matrixData1 = {{1,4},
-				{2,5},
-				{3,6}
+            double[][] matrixData1 = {
+                new double[2] {1,4},
+				new double[2] {2,5},
+				new double[2] {3,6}
 			};
-            double[,] matrixData2 = {{7,8,9},
-				{10,11,12}};
+            double[][] matrixData2 = {
+                new double[3] {7,8,9},
+				new double[3] {10,11,12}};
 
 
-            double[,] matrixData3 = {{47,52,57},
-				{64,71,78},
-				{81,90,99}
+            double[][] matrixData3 = {
+                new double[3] {47,52,57},
+				new double[3] {64,71,78},
+				new double[3] {81,90,99}
 		};
 
             Matrix matrix1 = new Matrix(matrixData1);
@@ -110,9 +118,16 @@ namespace encog_test.TestMatrix
         [Test]
         public void VerifySame()
         {
-            double[,] dataBase = { { 1.0, 2.0 }, { 3.0, 4.0 } };
-            double[,] dataTooManyRows = { { 1.0, 2.0 }, { 3.0, 4.0 }, { 5.0, 6.0 } };
-            double[,] dataTooManyCols = { { 1.0, 2.0, 3.0 }, { 4.0, 5.0, 6.0 } };
+            double[][] dataBase = { 
+                new double[2] { 1.0, 2.0 }, 
+                new double[2] { 3.0, 4.0 } };
+            double[][] dataTooManyRows = { 
+                new double[2] { 1.0, 2.0 }, 
+                new double[2] { 3.0, 4.0 }, 
+                new double[2] { 5.0, 6.0 } };
+            double[][] dataTooManyCols = { 
+                new double[3] { 1.0, 2.0, 3.0 }, 
+                new double[3] { 4.0, 5.0, 6.0 } };
             Matrix baseMatrix = new Matrix(dataBase);
             Matrix tooManyRows = new Matrix(dataTooManyRows);
             Matrix tooManyCols = new Matrix(dataTooManyCols);
@@ -138,7 +153,9 @@ namespace encog_test.TestMatrix
         [Test]
         public void Divide()
         {
-            double[,] data = { { 2.0, 4.0 }, { 6.0, 8.0 } };
+            double[][] data = { 
+                new double[2] { 2.0, 4.0 },
+                new double[2] { 6.0, 8.0 } };
             Matrix matrix = new Matrix(data);
             Matrix result = MatrixMath.Divide(matrix, 2.0);
             Assert.AreEqual(1.0, result[0, 0]);
@@ -157,7 +174,9 @@ namespace encog_test.TestMatrix
 
             }
 
-            double[,] checkData = { { 1, 0 }, { 0, 1 } };
+            double[][] checkData = { 
+                new double[2] { 1, 0 }, 
+                new double[2] { 0, 1 } };
             Matrix check = new Matrix(checkData);
             Matrix matrix = MatrixMath.Identity(2);
             Assert.IsTrue(check.Equals(matrix));
@@ -166,7 +185,9 @@ namespace encog_test.TestMatrix
         [Test]
         public void MultiplyScalar()
         {
-            double[,] data = { { 2.0, 4.0 }, { 6.0, 8.0 } };
+            double[][] data = { 
+                new double[2] { 2.0, 4.0 }, 
+                new double[2] { 6.0, 8.0 } };
             Matrix matrix = new Matrix(data);
             Matrix result = MatrixMath.Multiply(matrix, 2.0);
             Assert.AreEqual(4.0, result[0, 0]);
@@ -175,8 +196,10 @@ namespace encog_test.TestMatrix
         [Test]
         public void DeleteRow()
         {
-            double[,] origData = { { 1.0, 2.0 }, { 3.0, 4.0 } };
-            double[,] checkData = { { 3.0, 4.0 } };
+            double[][] origData = { 
+                new double[2] { 1.0, 2.0 },
+                new double[2] { 3.0, 4.0 } };
+            double[][] checkData = { new double[2] { 3.0, 4.0 } };
             Matrix orig = new Matrix(origData);
             Matrix matrix = MatrixMath.DeleteRow(orig, 0);
             Matrix check = new Matrix(checkData);
@@ -195,8 +218,12 @@ namespace encog_test.TestMatrix
         [Test]
         public void DeleteCol()
         {
-            double[,] origData = { { 1.0, 2.0 }, { 3.0, 4.0 } };
-            double[,] checkData = { { 2.0 }, { 4.0 } };
+            double[][] origData = { 
+                new double[2] { 1.0, 2.0 }, 
+                new double[2] { 3.0, 4.0 } };
+            double[][] checkData = { 
+                new double[1] { 2.0 }, 
+                new double[1] { 4.0 } };
             Matrix orig = new Matrix(origData);
             Matrix matrix = MatrixMath.DeleteCol(orig, 0);
             Matrix check = new Matrix(checkData);
@@ -215,7 +242,9 @@ namespace encog_test.TestMatrix
         [Test]
         public void Copy()
         {
-            double[,] data = { { 1.0, 2.0 }, { 3.0, 4.0 } };
+            double[][] data = { 
+                new double[2] { 1.0, 2.0 }, 
+                new double[2] { 3.0, 4.0 } };
             Matrix source = new Matrix(data);
             Matrix target = new Matrix(2, 2);
             MatrixMath.Copy(source, target);
