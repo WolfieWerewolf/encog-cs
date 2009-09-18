@@ -73,7 +73,7 @@ namespace EncogExamplesCS
 		INeuralDataSet trainingSet = new BasicNeuralDataSet(XOR_INPUT, XOR_IDEAL);
 		
 		// train the neural network
-		 NeuralSimulatedAnnealing train = new NeuralSimulatedAnnealing(
+        NeuralSimulatedAnnealing train = new NeuralTrainingSetSimulatedAnnealing(
 				network, trainingSet, 10, 2, 100);
 
             int epoch = 1;

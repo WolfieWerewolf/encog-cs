@@ -50,7 +50,7 @@ namespace ElmanNetwork
 	public static double trainNetwork(String what, BasicNetwork network,INeuralDataSet trainingSet)
 	{
 		// train the neural network
-		 NeuralSimulatedAnnealing trainAlt = new NeuralSimulatedAnnealing(
+        NeuralSimulatedAnnealing trainAlt = new NeuralTrainingSetSimulatedAnnealing(
 				network, trainingSet, 10, 2, 100);
 		
 		 ITrain trainMain = new Backpropagation(network, trainingSet, 0.00001, 0.0);
