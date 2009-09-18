@@ -18,7 +18,7 @@ namespace encog_test.Neural.Networks.Training
         {
             INeuralDataSet trainingData = new BasicNeuralDataSet(XOR.XOR_INPUT, XOR.XOR_IDEAL);
             BasicNetwork network = XOR.CreateThreeLayerNet();
-            NeuralSimulatedAnnealing train = new NeuralSimulatedAnnealing(network, trainingData, 10, 2, 100);
+            NeuralSimulatedAnnealing train = new NeuralTrainingSetSimulatedAnnealing(network, trainingData, 10, 2, 100);
 
             train.Iteration();
             double error1 = train.Error;
