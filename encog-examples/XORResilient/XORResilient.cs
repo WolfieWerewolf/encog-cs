@@ -48,7 +48,7 @@ namespace XORResilient
         {
             BasicNetwork network = new BasicNetwork();
             network.AddLayer(new BasicLayer(new ActivationSigmoid(), true, 2));
-            network.AddLayer(new BasicLayer(new ActivationSigmoid(), true, 3));
+            network.AddLayer(new BasicLayer(new ActivationSigmoid(), true, 5));
             network.AddLayer(new BasicLayer(new ActivationSigmoid(), true, 1));
             network.Structure.FinalizeStructure();
             network.Reset();
