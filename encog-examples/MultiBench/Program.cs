@@ -42,14 +42,14 @@ namespace MultiBench
             ResilientPropagation train = new ResilientPropagation(network, data);
             long start = DateTime.Now.Ticks;
             Console.WriteLine("Training 20 Iterations with RPROP");
-            for (int i = 1; i <= 1; i++)
+            for (int i = 1; i <= 20; i++)
             {
                 train.Iteration();
                 Console.WriteLine("Iteration #" + i + " Error:" + train.Error);
             }
             //train.FinishTraining();
             long stop = DateTime.Now.Ticks;
-            double diff = new TimeSpan(stop - start).Seconds;
+            double diff = (stop - start) / Evaluate.TICKS / Evaluate.MILIS;
             Console.WriteLine("RPROP Result:" + diff + " seconds.");
             Console.WriteLine("Final RPROP error: " + network.CalculateError(data));
             return diff;
@@ -68,7 +68,7 @@ namespace MultiBench
             }
             //train.finishTraining();
             long stop = DateTime.Now.Ticks;
-            double diff = new TimeSpan(stop - start).Seconds;
+            double diff = (stop - start) / Evaluate.TICKS / Evaluate.MILIS;
             Console.WriteLine("MPROP Result:" + diff + " seconds.");
             Console.WriteLine("Final MPROP error: " + network.CalculateError(data));
             return diff;
