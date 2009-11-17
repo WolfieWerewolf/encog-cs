@@ -19,3 +19,10 @@ C:\shared\encog-cs\encog-examples\XorBackprop\bin\Release\log4net.dll
 C:\shared\encog-cs\encog-examples\XorBackprop\obj\Release\ResolveAssemblyReference.cache
 C:\shared\encog-cs\encog-examples\XorBackprop\obj\Release\XorBackprop.exe
 C:\shared\encog-cs\encog-examples\XorBackprop\obj\Release\XorBackprop.pdb
+C:\shared\csharp\encog-examples\XorBackprop\bin\Release\XorBackprop.exe
+C:\shared\csharp\encog-examples\XorBackprop\bin\Release\XorBackprop.pdb
+C:\shared\csharp\encog-examples\XorBackprop\bin\Release\encog-core-cs.dll
+C:\shared\csharp\encog-examples\XorBackprop\bin\Release\log4net.dll
+C:\shared\csharp\encog-examples\XorBackprop\obj\Release\ResolveAssemblyReference.cache
+C:\shared\csharp\encog-examples\XorBackprop\obj\Release\XorBackprop.exe
+C:\shared\csharp\encog-examples\XorBackprop\obj\Release\XorBackprop.pdb

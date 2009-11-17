@@ -5,3 +5,10 @@ C:\shared\encog-cs\encog-examples\HopfieldAssociate\bin\Release\encog-core-cs.dl
 C:\shared\encog-cs\encog-examples\HopfieldAssociate\bin\Release\log4net.dll
 C:\shared\encog-cs\encog-examples\HopfieldAssociate\obj\Release\HopfieldAssociate.exe
 C:\shared\encog-cs\encog-examples\HopfieldAssociate\obj\Release\HopfieldAssociate.pdb
+C:\shared\csharp\encog-examples\HopfieldAssociate\bin\Release\HopfieldAssociate.exe
+C:\shared\csharp\encog-examples\HopfieldAssociate\bin\Release\HopfieldAssociate.pdb
+C:\shared\csharp\encog-examples\HopfieldAssociate\bin\Release\encog-core-cs.dll
+C:\shared\csharp\encog-examples\HopfieldAssociate\bin\Release\log4net.dll
+C:\shared\csharp\encog-examples\HopfieldAssociate\obj\Release\ResolveAssemblyReference.cache
+C:\shared\csharp\encog-examples\HopfieldAssociate\obj\Release\HopfieldAssociate.exe
+C:\shared\csharp\encog-examples\HopfieldAssociate\obj\Release\HopfieldAssociate.pdb

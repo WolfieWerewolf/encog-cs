@@ -5,3 +5,10 @@ C:\shared\encog-cs\encog-examples\BAM\bin\Debug\log4net.dll
 C:\shared\encog-cs\encog-examples\BAM\obj\Debug\ResolveAssemblyReference.cache
 C:\shared\encog-cs\encog-examples\BAM\obj\Debug\BAM.exe
 C:\shared\encog-cs\encog-examples\BAM\obj\Debug\BAM.pdb
+C:\shared\csharp\encog-examples\BAM\bin\Debug\BAM.exe
+C:\shared\csharp\encog-examples\BAM\bin\Debug\BAM.pdb
+C:\shared\csharp\encog-examples\BAM\bin\Debug\encog-core-cs.dll
+C:\shared\csharp\encog-examples\BAM\bin\Debug\log4net.dll
+C:\shared\csharp\encog-examples\BAM\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\csharp\encog-examples\BAM\obj\Debug\BAM.exe
+C:\shared\csharp\encog-examples\BAM\obj\Debug\BAM.pdb

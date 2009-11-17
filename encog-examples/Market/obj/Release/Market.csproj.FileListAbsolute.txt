@@ -12,3 +12,10 @@ C:\shared\encog-cs\encog-examples\Market\bin\Release\log4net.dll
 C:\shared\encog-cs\encog-examples\Market\obj\Release\ResolveAssemblyReference.cache
 C:\shared\encog-cs\encog-examples\Market\obj\Release\Market.exe
 C:\shared\encog-cs\encog-examples\Market\obj\Release\Market.pdb
+C:\shared\csharp\encog-examples\Market\bin\Release\Market.exe
+C:\shared\csharp\encog-examples\Market\bin\Release\Market.pdb
+C:\shared\csharp\encog-examples\Market\bin\Release\encog-core-cs.dll
+C:\shared\csharp\encog-examples\Market\bin\Release\log4net.dll
+C:\shared\csharp\encog-examples\Market\obj\Release\ResolveAssemblyReference.cache
+C:\shared\csharp\encog-examples\Market\obj\Release\Market.exe
+C:\shared\csharp\encog-examples\Market\obj\Release\Market.pdb

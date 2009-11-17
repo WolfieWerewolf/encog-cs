@@ -12,3 +12,10 @@ C:\shared\encog-cs\encog-examples\XorGaussian\bin\Debug\log4net.dll
 C:\shared\encog-cs\encog-examples\XorGaussian\obj\Debug\ResolveAssemblyReference.cache
 C:\shared\encog-cs\encog-examples\XorGaussian\obj\Debug\XorGaussian.exe
 C:\shared\encog-cs\encog-examples\XorGaussian\obj\Debug\XorGaussian.pdb
+C:\shared\csharp\encog-examples\XorGaussian\bin\Debug\XorGaussian.exe
+C:\shared\csharp\encog-examples\XorGaussian\bin\Debug\XorGaussian.pdb
+C:\shared\csharp\encog-examples\XorGaussian\bin\Debug\encog-core-cs.dll
+C:\shared\csharp\encog-examples\XorGaussian\bin\Debug\log4net.dll
+C:\shared\csharp\encog-examples\XorGaussian\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\csharp\encog-examples\XorGaussian\obj\Debug\XorGaussian.exe
+C:\shared\csharp\encog-examples\XorGaussian\obj\Debug\XorGaussian.pdb

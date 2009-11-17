@@ -12,3 +12,10 @@ C:\shared\encog-cs\encog-examples\XorRadial\bin\Debug\log4net.dll
 C:\shared\encog-cs\encog-examples\XorRadial\obj\Debug\ResolveAssemblyReference.cache
 C:\shared\encog-cs\encog-examples\XorRadial\obj\Debug\XorRadial.exe
 C:\shared\encog-cs\encog-examples\XorRadial\obj\Debug\XorRadial.pdb
+C:\shared\csharp\encog-examples\XorRadial\bin\Debug\XorRadial.exe
+C:\shared\csharp\encog-examples\XorRadial\bin\Debug\XorRadial.pdb
+C:\shared\csharp\encog-examples\XorRadial\bin\Debug\encog-core-cs.dll
+C:\shared\csharp\encog-examples\XorRadial\bin\Debug\log4net.dll
+C:\shared\csharp\encog-examples\XorRadial\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\csharp\encog-examples\XorRadial\obj\Debug\XorRadial.exe
+C:\shared\csharp\encog-examples\XorRadial\obj\Debug\XorRadial.pdb

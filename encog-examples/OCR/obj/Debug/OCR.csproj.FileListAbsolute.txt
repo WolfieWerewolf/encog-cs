@@ -18,3 +18,13 @@ C:\shared\encog-cs\encog-examples\OCR\obj\Debug\OCR.Properties.Resources.resourc
 C:\shared\encog-cs\encog-examples\OCR\obj\Debug\OCR.csproj.GenerateResource.Cache
 C:\shared\encog-cs\encog-examples\OCR\obj\Debug\OCR.exe
 C:\shared\encog-cs\encog-examples\OCR\obj\Debug\OCR.pdb
+C:\shared\csharp\encog-examples\OCR\bin\Debug\OCR.exe
+C:\shared\csharp\encog-examples\OCR\bin\Debug\OCR.pdb
+C:\shared\csharp\encog-examples\OCR\bin\Debug\encog-core-cs.dll
+C:\shared\csharp\encog-examples\OCR\bin\Debug\log4net.dll
+C:\shared\csharp\encog-examples\OCR\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\csharp\encog-examples\OCR\obj\Debug\Chapter12OCR.OCRForm.resources
+C:\shared\csharp\encog-examples\OCR\obj\Debug\OCR.Properties.Resources.resources
+C:\shared\csharp\encog-examples\OCR\obj\Debug\OCR.csproj.GenerateResource.Cache
+C:\shared\csharp\encog-examples\OCR\obj\Debug\OCR.exe
+C:\shared\csharp\encog-examples\OCR\obj\Debug\OCR.pdb

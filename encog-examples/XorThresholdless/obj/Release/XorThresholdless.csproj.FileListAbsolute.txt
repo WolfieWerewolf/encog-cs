@@ -12,3 +12,10 @@ C:\shared\encog-cs\encog-examples\XorThresholdless\bin\Release\log4net.dll
 C:\shared\encog-cs\encog-examples\XorThresholdless\obj\Release\ResolveAssemblyReference.cache
 C:\shared\encog-cs\encog-examples\XorThresholdless\obj\Release\XorThresholdless.exe
 C:\shared\encog-cs\encog-examples\XorThresholdless\obj\Release\XorThresholdless.pdb
+C:\shared\csharp\encog-examples\XorThresholdless\obj\Release\XorThresholdless.exe
+C:\shared\csharp\encog-examples\XorThresholdless\obj\Release\XorThresholdless.pdb
+C:\shared\csharp\encog-examples\XorThresholdless\bin\Release\XorThresholdless.exe
+C:\shared\csharp\encog-examples\XorThresholdless\bin\Release\XorThresholdless.pdb
+C:\shared\csharp\encog-examples\XorThresholdless\bin\Release\encog-core-cs.dll
+C:\shared\csharp\encog-examples\XorThresholdless\bin\Release\log4net.dll
+C:\shared\csharp\encog-examples\XorThresholdless\obj\Release\ResolveAssemblyReference.cache

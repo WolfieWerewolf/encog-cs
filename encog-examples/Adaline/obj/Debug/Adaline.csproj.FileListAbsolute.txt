@@ -5,3 +5,10 @@ C:\shared\encog-cs\encog-examples\Adaline\bin\Debug\log4net.dll
 C:\shared\encog-cs\encog-examples\Adaline\obj\Debug\ResolveAssemblyReference.cache
 C:\shared\encog-cs\encog-examples\Adaline\obj\Debug\Adaline.exe
 C:\shared\encog-cs\encog-examples\Adaline\obj\Debug\Adaline.pdb
+C:\shared\csharp\encog-examples\Adaline\bin\Debug\Adaline.exe
+C:\shared\csharp\encog-examples\Adaline\bin\Debug\Adaline.pdb
+C:\shared\csharp\encog-examples\Adaline\bin\Debug\encog-core-cs.dll
+C:\shared\csharp\encog-examples\Adaline\bin\Debug\log4net.dll
+C:\shared\csharp\encog-examples\Adaline\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\csharp\encog-examples\Adaline\obj\Debug\Adaline.exe
+C:\shared\csharp\encog-examples\Adaline\obj\Debug\Adaline.pdb

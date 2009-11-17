@@ -19,3 +19,10 @@ C:\shared\encog-cs\encog-examples\EncogExamplesCS\bin\Debug\log4net.dll
 C:\shared\encog-cs\encog-examples\EncogExamplesCS\obj\Debug\ResolveAssemblyReference.cache
 C:\shared\encog-cs\encog-examples\EncogExamplesCS\obj\Debug\EncogExamplesCS.exe
 C:\shared\encog-cs\encog-examples\EncogExamplesCS\obj\Debug\EncogExamplesCS.pdb
+C:\shared\csharp\encog-examples\EncogExamplesCS\bin\Debug\EncogExamplesCS.exe
+C:\shared\csharp\encog-examples\EncogExamplesCS\bin\Debug\EncogExamplesCS.pdb
+C:\shared\csharp\encog-examples\EncogExamplesCS\bin\Debug\encog-core-cs.dll
+C:\shared\csharp\encog-examples\EncogExamplesCS\bin\Debug\log4net.dll
+C:\shared\csharp\encog-examples\EncogExamplesCS\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\csharp\encog-examples\EncogExamplesCS\obj\Debug\EncogExamplesCS.exe
+C:\shared\csharp\encog-examples\EncogExamplesCS\obj\Debug\EncogExamplesCS.pdb

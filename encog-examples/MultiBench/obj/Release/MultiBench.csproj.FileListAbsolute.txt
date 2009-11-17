@@ -5,3 +5,10 @@ C:\shared\encog-cs\encog-examples\MultiBench\bin\Release\encog-core-cs.dll
 C:\shared\encog-cs\encog-examples\MultiBench\bin\Release\log4net.dll
 C:\shared\encog-cs\encog-examples\MultiBench\obj\Release\MultiBench.exe
 C:\shared\encog-cs\encog-examples\MultiBench\obj\Release\MultiBench.pdb
+C:\shared\csharp\encog-examples\MultiBench\bin\Release\MultiBench.exe
+C:\shared\csharp\encog-examples\MultiBench\bin\Release\MultiBench.pdb
+C:\shared\csharp\encog-examples\MultiBench\bin\Release\encog-core-cs.dll
+C:\shared\csharp\encog-examples\MultiBench\bin\Release\log4net.dll
+C:\shared\csharp\encog-examples\MultiBench\obj\Release\ResolveAssemblyReference.cache
+C:\shared\csharp\encog-examples\MultiBench\obj\Release\MultiBench.exe
+C:\shared\csharp\encog-examples\MultiBench\obj\Release\MultiBench.pdb

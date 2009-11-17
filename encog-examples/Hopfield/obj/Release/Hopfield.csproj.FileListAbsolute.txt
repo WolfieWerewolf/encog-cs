@@ -12,3 +12,10 @@ C:\shared\encog-cs\encog-examples\Hopfield\bin\Release\log4net.dll
 C:\shared\encog-cs\encog-examples\Hopfield\obj\Release\ResolveAssemblyReference.cache
 C:\shared\encog-cs\encog-examples\Hopfield\obj\Release\Hopfield.exe
 C:\shared\encog-cs\encog-examples\Hopfield\obj\Release\Hopfield.pdb
+C:\shared\csharp\encog-examples\Hopfield\bin\Release\Hopfield.exe
+C:\shared\csharp\encog-examples\Hopfield\bin\Release\Hopfield.pdb
+C:\shared\csharp\encog-examples\Hopfield\bin\Release\encog-core-cs.dll
+C:\shared\csharp\encog-examples\Hopfield\bin\Release\log4net.dll
+C:\shared\csharp\encog-examples\Hopfield\obj\Release\ResolveAssemblyReference.cache
+C:\shared\csharp\encog-examples\Hopfield\obj\Release\Hopfield.exe
+C:\shared\csharp\encog-examples\Hopfield\obj\Release\Hopfield.pdb

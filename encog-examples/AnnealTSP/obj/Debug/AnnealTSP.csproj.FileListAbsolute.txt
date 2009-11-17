@@ -19,3 +19,10 @@ C:\shared\encog-cs\encog-examples\AnnealTSP\bin\Debug\log4net.dll
 C:\shared\encog-cs\encog-examples\AnnealTSP\obj\Debug\ResolveAssemblyReference.cache
 C:\shared\encog-cs\encog-examples\AnnealTSP\obj\Debug\AnnealTSP.exe
 C:\shared\encog-cs\encog-examples\AnnealTSP\obj\Debug\AnnealTSP.pdb
+C:\shared\csharp\encog-examples\AnnealTSP\bin\Debug\AnnealTSP.exe
+C:\shared\csharp\encog-examples\AnnealTSP\bin\Debug\AnnealTSP.pdb
+C:\shared\csharp\encog-examples\AnnealTSP\bin\Debug\encog-core-cs.dll
+C:\shared\csharp\encog-examples\AnnealTSP\bin\Debug\log4net.dll
+C:\shared\csharp\encog-examples\AnnealTSP\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\csharp\encog-examples\AnnealTSP\obj\Debug\AnnealTSP.exe
+C:\shared\csharp\encog-examples\AnnealTSP\obj\Debug\AnnealTSP.pdb
