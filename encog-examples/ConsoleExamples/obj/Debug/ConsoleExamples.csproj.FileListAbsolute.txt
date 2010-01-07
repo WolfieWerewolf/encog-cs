@@ -1,0 +1,7 @@
+C:\shared\encog-cs\encog-examples\ConsoleExamples\bin\Debug\ConsoleExamples.exe
+C:\shared\encog-cs\encog-examples\ConsoleExamples\bin\Debug\ConsoleExamples.pdb
+C:\shared\encog-cs\encog-examples\ConsoleExamples\bin\Debug\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\ConsoleExamples\bin\Debug\log4net.dll
+C:\shared\encog-cs\encog-examples\ConsoleExamples\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-examples\ConsoleExamples\obj\Debug\ConsoleExamples.exe
+C:\shared\encog-cs\encog-examples\ConsoleExamples\obj\Debug\ConsoleExamples.pdb
