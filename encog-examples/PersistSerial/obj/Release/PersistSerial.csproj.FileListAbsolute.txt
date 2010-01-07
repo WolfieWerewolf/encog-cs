@@ -1,7 +1,0 @@
-C:\encog-cs\encog-examples\PersistSerial\bin\Release\PersistSerial.exe
-C:\encog-cs\encog-examples\PersistSerial\bin\Release\PersistSerial.pdb
-C:\encog-cs\encog-examples\PersistSerial\bin\Release\encog-core-cs.dll
-C:\encog-cs\encog-examples\PersistSerial\bin\Release\log4net.dll
-C:\encog-cs\encog-examples\PersistSerial\obj\Release\ResolveAssemblyReference.cache
-C:\encog-cs\encog-examples\PersistSerial\obj\Release\PersistSerial.exe
-C:\encog-cs\encog-examples\PersistSerial\obj\Release\PersistSerial.pdb
