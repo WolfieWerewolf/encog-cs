@@ -5,3 +5,10 @@ C:\shared\encog-cs\encog-examples\ConsoleExamples\bin\Release\encog-core-cs.dll
 C:\shared\encog-cs\encog-examples\ConsoleExamples\bin\Release\log4net.dll
 C:\shared\encog-cs\encog-examples\ConsoleExamples\obj\Release\ConsoleExamples.exe
 C:\shared\encog-cs\encog-examples\ConsoleExamples\obj\Release\ConsoleExamples.pdb
+D:\encog-cs\encog-examples\ConsoleExamples\obj\Release\ResolveAssemblyReference.cache
+D:\encog-cs\encog-examples\ConsoleExamples\obj\Release\ConsoleExamples.pdb
+D:\encog-cs\encog-examples\ConsoleExamples\bin\Release\ConsoleExamples.exe
+D:\encog-cs\encog-examples\ConsoleExamples\bin\Release\ConsoleExamples.pdb
+D:\encog-cs\encog-examples\ConsoleExamples\bin\Release\encog-core-cs.dll
+D:\encog-cs\encog-examples\ConsoleExamples\bin\Release\log4net.dll
+D:\encog-cs\encog-examples\ConsoleExamples\obj\Release\ConsoleExamples.exe

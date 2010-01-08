@@ -28,3 +28,5 @@ C:\shared\csharp\encog-examples\OCR\obj\Debug\OCR.Properties.Resources.resources
 C:\shared\csharp\encog-examples\OCR\obj\Debug\OCR.csproj.GenerateResource.Cache
 C:\shared\csharp\encog-examples\OCR\obj\Debug\OCR.exe
 C:\shared\csharp\encog-examples\OCR\obj\Debug\OCR.pdb
+D:\encog-cs\encog-examples\OCR\obj\Debug\OCR.exe
+D:\encog-cs\encog-examples\OCR\obj\Debug\OCR.pdb

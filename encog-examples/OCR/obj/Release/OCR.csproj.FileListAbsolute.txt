@@ -28,3 +28,13 @@ C:\shared\csharp\encog-examples\OCR\obj\Release\OCR.Properties.Resources.resourc
 C:\shared\csharp\encog-examples\OCR\obj\Release\OCR.csproj.GenerateResource.Cache
 C:\shared\csharp\encog-examples\OCR\obj\Release\OCR.exe
 C:\shared\csharp\encog-examples\OCR\obj\Release\OCR.pdb
+D:\encog-cs\encog-examples\OCR\bin\Release\OCR.exe
+D:\encog-cs\encog-examples\OCR\bin\Release\OCR.pdb
+D:\encog-cs\encog-examples\OCR\bin\Release\encog-core-cs.dll
+D:\encog-cs\encog-examples\OCR\bin\Release\log4net.dll
+D:\encog-cs\encog-examples\OCR\obj\Release\ResolveAssemblyReference.cache
+D:\encog-cs\encog-examples\OCR\obj\Release\Chapter12OCR.OCRForm.resources
+D:\encog-cs\encog-examples\OCR\obj\Release\OCR.Properties.Resources.resources
+D:\encog-cs\encog-examples\OCR\obj\Release\OCR.csproj.GenerateResource.Cache
+D:\encog-cs\encog-examples\OCR\obj\Release\OCR.exe
+D:\encog-cs\encog-examples\OCR\obj\Release\OCR.pdb
