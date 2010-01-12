@@ -38,6 +38,7 @@ namespace ConsoleExamples
             examples.Add(Encog.Examples.XOR.Thresholdless.XorThresholdless.Info);
             examples.Add(Encog.Examples.Forest.ForestCover.Info);
             examples.Add(Encog.Examples.Lunar.LunarLander.Info);
+            examples.Add(Encog.Examples.Image.ImageNeuralNetwork.Info);
         }
 
         public void ListCommands()

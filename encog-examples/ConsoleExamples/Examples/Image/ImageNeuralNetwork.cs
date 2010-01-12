@@ -13,6 +13,7 @@ using Encog.Util.Simple;
 using System.Drawing;
 using Encog.Neural.Networks.Training.Propagation.Resilient;
 using Encog.Neural.Networks.Training.Strategy;
+using ConsoleExamples.Examples;
 
 namespace Encog.Examples.Image
 {
@@ -34,6 +35,19 @@ namespace Encog.Examples.Image
     /// </summary>
     public class ImageNeuralNetwork : IExample
     {
+        public static ExampleInfo Info
+        {
+            get
+            {
+                ExampleInfo info = new ExampleInfo(
+                    typeof(ImageNeuralNetwork),
+                    "image",
+                    "Image Neural Networks",
+                    "Simple ADALINE neural network that recognizes the digits.");
+                return info;
+            }
+        }
+
         private IExampleInterface app;
 
         public void Execute(IExampleInterface app)
