@@ -47,7 +47,7 @@ namespace Encog.Examples.Forest
 
             BasicNetwork network = (BasicNetwork)encog.Find(Constant.TRAINED_NETWORK_NAME);
             if (network == null)
-                network = EncogUtility.simpleFeedForward(norm.GetNetworkInputLayerSize(), Constant.HIDDEN_COUNT, 0, norm.GetNetworkOutputLayerSize(), false);
+                network = EncogUtility.SimpleFeedForward(norm.GetNetworkInputLayerSize(), Constant.HIDDEN_COUNT, 0, norm.GetNetworkOutputLayerSize(), false);
 
             if (useGUI)
             {
