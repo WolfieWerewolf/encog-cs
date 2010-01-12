@@ -36,6 +36,8 @@ namespace ConsoleExamples
             examples.Add(Encog.Examples.XOR.Resilient.XORResilient.Info);
             examples.Add(Encog.Examples.XOR.SCG.XORSCG.Info);
             examples.Add(Encog.Examples.XOR.Thresholdless.XorThresholdless.Info);
+            examples.Add(Encog.Examples.Forest.ForestCover.Info);
+            examples.Add(Encog.Examples.Lunar.LunarLander.Info);
         }
 
         public void ListCommands()

@@ -62,6 +62,10 @@
     <Compile Include="Examples\Hopfield\Associate\HopfieldAssociate.cs" />
     <Compile Include="Examples\Hopfield\Simple\HopfieldSimple.cs" />
     <Compile Include="Examples\JordanNetwork\JordanExample.cs" />
+    <Compile Include="Examples\Lunar\LanderSimulator.cs" />
+    <Compile Include="Examples\Lunar\LunarLander.cs" />
+    <Compile Include="Examples\Lunar\NeuralPilot.cs" />
+    <Compile Include="Examples\Lunar\PilotScore.cs" />
     <Compile Include="Examples\Market\Config.cs" />
     <Compile Include="Examples\Market\Market.cs" />
     <Compile Include="Examples\Market\MarketBuildTraining.cs" />

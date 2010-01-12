@@ -6,6 +6,8 @@ using Encog.Util.Logging;
 using Encog.Normalize;
 using Encog.Persist;
 using System.IO;
+using ConsoleExamples.Examples;
+using Encog.Examples.Adaline;
 
 namespace Encog.Examples.Forest
 {
@@ -92,6 +94,20 @@ namespace Encog.Examples.Forest
     /// </summary>
     public class ForestCover : IExample
     {
+        public static ExampleInfo Info
+        {
+            get
+            {
+                ExampleInfo info = new ExampleInfo(
+                    typeof(ForestCover),
+                    "forest",
+                    "Forest Cover Prediction",
+                    "Predicts forest cover using normalization.");
+                return info;
+            }
+        }
+
+
         private IExampleInterface app;
 
         public void Generate(bool useOneOf)
