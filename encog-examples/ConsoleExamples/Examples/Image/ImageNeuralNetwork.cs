@@ -54,7 +54,7 @@ namespace Encog.Examples.Image
         {
             this.app = app;
             Logging.StopConsoleLogging();
-            if (args.Count < 1)
+            if (this.app.Args.Length < 1)
             {
                 this.app.WriteLine("Must specify command file.  See source for format.");
             }
@@ -227,13 +227,27 @@ namespace Encog.Examples.Image
                     }
                 }
 
-                Bitmap img = new Bitmap(pair.File);
-                ImageNeuralData data = new ImageNeuralData(img);
-                this.training.Add(data, ideal);
+                try
+                {
+                    Bitmap img = new Bitmap(pair.File);
+                    ImageNeuralData data = new ImageNeuralData(img);
+                    this.training.Add(data, ideal);
+                }
+                catch (Exception e)
+                {
+                    this.app.WriteLine("Error loading: " + pair.File 
+                        + ": " + e.Message);
+                }
             }
 
             String strHidden1 = GetArg("hidden1");
             String strHidden2 = GetArg("hidden2");
+
+            if (this.training.Count == 0)
+            {
+                app.WriteLine("No images to create network for.");
+                return;
+            }
 
             this.training.Downsample(this.downsampleHeight, this.downsampleWidth);
 
@@ -248,6 +262,9 @@ namespace Encog.Examples.Image
 
         private void ProcessTrain()
         {
+            if (this.network == null)
+                return;
+
             String strMode = GetArg("mode");
             String strMinutes = GetArg("minutes");
             String strStrategyError = GetArg("strategyerror");
@@ -278,13 +295,20 @@ namespace Encog.Examples.Image
         public void ProcessWhatIs()
         {
             String filename = GetArg("image");
-            Bitmap img = new Bitmap(filename);
-            ImageNeuralData input = new ImageNeuralData(img);
-            input.Downsample(this.downsample, false, this.downsampleHeight,
-                    this.downsampleWidth, 1, -1);
-            int winner = this.network.Winner(input);
-            this.app.WriteLine("What is: " + filename + ", it seems to be: "
-                    + this.neuron2identity[winner]);
+            try
+            {
+                Bitmap img = new Bitmap(filename);
+                ImageNeuralData input = new ImageNeuralData(img);
+                input.Downsample(this.downsample, false, this.downsampleHeight,
+                        this.downsampleWidth, 1, -1);
+                int winner = this.network.Winner(input);
+                this.app.WriteLine("What is: " + filename + ", it seems to be: "
+                        + this.neuron2identity[winner]);
+            }
+            catch (Exception e)
+            {
+                this.app.WriteLine("Error loading: " + filename + ", " + e.Message);
+            }
         }
     }
 }

@@ -1,8 +1,8 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <StartArguments>-pause image</StartArguments>
+    <StartArguments>-pause image c:\image\execute.txt</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <StartArguments>-pause image</StartArguments>
+    <StartArguments>-pause image c:\image\execute.txt</StartArguments>
   </PropertyGroup>
 </Project>
