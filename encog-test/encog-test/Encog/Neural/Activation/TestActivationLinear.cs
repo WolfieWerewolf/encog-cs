@@ -16,7 +16,7 @@ namespace encog_test.Encog.Neural.Activation
         public void testLinear()
         {
             ActivationLinear activation = new ActivationLinear();
-            Assert.IsFalse(activation.HasDerivative);
+            Assert.IsTrue(activation.HasDerivative);
 
             ActivationLinear clone = (ActivationLinear)activation.Clone();
             Assert.IsNotNull(clone);
@@ -32,16 +32,9 @@ namespace encog_test.Encog.Neural.Activation
             // this will throw an error if it does not work
             ActivationLinearPersistor p = (ActivationLinearPersistor)activation.CreatePersistor();
 
-            // test derivative, should throw an error
-            try
-            {
-                activation.DerivativeFunction(input);
-                Assert.IsTrue(false);// mark an error
-            }
-            catch (EncogError )
-            {
-                // good, this should happen
-            }
+            // test derivative, should not throw an error
+            activation.DerivativeFunction(input);
+   
 
             // test name and description
             // names and descriptions are not stored for these

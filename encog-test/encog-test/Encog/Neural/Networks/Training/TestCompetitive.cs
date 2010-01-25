@@ -14,6 +14,7 @@ using Encog.Neural.Data.Basic;
 using Encog.Neural.Activation;
 using Encog.Neural.Data;
 using Encog.Matrix;
+using Encog.Neural.Networks.Pattern;
 
 namespace encog_test.Neural.Networks.Training
 {
@@ -49,17 +50,17 @@ namespace encog_test.Neural.Networks.Training
                    TestCompetitive.SOM_INPUT, null);
 
             // Create the neural network.
-            BasicNetwork network = new BasicNetwork();
-            network.AddLayer(new BasicLayer(new ActivationLinear(), false, 4));
-            network.AddLayer(new BasicLayer(new ActivationLinear(), false, 2));
-            network.Structure.FinalizeStructure();
-            network.Reset();
+            SOMPattern pattern = new SOMPattern();
+            pattern.InputNeurons = 4;
+            pattern.OutputNeurons = 2;
+            BasicNetwork network = pattern.Generate();
 
             ISynapse synapse = findSynapse(network);
             synapse.WeightMatrix = new Matrix(MATRIX_ARRAY);
 
             CompetitiveTraining train = new CompetitiveTraining(network, 0.4,
                    training, new NeighborhoodSingle());
+            train.ForceWinner = true;
 
             int iteration = 0;
 
