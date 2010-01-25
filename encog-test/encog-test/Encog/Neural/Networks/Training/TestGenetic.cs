@@ -8,6 +8,7 @@ using Encog.Neural.Networks;
 using Encog.Neural.Networks.Training.Genetic;
 using Encog.Util.Randomize;
 using NUnit.Framework;
+using Encog.Neural.Networks.Training;
 
 namespace encog_test.Neural.Networks.Training
 {
@@ -20,7 +21,10 @@ namespace encog_test.Neural.Networks.Training
             INeuralDataSet trainingData = new BasicNeuralDataSet(XOR.XOR_INPUT, XOR.XOR_IDEAL);
             BasicNetwork network = CreateNetwork.createXORNetworkUntrained();
 
-            TrainingSetNeuralGeneticAlgorithm train = new TrainingSetNeuralGeneticAlgorithm(network, new RangeRandomizer(-1, 1), trainingData, 500, 0.1, 0.25);
+            ICalculateScore score = new TrainingSetScore(trainingData);
+            // train the neural network
+            ITrain train = new NeuralGeneticAlgorithm(
+                network, new FanInRandomizer(), score, 500, 0.1, 0.25);
 
             train.Iteration();
             double error1 = train.Error;

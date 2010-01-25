@@ -7,6 +7,7 @@ using Encog.Neural.NeuralData;
 using Encog.Neural.Data.Basic;
 using Encog.Neural.Networks;
 using Encog.Neural.Networks.Training.Anneal;
+using Encog.Neural.Networks.Training;
 
 namespace encog_test.Neural.Networks.Training
 {
@@ -18,7 +19,10 @@ namespace encog_test.Neural.Networks.Training
         {
             INeuralDataSet trainingData = new BasicNeuralDataSet(XOR.XOR_INPUT, XOR.XOR_IDEAL);
             BasicNetwork network = XOR.CreateThreeLayerNet();
-            NeuralSimulatedAnnealing train = new NeuralTrainingSetSimulatedAnnealing(network, trainingData, 10, 2, 100);
+
+            ICalculateScore score = new TrainingSetScore(trainingData);
+            ITrain train = new NeuralSimulatedAnnealing(
+                    network, score, 10, 2, 100);
 
             train.Iteration();
             double error1 = train.Error;

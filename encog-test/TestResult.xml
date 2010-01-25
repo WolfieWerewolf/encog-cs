@@ -1,44 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\shared\csharp\encog-test\Encog-test.nunit" total="86" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2009-11-17" time="08:12:55">
-  <environment nunit-version="2.5.2.9222" clr-version="2.0.50727.4927" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.5.2\bin\net-2.0" machine-name="JHEATON-QUAD" user="jheaton" user-domain="JHEATON-QUAD" />
+<test-results name="C:\shared\encog-cs\encog-test\Encog-test.nunit" total="86" errors="1" failures="3" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-01-25" time="06:58:40">
+  <environment nunit-version="2.5.2.9222" clr-version="2.0.50727.4927" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\shared\encog-cs\encog-test" machine-name="JHEATON-QUAD" user="jheaton" user-domain="JHEATON-QUAD" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite name="C:\shared\csharp\encog-test\Encog-test.nunit" executed="True" success="False" time="6.110" asserts="0">
+  <test-suite name="C:\shared\encog-cs\encog-test\Encog-test.nunit" executed="True" success="False" time="7.255" asserts="0">
     <results>
-      <test-suite name="C:\shared\csharp\encog-test\encog-test\bin\Release\encog-test.dll" executed="True" success="False" time="6.097" asserts="0">
+      <test-suite name="C:\shared\encog-cs\encog-test\encog-test\bin\Release\encog-test.dll" executed="True" success="False" time="7.213" asserts="0">
         <results>
-          <test-suite name="encog_test" executed="True" success="False" time="6.097" asserts="0">
+          <test-suite name="encog_test" executed="True" success="False" time="7.212" asserts="0">
             <results>
-              <test-suite name="Data" executed="True" success="False" time="3.761" asserts="0">
+              <test-suite name="Data" executed="True" success="False" time="4.681" asserts="0">
                 <results>
-                  <test-suite name="CSV" executed="True" success="True" time="0.043" asserts="0">
+                  <test-suite name="CSV" executed="True" success="True" time="0.181" asserts="0">
                     <results>
-                      <test-suite name="TestCSVNeuralData" executed="True" success="True" time="0.041" asserts="0">
+                      <test-suite name="TestCSVNeuralData" executed="True" success="True" time="0.144" asserts="0">
                         <results>
-                          <test-case name="encog_test.Data.CSV.TestCSVNeuralData.CSVData" executed="True" success="True" time="0.041" asserts="12" />
+                          <test-case name="encog_test.Data.CSV.TestCSVNeuralData.CSVData" executed="True" success="True" time="0.132" asserts="12" />
                         </results>
                       </test-suite>
                     </results>
                   </test-suite>
-                  <test-suite name="Market" executed="True" success="True" time="3.651" asserts="0">
+                  <test-suite name="Market" executed="True" success="True" time="3.743" asserts="0">
                     <results>
-                      <test-suite name="TestMarketData" executed="True" success="True" time="3.527" asserts="0">
+                      <test-suite name="TestMarketData" executed="True" success="True" time="3.631" asserts="0">
                         <results>
-                          <test-case name="encog_test.Data.Market.TestMarketData.MarketData" executed="True" success="True" time="3.526" asserts="66" />
+                          <test-case name="encog_test.Data.Market.TestMarketData.MarketData" executed="True" success="True" time="3.631" asserts="66" />
                         </results>
                       </test-suite>
-                      <test-suite name="TestYahooLoader" executed="True" success="True" time="0.121" asserts="0">
+                      <test-suite name="TestYahooLoader" executed="True" success="True" time="0.109" asserts="0">
                         <results>
-                          <test-case name="encog_test.Data.Market.TestYahooLoader.Loader" executed="True" success="True" time="0.120" asserts="2" />
+                          <test-case name="encog_test.Data.Market.TestYahooLoader.Loader" executed="True" success="True" time="0.109" asserts="2" />
                         </results>
                       </test-suite>
                     </results>
                   </test-suite>
-                  <test-suite name="SQL" executed="True" success="False" time="0.010" asserts="0">
+                  <test-suite name="SQL" executed="True" success="False" time="0.697" asserts="0">
                     <results>
-                      <test-suite name="TestSQLDataSet" executed="True" success="False" time="0.001" asserts="0">
+                      <test-suite name="TestSQLDataSet" executed="True" success="False" time="0.549" asserts="0">
                         <results>
-                          <test-case name="encog_test.Data.SQL.TestSQLDataSet.SQLDataSet" executed="True" success="False" time="0.001" asserts="0">
+                          <test-case name="encog_test.Data.SQL.TestSQLDataSet.SQLDataSet" executed="True" success="False" time="0.549" asserts="0">
                             <failure>
                               <message><![CDATA[System.InvalidOperationException : The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.]]></message>
                               <stack-trace><![CDATA[at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
@@ -49,7 +49,7 @@ at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection ownin
 at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
 at System.Data.OleDb.OleDbConnection.Open()
 at Encog.Neural.NeuralData.SQL.SQLNeuralDataSet..ctor(String sql, Int32 inputSize, Int32 idealSize, String connectString)
-at encog_test.Data.SQL.TestSQLDataSet.SQLDataSet() in C:\shared\csharp\encog-test\encog-test\Encog\Data\SQL\TestSQLDataSet.cs:line 21
+at encog_test.Data.SQL.TestSQLDataSet.SQLDataSet() in C:\shared\encog-cs\encog-test\encog-test\Encog\Data\SQL\TestSQLDataSet.cs:line 21
 ]]></stack-trace>
                             </failure>
                           </test-case>
@@ -57,12 +57,12 @@ at encog_test.Data.SQL.TestSQLDataSet.SQLDataSet() in C:\shared\csharp\encog-tes
                       </test-suite>
                     </results>
                   </test-suite>
-                  <test-suite name="Temporal" executed="True" success="True" time="0.028" asserts="0">
+                  <test-suite name="Temporal" executed="True" success="True" time="0.029" asserts="0">
                     <results>
                       <test-suite name="TestTemporal" executed="True" success="True" time="0.028" asserts="0">
                         <results>
-                          <test-case name="encog_test.Data.Temporal.TestTemporal.ActivationTemporal" executed="True" success="True" time="0.006" asserts="6" />
-                          <test-case name="encog_test.Data.Temporal.TestTemporal.BasicTemporal" executed="True" success="True" time="0.012" asserts="55" />
+                          <test-case name="encog_test.Data.Temporal.TestTemporal.ActivationTemporal" executed="True" success="True" time="0.005" asserts="6" />
+                          <test-case name="encog_test.Data.Temporal.TestTemporal.BasicTemporal" executed="True" success="True" time="0.013" asserts="55" />
                           <test-case name="encog_test.Data.Temporal.TestTemporal.FormatTemporal" executed="True" success="True" time="0.004" asserts="13" />
                           <test-case name="encog_test.Data.Temporal.TestTemporal.HiLowTemporal" executed="True" success="True" time="0.004" asserts="16" />
                         </results>
@@ -71,33 +71,33 @@ at encog_test.Data.SQL.TestSQLDataSet.SQLDataSet() in C:\shared\csharp\encog-tes
                   </test-suite>
                   <test-suite name="XML" executed="True" success="True" time="0.021" asserts="0">
                     <results>
-                      <test-suite name="TestXMLNeuralData" executed="True" success="True" time="0.019" asserts="0">
+                      <test-suite name="TestXMLNeuralData" executed="True" success="True" time="0.020" asserts="0">
                         <results>
-                          <test-case name="encog_test.Data.XML.TestXMLNeuralData.XMLNeuralData" executed="True" success="True" time="0.019" asserts="14" />
+                          <test-case name="encog_test.Data.XML.TestXMLNeuralData.XMLNeuralData" executed="True" success="True" time="0.020" asserts="14" />
                         </results>
                       </test-suite>
                     </results>
                   </test-suite>
                 </results>
               </test-suite>
-              <test-suite name="Encog" executed="True" success="True" time="0.620" asserts="0">
+              <test-suite name="Encog" executed="True" success="False" time="0.804" asserts="0">
                 <results>
-                  <test-suite name="Bot" executed="True" success="True" time="0.558" asserts="0">
+                  <test-suite name="Bot" executed="True" success="True" time="0.741" asserts="0">
                     <results>
-                      <test-suite name="Browse" executed="True" success="True" time="0.340" asserts="0">
+                      <test-suite name="Browse" executed="True" success="True" time="0.494" asserts="0">
                         <results>
-                          <test-suite name="TestAddress" executed="True" success="True" time="0.017" asserts="0">
+                          <test-suite name="TestAddress" executed="True" success="True" time="0.016" asserts="0">
                             <results>
-                              <test-case name="encog_test.Encog.Bot.Browse.TestAddress.testAddressFunctions" executed="True" success="True" time="0.017" asserts="4" />
+                              <test-case name="encog_test.Encog.Bot.Browse.TestAddress.testAddressFunctions" executed="True" success="True" time="0.016" asserts="4" />
                             </results>
                           </test-suite>
-                          <test-suite name="TestBrowse" executed="True" success="True" time="0.300" asserts="0">
+                          <test-suite name="TestBrowse" executed="True" success="True" time="0.452" asserts="0">
                             <results>
-                              <test-case name="encog_test.Encog.Bot.Browse.TestBrowse.testBrowse" executed="True" success="True" time="0.123" asserts="1" />
-                              <test-case name="encog_test.Encog.Bot.Browse.TestBrowse.testFormGET" executed="True" success="True" time="0.175" asserts="2" />
+                              <test-case name="encog_test.Encog.Bot.Browse.TestBrowse.testBrowse" executed="True" success="True" time="0.254" asserts="1" />
+                              <test-case name="encog_test.Encog.Bot.Browse.TestBrowse.testFormGET" executed="True" success="True" time="0.194" asserts="2" />
                             </results>
                           </test-suite>
-                          <test-suite name="TestWebPageData" executed="True" success="True" time="0.019" asserts="0">
+                          <test-suite name="TestWebPageData" executed="True" success="True" time="0.020" asserts="0">
                             <results>
                               <test-case name="encog_test.Encog.Bot.Browse.TestWebPageData.testLink" executed="True" success="True" time="0.015" asserts="6" />
                               <test-case name="encog_test.Encog.Bot.Browse.TestWebPageData.testSimple" executed="True" success="True" time="0.003" asserts="9" />
@@ -125,32 +125,40 @@ at encog_test.Data.SQL.TestSQLDataSet.SQLDataSet() in C:\shared\csharp\encog-tes
                           </test-suite>
                         </results>
                       </test-suite>
-                      <test-suite name="TestBotUtil" executed="True" success="True" time="0.194" asserts="0">
+                      <test-suite name="TestBotUtil" executed="True" success="True" time="0.221" asserts="0">
                         <results>
-                          <test-case name="encog_test.Encog.Bot.TestBotUtil.testExtract" executed="True" success="True" time="0.019" asserts="4" />
+                          <test-case name="encog_test.Encog.Bot.TestBotUtil.testExtract" executed="True" success="True" time="0.020" asserts="4" />
                           <test-case name="encog_test.Encog.Bot.TestBotUtil.testExtractFromIndex" executed="True" success="True" time="0.002" asserts="5" />
-                          <test-case name="encog_test.Encog.Bot.TestBotUtil.testLoadPage" executed="True" success="True" time="0.172" asserts="1" />
+                          <test-case name="encog_test.Encog.Bot.TestBotUtil.testLoadPage" executed="True" success="True" time="0.198" asserts="1" />
                         </results>
                       </test-suite>
                     </results>
                   </test-suite>
-                  <test-suite name="Neural" executed="True" success="True" time="0.043" asserts="0">
+                  <test-suite name="Neural" executed="True" success="False" time="0.043" asserts="0">
                     <results>
-                      <test-suite name="Activation" executed="True" success="True" time="0.041" asserts="0">
+                      <test-suite name="Activation" executed="True" success="False" time="0.042" asserts="0">
                         <results>
                           <test-suite name="TestActivationBiPolar" executed="True" success="True" time="0.005" asserts="0">
                             <results>
                               <test-case name="encog_test.Encog.Neural.Activation.TestActivationBiPolar.testBiPolar" executed="True" success="True" time="0.005" asserts="6" />
                             </results>
                           </test-suite>
-                          <test-suite name="TestActivationGaussian" executed="True" success="True" time="0.004" asserts="0">
+                          <test-suite name="TestActivationGaussian" executed="True" success="True" time="0.003" asserts="0">
                             <results>
-                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationGaussian.testGaussian" executed="True" success="True" time="0.004" asserts="6" />
+                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationGaussian.testGaussian" executed="True" success="True" time="0.003" asserts="6" />
                             </results>
                           </test-suite>
-                          <test-suite name="TestActivationLinear" executed="True" success="True" time="0.003" asserts="0">
+                          <test-suite name="TestActivationLinear" executed="True" success="False" time="0.007" asserts="0">
                             <results>
-                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationLinear.testLinear" executed="True" success="True" time="0.003" asserts="7" />
+                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationLinear.testLinear" executed="True" success="False" time="0.007" asserts="1">
+                                <failure>
+                                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                                  <stack-trace><![CDATA[at encog_test.Encog.Neural.Activation.TestActivationLinear.testLinear() in C:\shared\encog-cs\encog-test\encog-test\Encog\Neural\Activation\TestActivationLinear.cs:line 21
+]]></stack-trace>
+                                </failure>
+                              </test-case>
                             </results>
                           </test-suite>
                           <test-suite name="TestActivationLOG" executed="True" success="True" time="0.003" asserts="0">
@@ -160,12 +168,12 @@ at encog_test.Data.SQL.TestSQLDataSet.SQLDataSet() in C:\shared\csharp\encog-tes
                           </test-suite>
                           <test-suite name="TestActivationSigmoid" executed="True" success="True" time="0.003" asserts="0">
                             <results>
-                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationSigmoid.testSigmoid" executed="True" success="True" time="0.003" asserts="6" />
+                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationSigmoid.testSigmoid" executed="True" success="True" time="0.002" asserts="6" />
                             </results>
                           </test-suite>
-                          <test-suite name="TestActivationSIN" executed="True" success="True" time="0.002" asserts="0">
+                          <test-suite name="TestActivationSIN" executed="True" success="True" time="0.003" asserts="0">
                             <results>
-                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationSIN.testSIN" executed="True" success="True" time="0.002" asserts="6" />
+                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationSIN.testSIN" executed="True" success="True" time="0.003" asserts="6" />
                             </results>
                           </test-suite>
                           <test-suite name="TestActivationSoftMax" executed="True" success="True" time="0.001" asserts="0">
@@ -173,7 +181,7 @@ at encog_test.Data.SQL.TestSQLDataSet.SQLDataSet() in C:\shared\csharp\encog-tes
                               <test-case name="encog_test.Encog.Neural.Activation.TestActivationSoftMax.testSIN" executed="True" success="True" time="0.001" asserts="6" />
                             </results>
                           </test-suite>
-                          <test-suite name="TestActivationTANH" executed="True" success="True" time="0.003" asserts="0">
+                          <test-suite name="TestActivationTANH" executed="True" success="True" time="0.002" asserts="0">
                             <results>
                               <test-case name="encog_test.Encog.Neural.Activation.TestActivationTANH.testTANH" executed="True" success="True" time="0.001" asserts="6" />
                             </results>
@@ -187,13 +195,13 @@ at encog_test.Data.SQL.TestSQLDataSet.SQLDataSet() in C:\shared\csharp\encog-tes
                       </test-suite>
                     </results>
                   </test-suite>
-                  <test-suite name="Parse" executed="True" success="True" time="0.010" asserts="0">
+                  <test-suite name="Parse" executed="True" success="True" time="0.011" asserts="0">
                     <results>
                       <test-suite name="Tags" executed="True" success="True" time="0.010" asserts="0">
                         <results>
-                          <test-suite name="Read" executed="True" success="True" time="0.003" asserts="0">
+                          <test-suite name="Read" executed="True" success="True" time="0.002" asserts="0">
                             <results>
-                              <test-suite name="TestXMLRead" executed="True" success="True" time="0.002" asserts="0">
+                              <test-suite name="TestXMLRead" executed="True" success="True" time="0.001" asserts="0">
                                 <results>
                                   <test-case name="encog_test.Encog.Parse.Tags.Read.TestXMLRead.testRead" executed="True" success="True" time="0.001" asserts="7" />
                                 </results>
@@ -202,9 +210,9 @@ at encog_test.Data.SQL.TestSQLDataSet.SQLDataSet() in C:\shared\csharp\encog-tes
                           </test-suite>
                           <test-suite name="Write" executed="True" success="True" time="0.005" asserts="0">
                             <results>
-                              <test-suite name="TestXMLWrite" executed="True" success="True" time="0.004" asserts="0">
+                              <test-suite name="TestXMLWrite" executed="True" success="True" time="0.005" asserts="0">
                                 <results>
-                                  <test-case name="encog_test.Encog.Parse.Tags.Write.TestXMLWrite.testXMLWrite" executed="True" success="True" time="0.004" asserts="1" />
+                                  <test-case name="encog_test.Encog.Parse.Tags.Write.TestXMLWrite.testXMLWrite" executed="True" success="True" time="0.005" asserts="1" />
                                 </results>
                               </test-suite>
                             </results>
@@ -215,52 +223,68 @@ at encog_test.Data.SQL.TestSQLDataSet.SQLDataSet() in C:\shared\csharp\encog-tes
                   </test-suite>
                 </results>
               </test-suite>
-              <test-suite name="Neural" executed="True" success="True" time="1.597" asserts="0">
+              <test-suite name="Neural" executed="True" success="False" time="1.604" asserts="0">
                 <results>
-                  <test-suite name="Networks" executed="True" success="True" time="1.511" asserts="0">
+                  <test-suite name="Networks" executed="True" success="False" time="1.515" asserts="0">
                     <results>
-                      <test-suite name="Training" executed="True" success="True" time="1.511" asserts="0">
+                      <test-suite name="Training" executed="True" success="False" time="1.514" asserts="0">
                         <results>
-                          <test-suite name="TestAnneal" executed="True" success="True" time="0.054" asserts="0">
+                          <test-suite name="TestAnneal" executed="True" success="True" time="0.065" asserts="0">
                             <results>
-                              <test-case name="encog_test.Neural.Networks.Training.TestAnneal.testAnneal" executed="True" success="True" time="0.054" asserts="1" />
+                              <test-case name="encog_test.Neural.Networks.Training.TestAnneal.testAnneal" executed="True" success="True" time="0.065" asserts="1" />
                             </results>
                           </test-suite>
-                          <test-suite name="TestBackpropagation" executed="True" success="True" time="0.016" asserts="0">
+                          <test-suite name="TestBackpropagation" executed="True" success="True" time="0.014" asserts="0">
                             <results>
                               <test-case name="encog_test.Neural.Networks.Training.TestBackpropagation.testCounts" executed="True" success="True" time="0.002" asserts="1" />
-                              <test-case name="encog_test.Neural.Networks.Training.TestBackpropagation.testPrune" executed="True" success="True" time="0.011" asserts="2" />
-                              <test-case name="encog_test.Neural.Networks.Training.TestBackpropagation.testToString" executed="True" success="True" time="0.001" asserts="0" />
+                              <test-case name="encog_test.Neural.Networks.Training.TestBackpropagation.testPrune" executed="True" success="True" time="0.009" asserts="2" />
+                              <test-case name="encog_test.Neural.Networks.Training.TestBackpropagation.testToString" executed="True" success="True" time="0.000" asserts="0" />
                             </results>
                           </test-suite>
-                          <test-suite name="TestCompetitive" executed="True" success="True" time="0.019" asserts="0">
+                          <test-suite name="TestCompetitive" executed="True" success="False" time="0.016" asserts="0">
                             <results>
-                              <test-case name="encog_test.Neural.Networks.Training.TestCompetitive.TestSOM" executed="True" success="True" time="0.018" asserts="1" />
+                              <test-case name="encog_test.Neural.Networks.Training.TestCompetitive.TestSOM" executed="True" success="False" time="0.015" asserts="1">
+                                <failure>
+                                  <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                                  <stack-trace><![CDATA[at encog_test.Neural.Networks.Training.TestCompetitive.TestSOM() in C:\shared\encog-cs\encog-test\encog-test\Encog\Neural\Networks\Training\TestCompetitive.cs:line 79
+]]></stack-trace>
+                                </failure>
+                              </test-case>
                             </results>
                           </test-suite>
-                          <test-suite name="TestGenetic" executed="True" success="True" time="1.416" asserts="0">
+                          <test-suite name="TestGenetic" executed="True" success="False" time="1.408" asserts="0">
                             <results>
-                              <test-case name="encog_test.Neural.Networks.Training.TestGenetic.testGenetic" executed="True" success="True" time="1.416" asserts="1" />
+                              <test-case name="encog_test.Neural.Networks.Training.TestGenetic.testGenetic" executed="True" success="False" time="1.408" asserts="1">
+                                <failure>
+                                  <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                                  <stack-trace><![CDATA[at encog_test.Neural.Networks.Training.TestGenetic.testGenetic() in C:\shared\encog-cs\encog-test\encog-test\Encog\Neural\Networks\Training\TestGenetic.cs:line 38
+]]></stack-trace>
+                                </failure>
+                              </test-case>
                             </results>
                           </test-suite>
                         </results>
                       </test-suite>
                     </results>
                   </test-suite>
-                  <test-suite name="Persist" executed="True" success="True" time="0.082" asserts="0">
+                  <test-suite name="Persist" executed="True" success="True" time="0.085" asserts="0">
                     <results>
-                      <test-suite name="TestPersist" executed="True" success="True" time="0.081" asserts="0">
+                      <test-suite name="TestPersist" executed="True" success="True" time="0.084" asserts="0">
                         <results>
-                          <test-case name="encog_test.Neural.Persist.TestPersist.testPersist" executed="True" success="True" time="0.081" asserts="2" />
+                          <test-case name="encog_test.Neural.Persist.TestPersist.testPersist" executed="True" success="True" time="0.084" asserts="2" />
                         </results>
                       </test-suite>
                     </results>
                   </test-suite>
                 </results>
               </test-suite>
-              <test-suite name="TestMatrix" executed="True" success="True" time="0.084" asserts="0">
+              <test-suite name="TestMatrix" executed="True" success="True" time="0.085" asserts="0">
                 <results>
-                  <test-suite name="TestBiPolarUtil" executed="True" success="True" time="0.010" asserts="0">
+                  <test-suite name="TestBiPolarUtil" executed="True" success="True" time="0.011" asserts="0">
                     <results>
                       <test-case name="encog_test.TestMatrix.TestBiPolarUtil.Binary" executed="True" success="True" time="0.001" asserts="5" />
                       <test-case name="encog_test.TestMatrix.TestBiPolarUtil.Bipolar2double" executed="True" success="True" time="0.005" asserts="2" />
@@ -272,29 +296,29 @@ at encog_test.Data.SQL.TestSQLDataSet.SQLDataSet() in C:\shared\csharp\encog-tes
                       <test-case name="encog_test.TestMatrix.TestMatrix.Add" executed="True" success="True" time="0.002" asserts="1" />
                       <test-case name="encog_test.TestMatrix.TestMatrix.Boolean" executed="True" success="True" time="0.002" asserts="1" />
                       <test-case name="encog_test.TestMatrix.TestMatrix.Clear" executed="True" success="True" time="0.000" asserts="4" />
-                      <test-case name="encog_test.TestMatrix.TestMatrix.ColumnMatrix" executed="True" success="True" time="0.001" asserts="4" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.ColumnMatrix" executed="True" success="True" time="0.000" asserts="4" />
                       <test-case name="encog_test.TestMatrix.TestMatrix.GetCol" executed="True" success="True" time="0.002" asserts="2" />
                       <test-case name="encog_test.TestMatrix.TestMatrix.GetRow" executed="True" success="True" time="0.002" asserts="2" />
                       <test-case name="encog_test.TestMatrix.TestMatrix.IsVector" executed="True" success="True" time="0.001" asserts="3" />
                       <test-case name="encog_test.TestMatrix.TestMatrix.IsZero" executed="True" success="True" time="0.001" asserts="2" />
-                      <test-case name="encog_test.TestMatrix.TestMatrix.MatrixConstruct" executed="True" success="True" time="0.000" asserts="2" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.MatrixConstruct" executed="True" success="True" time="0.001" asserts="2" />
                       <test-case name="encog_test.TestMatrix.TestMatrix.MatrixEquals" executed="True" success="True" time="0.001" asserts="2" />
-                      <test-case name="encog_test.TestMatrix.TestMatrix.MatrixEqualsPrecision" executed="True" success="True" time="0.003" asserts="4" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.MatrixEqualsPrecision" executed="True" success="True" time="0.002" asserts="4" />
                       <test-case name="encog_test.TestMatrix.TestMatrix.MatrixMultiply" executed="True" success="True" time="0.005" asserts="2" />
                       <test-case name="encog_test.TestMatrix.TestMatrix.PackedArray" executed="True" success="True" time="0.002" asserts="6" />
                       <test-case name="encog_test.TestMatrix.TestMatrix.PackedArray2" executed="True" success="True" time="0.000" asserts="3" />
                       <test-case name="encog_test.TestMatrix.TestMatrix.Randomize" executed="True" success="True" time="0.001" asserts="0" />
                       <test-case name="encog_test.TestMatrix.TestMatrix.RowAndColRangeOver" executed="True" success="True" time="0.001" asserts="0" />
-                      <test-case name="encog_test.TestMatrix.TestMatrix.RowAndColRangeUnder" executed="True" success="True" time="0.001" asserts="0" />
-                      <test-case name="encog_test.TestMatrix.TestMatrix.RowMatrix" executed="True" success="True" time="0.000" asserts="4" />
-                      <test-case name="encog_test.TestMatrix.TestMatrix.RowsAndCols" executed="True" success="True" time="0.000" asserts="3" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.RowAndColRangeUnder" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.RowMatrix" executed="True" success="True" time="0.001" asserts="4" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.RowsAndCols" executed="True" success="True" time="0.001" asserts="3" />
                       <test-case name="encog_test.TestMatrix.TestMatrix.Size" executed="True" success="True" time="0.001" asserts="1" />
-                      <test-case name="encog_test.TestMatrix.TestMatrix.Sum" executed="True" success="True" time="0.002" asserts="1" />
-                      <test-case name="encog_test.TestMatrix.TestMatrix.VectorLength" executed="True" success="True" time="0.001" asserts="1" />
-                      <test-case name="encog_test.TestMatrix.TestMatrix.Zero" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.Sum" executed="True" success="True" time="0.001" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.VectorLength" executed="True" success="True" time="0.002" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.Zero" executed="True" success="True" time="0.001" asserts="1" />
                     </results>
                   </test-suite>
-                  <test-suite name="TestMatrixMath" executed="True" success="True" time="0.023" asserts="0">
+                  <test-suite name="TestMatrixMath" executed="True" success="True" time="0.025" asserts="0">
                     <results>
                       <test-case name="encog_test.TestMatrix.TestMatrixMath.Copy" executed="True" success="True" time="0.001" asserts="1" />
                       <test-case name="encog_test.TestMatrix.TestMatrixMath.DeleteCol" executed="True" success="True" time="0.001" asserts="1" />
