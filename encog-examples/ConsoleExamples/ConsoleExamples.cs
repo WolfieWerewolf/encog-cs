@@ -39,6 +39,9 @@ namespace ConsoleExamples
             examples.Add(Encog.Examples.Forest.ForestCover.Info);
             examples.Add(Encog.Examples.Lunar.LunarLander.Info);
             examples.Add(Encog.Examples.Image.ImageNeuralNetwork.Info);
+            examples.Add(Encog.Examples.Persist.PersistEncog.Info);
+            examples.Add(Encog.Examples.Persist.PersistSerial.Info);
+            examples.Add(Encog.Examples.Sunspots.Sunspots.Info);
         }
 
         public void ListCommands()
@@ -67,10 +70,14 @@ namespace ConsoleExamples
                 index++;
             }
 
-            if (index > args.Length )
+            if (index >= args.Length )
             {
                 Console.WriteLine("Must specify the example to run as the first argument");
                 ListCommands();
+                if (pause)
+                {
+                    Pause();
+                }
                 return;
             }
 

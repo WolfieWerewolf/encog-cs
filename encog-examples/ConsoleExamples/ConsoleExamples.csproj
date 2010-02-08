@@ -75,6 +75,9 @@
     <Compile Include="Examples\Market\MarketPredict.cs" />
     <Compile Include="Examples\Market\MarketTrain.cs" />
     <Compile Include="Examples\MultiBench\MultiThreadBenchmark.cs" />
+    <Compile Include="Examples\Persist\PersistEncog.cs" />
+    <Compile Include="Examples\Persist\PersistSerial.cs" />
+    <Compile Include="Examples\Sunspots\Sunspots.cs" />
     <Compile Include="Examples\Util\City.cs" />
     <Compile Include="Examples\AnnealTSP\SolveTSP.cs" />
     <Compile Include="Examples\AnnealTSP\TSPSimulatedAnnealing.cs" />

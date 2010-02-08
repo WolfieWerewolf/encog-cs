@@ -42,7 +42,7 @@ namespace Encog.Examples.Forest
             EncogPersistedCollection encog = new EncogPersistedCollection(Constant.TRAINED_NETWORK_FILE, FileMode.Open);
             DataNormalization norm = (DataNormalization)encog.Find(Constant.NORMALIZATION_NAME);
 
-            //sEncogUtility.convertCSV2Binary(Constant.NORMALIZED_FILE, Constant.BINARY_FILE, norm.GetNetworkInputLayerSize(), norm.GetNetworkOutputLayerSize(), false);
+            EncogUtility.ConvertCSV2Binary(Constant.NORMALIZED_FILE, Constant.BINARY_FILE, norm.GetNetworkInputLayerSize(), norm.GetNetworkOutputLayerSize(), false);
             BufferedNeuralDataSet trainingSet = new BufferedNeuralDataSet(Constant.BINARY_FILE);
 
             BasicNetwork network = (BasicNetwork)encog.Find(Constant.TRAINED_NETWORK_NAME);
