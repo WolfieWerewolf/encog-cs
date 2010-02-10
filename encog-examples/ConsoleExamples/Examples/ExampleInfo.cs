@@ -7,22 +7,12 @@ using System.Reflection;
 
 namespace ConsoleExamples.Examples
 {
-    public class ExampleInfo
+    public class ExampleInfo: IComparable<ExampleInfo>
     {
         public String Command { get; set; }
         public String Title { get; set; }
         public String Description { get; set; }
         public Type ExampleType { get; set; }
-
-        public IList<ExampleArgument> Arguments 
-        {
-            get
-            {
-                return this.args;
-            }
-        }
-
-        private IList<ExampleArgument> args = new List<ExampleArgument>();
 
         public ExampleInfo(Type type, String command, String title, String description)
         {
@@ -38,5 +28,9 @@ namespace ConsoleExamples.Examples
             return result;
         }
 
+        public int CompareTo(ExampleInfo other)
+        {
+            return this.Command.CompareTo(other.Command);
+        }
     }
 }

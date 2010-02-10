@@ -14,6 +14,7 @@ using Encog.Neural.Networks.Training;
 using Encog.Neural.Data;
 using ConsoleExamples.Examples;
 using Encog.Neural.Networks.Pattern;
+using Encog.Util.Simple;
 
 namespace Encog.Examples.XOR.Radial
 {
@@ -79,24 +80,10 @@ namespace Encog.Examples.XOR.Radial
             // train the neural network
             ITrain train = new ResilientPropagation(network, trainingSet);
 
-
-            int epoch = 1;
-
-            do
-            {
-                train.Iteration();
-                Console.WriteLine("Epoch #" + epoch + " Error:" + train.Error);
-                epoch++;
-            } while (train.Error > 0.01);
+            EncogUtility.TrainToError(network, trainingSet, 0.01);
 
             // test the neural network
-            Console.WriteLine("Neural Network Results:");
-            foreach (INeuralDataPair pair in trainingSet)
-            {
-                INeuralData output = network.Compute(pair.Input);
-                Console.WriteLine(pair.Input[0] + "," + pair.Input[1]
-                        + ", actual=" + output[0] + ",ideal=" + pair.Ideal[0]);
-            }
+            EncogUtility.Evaluate(network, trainingSet);
         }
     }
 }
