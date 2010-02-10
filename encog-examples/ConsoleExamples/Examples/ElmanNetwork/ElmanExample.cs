@@ -14,6 +14,8 @@ using Encog.Neural.Networks.Training.Propagation.Back;
 using Encog.Neural.Networks.Training.Strategy;
 using Encog.Util.Logging;
 using Encog.Examples.Util;
+using Encog.Neural.Networks.Pattern;
+using Encog.Neural.Activation;
 
 namespace Encog.Examples.ElmanNetwork
 {
@@ -34,24 +36,18 @@ namespace Encog.Examples.ElmanNetwork
             }
         }
 
-        private BasicNetwork createElmanNetwork()
+        private BasicNetwork CreateElmanNetwork()
         {
             // construct an Elman type network
-            ILayer hidden;
-            ILayer context = new ContextLayer(2);
-            BasicNetwork network = new BasicNetwork();
-            network.AddLayer(new BasicLayer(1));
-            network.AddLayer(hidden = new BasicLayer(2));
-            hidden.AddNext(context, SynapseType.OneToOne);
-            context.AddNext(hidden);
-            network.AddLayer(new BasicLayer(1));
-            network.Structure.FinalizeStructure();
-            //network.reset();
-            (new RangeRandomizer(-1.0, 1.0)).Randomize(network);
-            return network;
+            ElmanPattern pattern = new ElmanPattern();
+            pattern.ActivationFunction = new ActivationTANH();
+            pattern.InputNeurons = 1;
+            pattern.AddHiddenLayer(2);
+            pattern.OutputNeurons = 1;
+            return pattern.Generate();
         }
 
-        private BasicNetwork createFeedforwardNetwork()
+        private BasicNetwork CreateFeedforwardNetwork()
         {
             // construct a feedforward type network
 
@@ -64,7 +60,7 @@ namespace Encog.Examples.ElmanNetwork
             return network;
         }
 
-        private double trainNetwork(String what, BasicNetwork network, INeuralDataSet trainingSet)
+        private double TrainNetwork(String what, BasicNetwork network, INeuralDataSet trainingSet)
         {
             // train the neural network
             ICalculateScore score = new TrainingSetScore(trainingSet);
@@ -96,11 +92,11 @@ namespace Encog.Examples.ElmanNetwork
             TemporalXOR temp = new TemporalXOR();
             INeuralDataSet trainingSet = temp.Generate(100);
 
-            BasicNetwork elmanNetwork = createElmanNetwork();
-            BasicNetwork feedforwardNetwork = createFeedforwardNetwork();
+            BasicNetwork elmanNetwork = CreateElmanNetwork();
+            BasicNetwork feedforwardNetwork = CreateFeedforwardNetwork();
 
-            double elmanError = trainNetwork("Elman", elmanNetwork, trainingSet);
-            double feedforwardError = trainNetwork("Feedforward", feedforwardNetwork, trainingSet);
+            double elmanError = TrainNetwork("Elman", elmanNetwork, trainingSet);
+            double feedforwardError = TrainNetwork("Feedforward", feedforwardNetwork, trainingSet);
 
             app.WriteLine("Best error rate with Elman Network: " + elmanError);
             app.WriteLine("Best error rate with Feedforward Network: " + feedforwardError);

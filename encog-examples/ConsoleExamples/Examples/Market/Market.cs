@@ -45,6 +45,11 @@ namespace Encog.Examples.Market
                 MarketPredict m = new MarketPredict();
                 m.Run();
             }
+            else if (String.Compare(app.Args[0], "prune", true) == 0)
+            {
+                MarketPrune m = new MarketPrune();
+                m.Run();
+            }
         }
     }
 }

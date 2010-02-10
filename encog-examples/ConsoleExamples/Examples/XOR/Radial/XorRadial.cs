@@ -13,18 +13,16 @@ using Encog.Neural.Networks.Synapse;
 using Encog.Neural.Networks.Training;
 using Encog.Neural.Data;
 using ConsoleExamples.Examples;
+using Encog.Neural.Networks.Pattern;
 
 namespace Encog.Examples.XOR.Radial
 {
-    /**
- * XOR: This example is essentially the "Hello World" of neural network
- * programming.  This example shows how to construct an Encog neural
- * network to predict the output from the XOR operator.  This example
- * uses backpropagation to train the neural network.
- * 
- * @author $Author$
- * @version $Revision$
- */
+    /// <summary>
+    /// XOR: This example is essentially the "Hello World" of neural network
+    /// programming.  This example shows how to construct an Encog neural
+    /// network to predict the output from the XOR operator.  This example
+    /// uses a radial network.
+    /// </summary>
     public class XorRadial : IExample
     {
         public static ExampleInfo Info
@@ -66,12 +64,12 @@ namespace Encog.Examples.XOR.Radial
 
             Logging.StopConsoleLogging();
 
-            RadialBasisFunctionLayer rbfLayer;
-            BasicNetwork network = new BasicNetwork();
-            network.AddLayer(new BasicLayer(new ActivationLinear(), false, 2));
-            network.AddLayer(rbfLayer = new RadialBasisFunctionLayer(4), SynapseType.Direct);
-            network.AddLayer(new BasicLayer(1));
-            network.Structure.FinalizeStructure();
+            RadialBasisPattern pattern = new RadialBasisPattern();
+            pattern.InputNeurons = 2;
+            pattern.AddHiddenLayer(4);
+            pattern.OutputNeurons = 1;
+            BasicNetwork network = pattern.Generate();
+            RadialBasisFunctionLayer rbfLayer = (RadialBasisFunctionLayer)network.GetLayer(RadialBasisPattern.RBF_LAYER);
             network.Reset();
             rbfLayer.RandomizeGaussianCentersAndWidths(0, 1);
 

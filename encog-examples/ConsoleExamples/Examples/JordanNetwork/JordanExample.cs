@@ -13,6 +13,8 @@ using Encog.Neural.Networks.Training.Strategy;
 using Encog.Util.Logging;
 using Encog.Examples.Util;
 using ConsoleExamples.Examples;
+using Encog.Neural.Networks.Pattern;
+using Encog.Neural.Activation;
 
 namespace Encog.Examples.JordanNetwork
 {
@@ -33,24 +35,18 @@ namespace Encog.Examples.JordanNetwork
 
         private IExampleInterface app;
 
-        static BasicNetwork createJordanNetwork()
+        static BasicNetwork CreateJordanNetwork()
         {
             // construct an Jordan type network
-            ILayer hidden, output;
-            ILayer context = new ContextLayer(1);
-            BasicNetwork network = new BasicNetwork();
-            network.AddLayer(new BasicLayer(1));
-            network.AddLayer(hidden = new BasicLayer(2));
-            network.AddLayer(output = new BasicLayer(1));
-
-            output.AddNext(context, SynapseType.OneToOne);
-            context.AddNext(hidden);
-            network.Structure.FinalizeStructure();
-            network.Reset();
-            return network;
+            JordanPattern pattern = new JordanPattern();
+            pattern.ActivationFunction = new ActivationTANH();
+            pattern.InputNeurons = 1;
+            pattern.AddHiddenLayer(2);
+            pattern.OutputNeurons = 1;
+            return pattern.Generate();
         }
 
-        private BasicNetwork createFeedforwardNetwork()
+        private BasicNetwork CreateFeedforwardNetwork()
         {
             // construct a feedforward type network
 
@@ -63,7 +59,7 @@ namespace Encog.Examples.JordanNetwork
             return network;
         }
 
-        private double trainNetwork(String what, BasicNetwork network, INeuralDataSet trainingSet)
+        private double TrainNetwork(String what, BasicNetwork network, INeuralDataSet trainingSet)
         {
             // train the neural network
             ICalculateScore score = new TrainingSetScore(trainingSet);
@@ -94,11 +90,11 @@ namespace Encog.Examples.JordanNetwork
             TemporalXOR temp = new TemporalXOR();
             INeuralDataSet trainingSet = temp.Generate(100);
 
-            BasicNetwork jordanNetwork = createJordanNetwork();
-            BasicNetwork feedforwardNetwork = createFeedforwardNetwork();
+            BasicNetwork jordanNetwork = CreateJordanNetwork();
+            BasicNetwork feedforwardNetwork = CreateFeedforwardNetwork();
 
-            double jordanError = trainNetwork("Jordan", jordanNetwork, trainingSet);
-            double feedforwardError = trainNetwork("Feedforward", feedforwardNetwork, trainingSet);
+            double jordanError = TrainNetwork("Jordan", jordanNetwork, trainingSet);
+            double feedforwardError = TrainNetwork("Feedforward", feedforwardNetwork, trainingSet);
 
             app.WriteLine("Best error rate with Jordan Network: " + jordanError);
             app.WriteLine("Best error rate with Feedforward Network: " + feedforwardError);
