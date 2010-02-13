@@ -34,7 +34,7 @@ using Encog.Neural.Networks.Training.Propagation.Back;
 using Encog.Neural.Data;
 using ConsoleExamples.Examples;
 
-namespace Encog.Examples.XOR.Anneal.Backprop
+namespace Encog.Examples.XOR.Backprop
 {
     /// <summary>
     /// Learn to recognize the XOR pattern using a backpropagation training algorithm.

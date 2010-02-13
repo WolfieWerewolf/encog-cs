@@ -28,7 +28,7 @@ namespace ConsoleExamples
             examples.Add(Encog.Examples.Market.Market.Info);
             examples.Add(Encog.Examples.MultiBench.MultiThreadBenchmark.Info);
             examples.Add(Encog.Examples.XOR.Anneal.XorAnneal.Info);
-            examples.Add(Encog.Examples.XOR.Anneal.Backprop.XorBackprop.Info);
+            examples.Add(Encog.Examples.XOR.Backprop.XorBackprop.Info);
             examples.Add(Encog.Examples.XOR.Gaussian.XorGaussian.Info);
             examples.Add(Encog.Examples.XOR.Genetic.XorGenetic.Info);
             examples.Add(Encog.Examples.XOR.Manhattan.XORManhattan.Info);
