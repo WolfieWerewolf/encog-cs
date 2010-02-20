@@ -3,3 +3,8 @@ C:\shared\csharp\encog-core-silverlight\SilverlightExample.Web\bin\SilverlightEx
 C:\shared\csharp\encog-core-silverlight\SilverlightExample.Web\obj\Debug\ResolveAssemblyReference.cache
 C:\shared\csharp\encog-core-silverlight\SilverlightExample.Web\obj\Debug\SilverlightExample.Web.dll
 C:\shared\csharp\encog-core-silverlight\SilverlightExample.Web\obj\Debug\SilverlightExample.Web.pdb
+C:\shared\encog-cs\encog-core-silverlight\SilverlightExample.Web\bin\SilverlightExample.Web.dll
+C:\shared\encog-cs\encog-core-silverlight\SilverlightExample.Web\bin\SilverlightExample.Web.pdb
+C:\shared\encog-cs\encog-core-silverlight\SilverlightExample.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-core-silverlight\SilverlightExample.Web\obj\Debug\SilverlightExample.Web.dll
+C:\shared\encog-cs\encog-core-silverlight\SilverlightExample.Web\obj\Debug\SilverlightExample.Web.pdb

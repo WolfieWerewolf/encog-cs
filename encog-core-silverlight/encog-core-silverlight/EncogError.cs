@@ -3,7 +3,7 @@
 // http://www.heatonresearch.com/encog/
 // http://code.google.com/p/encog-cs/
 // 
-// Copyright 2009, Heaton Research Inc., and individual contributors.
+// Copyright 2009-2010, Heaton Research Inc., and individual contributors.
 // See the copyright.txt in the distribution for a full listing of 
 // individual contributors.
 //
@@ -48,6 +48,16 @@ namespace Encog
         /// <param name="e">The other exception.</param>
         public EncogError(Exception e)
             : base("Nested Exception", e)
+        {
+        }
+
+        /// <summary>
+        /// Pass on an exception.
+        /// </summary>
+        /// <param name="msg">The message.</param>
+        /// <param name="e">The exception.</param>
+        public EncogError(String msg, Exception e)
+            : base(msg,e)
         {
         }
     }

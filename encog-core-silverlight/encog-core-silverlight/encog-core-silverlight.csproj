@@ -148,10 +148,8 @@
     <Compile Include="Neural\Networks\Logic\INeuralLogic.cs" />
     <Compile Include="Neural\Networks\Logic\SimpleRecurrentLogic.cs" />
     <Compile Include="Neural\Networks\Logic\ThermalLogic.cs" />
-    <Compile Include="Neural\Networks\NetworkCODEC.cs" />
     <Compile Include="Neural\Networks\NeuralDataMapping.cs" />
     <Compile Include="Neural\Networks\NeuralOutputHolder.cs" />
-    <Compile Include="Neural\Networks\NeuralStructure.cs" />
     <Compile Include="Neural\Networks\Pattern\ADALINEPattern.cs" />
     <Compile Include="Neural\Networks\Pattern\ART1Pattern.cs" />
     <Compile Include="Neural\Networks\Pattern\BAMPattern.cs" />
@@ -171,6 +169,11 @@
     <Compile Include="Neural\Networks\Prune\NetworkPattern.cs" />
     <Compile Include="Neural\Networks\Prune\PruneIncremental.cs" />
     <Compile Include="Neural\Networks\Prune\PruneSelective.cs" />
+    <Compile Include="Neural\Networks\Structure\CalculateDepth.cs" />
+    <Compile Include="Neural\Networks\Structure\LayerComparator.cs" />
+    <Compile Include="Neural\Networks\Structure\NetworkCODEC.cs" />
+    <Compile Include="Neural\Networks\Structure\NeuralStructure.cs" />
+    <Compile Include="Neural\Networks\Structure\SynapseComparator.cs" />
     <Compile Include="Neural\Networks\Synapse\BasicSynapse.cs" />
     <Compile Include="Neural\Networks\Synapse\DirectSynapse.cs" />
     <Compile Include="Neural\Networks\Synapse\ISynapse.cs" />
@@ -180,41 +183,34 @@
     <Compile Include="Neural\Networks\Synapse\WeightlessSynapse.cs" />
     <Compile Include="Neural\Networks\Training\Anneal\NeuralSimulatedAnnealing.cs" />
     <Compile Include="Neural\Networks\Training\Anneal\NeuralSimulatedAnnealingHelper.cs" />
-    <Compile Include="Neural\Networks\Training\Anneal\NeuralTrainingSetSimulatedAnnealing.cs" />
     <Compile Include="Neural\Networks\Training\BasicTraining.cs" />
     <Compile Include="Neural\Networks\Training\Competitive\BestMatchingUnit.cs" />
     <Compile Include="Neural\Networks\Training\Competitive\CompetitiveTraining.cs" />
     <Compile Include="Neural\Networks\Training\Competitive\Neighborhood\INeighborhoodFunction.cs" />
     <Compile Include="Neural\Networks\Training\Competitive\Neighborhood\NeighborhoodBubble.cs" />
     <Compile Include="Neural\Networks\Training\Competitive\Neighborhood\NeighborhoodGaussian.cs" />
+    <Compile Include="Neural\Networks\Training\Competitive\Neighborhood\NeighborhoodGaussianMulti.cs" />
     <Compile Include="Neural\Networks\Training\Competitive\Neighborhood\NeighborhoodSingle.cs" />
     <Compile Include="Neural\Networks\Training\CPN\FindCPN.cs" />
     <Compile Include="Neural\Networks\Training\CPN\TrainInstar.cs" />
     <Compile Include="Neural\Networks\Training\CPN\TrainOutstar.cs" />
     <Compile Include="Neural\Networks\Training\Genetic\NeuralChromosome.cs" />
     <Compile Include="Neural\Networks\Training\Genetic\NeuralGeneticAlgorithm.cs" />
-    <Compile Include="Neural\Networks\Training\Genetic\TrainingSetNeuralChromosome.cs" />
-    <Compile Include="Neural\Networks\Training\Genetic\TrainingSetNeuralGeneticAlgorithm.cs" />
     <Compile Include="Neural\Networks\Training\Hopfield\TrainHopfield.cs" />
+    <Compile Include="Neural\Networks\Training\ICalculateScore.cs" />
     <Compile Include="Neural\Networks\Training\ILearningRate.cs" />
     <Compile Include="Neural\Networks\Training\IMomentum.cs" />
     <Compile Include="Neural\Networks\Training\IStrategy.cs" />
     <Compile Include="Neural\Networks\Training\ITrain.cs" />
     <Compile Include="Neural\Networks\Training\Propagation\Back\Backpropagation.cs" />
-    <Compile Include="Neural\Networks\Training\Propagation\Back\BackpropagationMethod.cs" />
-    <Compile Include="Neural\Networks\Training\Propagation\CalculatePartialDerivative.cs" />
-    <Compile Include="Neural\Networks\Training\Propagation\IPropagationMethod.cs" />
+    <Compile Include="Neural\Networks\Training\Propagation\Gradient\CalculateGradient.cs" />
+    <Compile Include="Neural\Networks\Training\Propagation\Gradient\GradientUtil.cs" />
+    <Compile Include="Neural\Networks\Training\Propagation\Gradient\GradientWorker.cs" />
     <Compile Include="Neural\Networks\Training\Propagation\Manhattan\ManhattanPropagation.cs" />
-    <Compile Include="Neural\Networks\Training\Propagation\Manhattan\ManhattanPropagationMethod.cs" />
-    <Compile Include="Neural\Networks\Training\Propagation\Multi\GradientMap.cs" />
-    <Compile Include="Neural\Networks\Training\Propagation\Multi\MPROPWorker.cs" />
-    <Compile Include="Neural\Networks\Training\Propagation\Multi\MultiPropagation.cs" />
     <Compile Include="Neural\Networks\Training\Propagation\Propagation.cs" />
-    <Compile Include="Neural\Networks\Training\Propagation\PropagationLevel.cs" />
-    <Compile Include="Neural\Networks\Training\Propagation\PropagationSynapse.cs" />
-    <Compile Include="Neural\Networks\Training\Propagation\PropagationUtil.cs" />
     <Compile Include="Neural\Networks\Training\Propagation\Resilient\ResilientPropagation.cs" />
-    <Compile Include="Neural\Networks\Training\Propagation\Resilient\ResilientPropagationMethod.cs" />
+    <Compile Include="Neural\Networks\Training\Propagation\SCG\ScaledConjugateGradient.cs" />
+    <Compile Include="Neural\Networks\Training\Propagation\TrainingContinuation.cs" />
     <Compile Include="Neural\Networks\Training\Simple\TrainAdaline.cs" />
     <Compile Include="Neural\Networks\Training\Strategy\Greedy.cs" />
     <Compile Include="Neural\Networks\Training\Strategy\HybridStrategy.cs" />
@@ -223,6 +219,7 @@
     <Compile Include="Neural\Networks\Training\Strategy\SmartMomentum.cs" />
     <Compile Include="Neural\Networks\Training\Strategy\StopTrainingStrategy.cs" />
     <Compile Include="Neural\Networks\Training\TrainingError.cs" />
+    <Compile Include="Neural\Networks\Training\TrainingSetScore.cs" />
     <Compile Include="Neural\NeuralNetworkError.cs" />
     <Compile Include="Normalize\DataNormalization.cs" />
     <Compile Include="Normalize\Input\BasicInputField.cs" />
@@ -238,6 +235,7 @@
     <Compile Include="Normalize\Output\BasicOutputFieldGroup.cs" />
     <Compile Include="Normalize\Output\IOutputField.cs" />
     <Compile Include="Normalize\Output\IOutputFieldGroup.cs" />
+    <Compile Include="Normalize\Output\IRequireTwoPass.cs" />
     <Compile Include="Normalize\Output\Mapped\MappedRange.cs" />
     <Compile Include="Normalize\Output\Mapped\OutputFieldEncode.cs" />
     <Compile Include="Normalize\Output\Multiplicative\MultiplicativeGroup.cs" />
@@ -313,6 +311,7 @@
     <Compile Include="Persist\Persistors\PropertyDataPersistor.cs" />
     <Compile Include="Persist\Persistors\RadialBasisFunctionLayerPersistor.cs" />
     <Compile Include="Persist\Persistors\TextDataPersistor.cs" />
+    <Compile Include="Persist\Persistors\TrainingContinuationPersistor.cs" />
     <Compile Include="Persist\Persistors\WeightedSynapsePersistor.cs" />
     <Compile Include="Persist\Persistors\WeightlessSynapsePersistor.cs" />
     <Compile Include="Persist\PersistReader.cs" />
@@ -339,8 +338,12 @@
     <Compile Include="Util\CSV\ReadCSV.cs" />
     <Compile Include="Util\DirectoryUtil.cs" />
     <Compile Include="Util\DownSample\IDownSample.cs" />
+    <Compile Include="Util\DownSample\RGBDownsample.cs" />
     <Compile Include="Util\DownSample\SimpleIntensityDownsample.cs" />
+    <Compile Include="Util\EncogArray.cs" />
+    <Compile Include="Util\EncogValidate.cs" />
     <Compile Include="Util\ErrorCalculation.cs" />
+    <Compile Include="Util\Format.cs" />
     <Compile Include="Util\HTTP\FormUtility.cs" />
     <Compile Include="Util\HTTP\URLUtility.cs" />
     <Compile Include="Util\Logging\DumpMatrix.cs" />
@@ -351,9 +354,10 @@
     <Compile Include="Util\MathUtil\Equilateral.cs" />
     <Compile Include="Util\MathUtil\MathConst.cs" />
     <Compile Include="Util\MathUtil\RBF\GaussianFunction.cs" />
-    <Compile Include="Util\MathUtil\RBF\RadialBasisFunction.cs" />
+    <Compile Include="Util\MathUtil\RBF\GaussianFunctionMulti.cs" />
+    <Compile Include="Util\MathUtil\RBF\IRadialBasisFunction.cs" />
+    <Compile Include="Util\MathUtil\RBF\IRadialBasisFunctionMulti.cs" />
     <Compile Include="Util\MathUtil\ThreadSafeRandom.cs" />
-    <Compile Include="Util\NormalizeInput.cs" />
     <Compile Include="Util\ObjectCloner.cs" />
     <Compile Include="Util\Randomize\BasicRandomizer.cs" />
     <Compile Include="Util\Randomize\ConstRandomizer.cs" />
@@ -363,6 +367,7 @@
     <Compile Include="Util\Randomize\RangeRandomizer.cs" />
     <Compile Include="Util\ReflectionUtil.cs" />
     <Compile Include="Util\SerializeObject.cs" />
+    <Compile Include="Util\Simple\EncogUtility.cs" />
     <Compile Include="Util\StringUtil.cs" />
     <Compile Include="Util\Time\DateUtil.cs" />
     <Compile Include="Util\Time\EnglishTimeUnitNames.cs" />
@@ -373,11 +378,12 @@
     <Compile Include="Util\YahooSearch.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\classes.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="encog-core-cs.resx" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\classes.txt" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>

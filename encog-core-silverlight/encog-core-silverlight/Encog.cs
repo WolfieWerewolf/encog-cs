@@ -3,7 +3,7 @@
 // http://www.heatonresearch.com/encog/
 // http://code.google.com/p/encog-cs/
 // 
-// Copyright 2009, Heaton Research Inc., and individual contributors.
+// Copyright 2009-2010, Heaton Research Inc., and individual contributors.
 // See the copyright.txt in the distribution for a full listing of 
 // individual contributors.
 //
@@ -43,7 +43,12 @@ namespace Encog
 		/// <summary>
         /// The current engog version, this should be read from the properties.
 		/// </summary>
-	    public static String VERSION = "2.2.0";
+	    public static String VERSION = "2.3.0";
+
+        /// <summary>
+        /// The platform.
+        /// </summary>
+        public static String PLATFORM = "DotNet";
 	
 	    /// <summary>
         /// The current engog file version, this should be read from the properties.
