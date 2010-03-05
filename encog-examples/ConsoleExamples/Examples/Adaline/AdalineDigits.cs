@@ -37,10 +37,10 @@ using Encog.Neural.Data.Basic;
 using Encog.Neural.Networks.Layers;
 using Encog.Neural.Activation;
 using Encog.Neural.Networks;
-using Encog.Util.Randomize;
 using Encog.Neural.Networks.Training.Simple;
 using Encog.Neural.Networks.Training;
 using ConsoleExamples.Examples;
+using Encog.MathUtil.Randomize;
 
 
 namespace Encog.Examples.Adaline

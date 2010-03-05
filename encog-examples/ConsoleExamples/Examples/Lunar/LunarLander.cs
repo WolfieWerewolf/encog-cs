@@ -37,9 +37,9 @@ using Encog.Util.Logging;
 using Encog.Neural.Networks.Training;
 using Encog.Neural.Activation;
 using Encog.Neural.Networks.Training.Genetic;
-using Encog.Util.Randomize;
 using Encog.Neural.Networks.Training.Anneal;
 using ConsoleExamples.Examples;
+using Encog.MathUtil.Randomize;
 
 namespace Encog.Examples.Lunar
 {

@@ -45,7 +45,7 @@ using Encog.Neural.Activation;
 using Encog.Neural.Data;
 using Encog.Neural.Networks.Training.Competitive;
 using Encog.Neural.Networks.Training.Competitive.Neighborhood;
-using Encog.Util.MathUtil.RBF;
+using Encog.MathUtil.RBF;
 
 
 namespace Chapter12OCR

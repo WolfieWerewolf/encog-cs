@@ -33,11 +33,11 @@ using System.Linq;
 using System.Text;
 using Encog.Neural.NeuralData.Bipolar;
 using Encog.Neural.Networks;
-using Encog.Util.MathUtil;
 using Encog.Neural.Networks.Logic;
 using Encog.Neural.Networks.Pattern;
 using ConsoleExamples.Examples;
 using Encog.Examples.Adaline;
+using Encog.MathUtil;
 
 namespace Encog.Examples.BAM
 {

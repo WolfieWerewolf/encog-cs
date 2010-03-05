@@ -40,9 +40,9 @@ using Encog.Neural.NeuralData;
 using Encog.Neural.Networks.Training;
 using Encog.Neural.Data;
 using Encog.Neural.Networks.Training.Propagation.Resilient;
-using Encog.Util.Randomize;
 using Encog.Neural.Networks.Training.Propagation.SCG;
 using ConsoleExamples.Examples;
+using Encog.MathUtil.Randomize;
 
 namespace Encog.Examples.XOR.SCG
 {

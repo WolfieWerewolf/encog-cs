@@ -43,8 +43,8 @@ using Encog.Neural.Networks.Training.Competitive.Neighborhood;
 using Encog.Neural.Networks.Pattern;
 using Encog.Neural.Data;
 using Encog.Neural.Data.Basic;
-using Encog.Util.Randomize;
-using Encog.Util.MathUtil;
+using Encog.MathUtil.Randomize;
+using Encog.MathUtil;
 
 namespace SOMColors
 {
