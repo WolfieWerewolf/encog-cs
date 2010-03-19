@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Encog.Matrix;
+using Encog.MathUtil.Matrices;
 using NUnit.Framework;
 
 

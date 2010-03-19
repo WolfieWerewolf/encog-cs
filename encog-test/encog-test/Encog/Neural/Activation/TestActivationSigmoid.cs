@@ -28,10 +28,6 @@ namespace encog_test.Encog.Neural.Activation
 
             Assert.AreEqual(0.5, input[0], 0.1);
 
-            // this will throw an error if it does not work
-            ActivationSigmoidPersistor p = (ActivationSigmoidPersistor)activation
-                    .CreatePersistor();
-
             // test derivative, should throw an error
             activation.DerivativeFunction(input);
             Assert.AreEqual(0.25, input[0], 0.1);

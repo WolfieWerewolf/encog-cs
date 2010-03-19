@@ -6,8 +6,9 @@ using Encog.Neural.Networks;
 using Encog.Neural.Networks.Training;
 using Encog.Neural.Networks.Layers;
 using Encog.Neural.Activation;
-using Encog.Util.Randomize;
+using Encog.MathUtil.Matrices;
 using NUnit.Framework;
+using Encog.MathUtil.Randomize;
 
 namespace encog_test.Encog.Neural.Networks
 {

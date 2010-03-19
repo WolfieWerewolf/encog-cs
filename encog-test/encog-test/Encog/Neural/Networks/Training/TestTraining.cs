@@ -15,7 +15,7 @@ using Encog.Neural.Networks.Training.Propagation.Manhattan;
 using Encog.Neural.Networks.Training.Propagation.SCG;
 using Encog.Neural.Networks.Training.Anneal;
 using Encog.Neural.Networks.Training.Genetic;
-using Encog.Util.Randomize;
+using Encog.MathUtil.Randomize;
 using Encog.Neural.Networks.Training.Propagation;
 
 namespace encog_test.Encog.Neural.Networks.Training

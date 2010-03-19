@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
-using Encog.Matrix;
+using Encog.MathUtil.Matrices;
 
 
 namespace encog_test.TestMatrix

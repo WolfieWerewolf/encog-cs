@@ -13,7 +13,7 @@ using Encog.Neural.Networks.Training.Competitive.Neighborhood;
 using Encog.Neural.Data.Basic;
 using Encog.Neural.Activation;
 using Encog.Neural.Data;
-using Encog.Matrix;
+using Encog.MathUtil.Matrices;
 using Encog.Neural.Networks.Pattern;
 
 namespace encog_test.Neural.Networks.Training
