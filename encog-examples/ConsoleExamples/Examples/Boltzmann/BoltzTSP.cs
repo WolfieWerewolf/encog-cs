@@ -208,7 +208,7 @@ namespace Encog.Examples.Boltzmann
                             logic.ThermalSynapse.WeightMatrix[i, j] = weight;
                         }
                     }
-                    logic.ThermalLayer.Threshold[i] = (-gamma / 2);
+                    logic.ThermalLayer.BiasWeights[i] = (-gamma / 2);
                 }
             }
         }
