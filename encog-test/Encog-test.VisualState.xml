@@ -34,5 +34,6 @@
     <Node UniqueName="[0-1106]encog_test.Neural.Persist.TestPersist" Expanded="true" />
     <Node UniqueName="[0-1131]encog_test.TestMatrix" Expanded="true" />
     <Node UniqueName="[0-1141]encog_test.Util" Expanded="true" />
+    <Node UniqueName="[0-1108]encog_test.Util.TestSerializeObject" Expanded="true" />
   </Nodes>
 </VisualState>
