@@ -58,8 +58,8 @@
     <Compile Include="Examples\Forest\GenerateData.cs" />
     <Compile Include="Examples\Forest\TrainNetwork.cs" />
     <Compile Include="Examples\GeneticTSP\GeneticSolveTSP.cs" />
-    <Compile Include="Examples\GeneticTSP\TSPChromosome.cs" />
-    <Compile Include="Examples\GeneticTSP\TSPGeneticAlgorithm.cs" />
+    <Compile Include="Examples\GeneticTSP\TSPGenome.cs" />
+    <Compile Include="Examples\GeneticTSP\TSPScore.cs" />
     <Compile Include="Examples\Hopfield\Associate\HopfieldAssociate.cs" />
     <Compile Include="Examples\Hopfield\Simple\HopfieldSimple.cs" />
     <Compile Include="Examples\Image\ImageNeuralNetwork.cs" />
