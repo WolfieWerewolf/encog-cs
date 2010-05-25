@@ -36,6 +36,14 @@ using Encog.Examples;
 
 namespace ConsoleExamples
 {
+    /// <summary>
+    /// Console examples
+    /// 
+    /// For example, to run the xor-rprop example, with a pause, use the
+    /// following command.
+    /// 
+    /// -pause xor-rprop
+    /// </summary>
     public class ConsoleExamples
     {
         private List<ExampleInfo> examples = new List<ExampleInfo>();
@@ -71,6 +79,8 @@ namespace ConsoleExamples
             examples.Add(Encog.Examples.Persist.PersistEncog.Info);
             examples.Add(Encog.Examples.Persist.PersistSerial.Info);
             examples.Add(Encog.Examples.Sunspots.Sunspots.Info);
+            examples.Add(Encog.Examples.XOR.NEAT.XORNEAT.Info);
+            examples.Add(Encog.Examples.CL.SimpleCL.Info);
         }
 
         public void ListCommands()
