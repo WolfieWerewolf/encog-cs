@@ -81,6 +81,8 @@ namespace ConsoleExamples
             examples.Add(Encog.Examples.Sunspots.Sunspots.Info);
             examples.Add(Encog.Examples.XOR.NEAT.XORNEAT.Info);
             examples.Add(Encog.Examples.CL.SimpleCL.Info);
+            examples.Add(Encog.Examples.Benchmark.WeightInitialization.Info);
+            examples.Add(Encog.Examples.Benchmark.ThreadCount.Info);
         }
 
         public void ListCommands()

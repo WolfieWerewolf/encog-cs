@@ -56,6 +56,8 @@
   <ItemGroup>
     <Compile Include="ConsoleExamples.cs" />
     <Compile Include="Examples\Adaline\AdalineDigits.cs" />
+    <Compile Include="Examples\Benchmark\ThreadCount.cs" />
+    <Compile Include="Examples\Benchmark\WeightInitialization.cs" />
     <Compile Include="Examples\CL\SimpleCL.cs" />
     <Compile Include="Examples\Forest\Constant.cs" />
     <Compile Include="Examples\Forest\Evaluate.cs" />
