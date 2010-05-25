@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{A65A5878-6336-4ACF-9C40-540F8FAF2CC7}</ProjectGuid>
     <OutputType>Exe</OutputType>
@@ -31,7 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="encog-core-cs, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Cloo, Version=0.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Cloo.dll</HintPath>
+    </Reference>
+    <Reference Include="encog-core-cs, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\dll\encog-core-cs.dll</HintPath>
     </Reference>
@@ -52,6 +56,7 @@
   <ItemGroup>
     <Compile Include="ConsoleExamples.cs" />
     <Compile Include="Examples\Adaline\AdalineDigits.cs" />
+    <Compile Include="Examples\CL\SimpleCL.cs" />
     <Compile Include="Examples\Forest\Constant.cs" />
     <Compile Include="Examples\Forest\Evaluate.cs" />
     <Compile Include="Examples\Forest\ForestCover.cs" />
@@ -99,6 +104,7 @@
     <Compile Include="Examples\XOR\Gaussian\XorGaussian.cs" />
     <Compile Include="Examples\XOR\Genetic\XorGenetic.cs" />
     <Compile Include="Examples\XOR\Manhattan\XORManhattan.cs" />
+    <Compile Include="Examples\XOR\NEAT\XORNEAT.cs" />
     <Compile Include="Examples\XOR\Radial\XorRadial.cs" />
     <Compile Include="Examples\XOR\Resilient\XORResilient.cs" />
     <Compile Include="Examples\XOR\SCG\XORSCG.cs" />
