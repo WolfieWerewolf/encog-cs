@@ -57,9 +57,12 @@
             this.textTimedResult = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnBenchmark = new System.Windows.Forms.Button();
+            this.statusBarText = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusBar = new System.Windows.Forms.StatusStrip();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.statusBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // listGPU
@@ -316,15 +319,34 @@
             this.btnBenchmark.UseVisualStyleBackColor = true;
             this.btnBenchmark.Click += new System.EventHandler(this.btnBenchmark_Click);
             // 
+            // statusBarText
+            // 
+            this.statusBarText.Name = "statusBarText";
+            this.statusBarText.Size = new System.Drawing.Size(42, 17);
+            this.statusBarText.Text = "Ready.";
+            // 
+            // statusBar
+            // 
+            this.statusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusBarText});
+            this.statusBar.Location = new System.Drawing.Point(0, 251);
+            this.statusBar.Name = "statusBar";
+            this.statusBar.Size = new System.Drawing.Size(684, 22);
+            this.statusBar.SizingGrip = false;
+            this.statusBar.TabIndex = 4;
+            this.statusBar.Text = "statusStrip1";
+            // 
             // EncogTuneForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 262);
+            this.ClientSize = new System.Drawing.Size(684, 273);
+            this.Controls.Add(this.statusBar);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listGPU);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "EncogTuneForm";
             this.Text = "Tune Encog OpenCL";
             this.Load += new System.EventHandler(this.EncogTuneForm_Load);
@@ -334,7 +356,10 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.statusBar.ResumeLayout(false);
+            this.statusBar.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -369,6 +394,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnBenchmark;
         private System.Windows.Forms.TextBox textTimedResult;
+        private System.Windows.Forms.ToolStripStatusLabel statusBarText;
+        private System.Windows.Forms.StatusStrip statusBar;
     }
 }
 

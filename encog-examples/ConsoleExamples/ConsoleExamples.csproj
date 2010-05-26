@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{A65A5878-6336-4ACF-9C40-540F8FAF2CC7}</ProjectGuid>
     <OutputType>Exe</OutputType>
@@ -58,6 +58,8 @@
     <Compile Include="Examples\Adaline\AdalineDigits.cs" />
     <Compile Include="Examples\Benchmark\ThreadCount.cs" />
     <Compile Include="Examples\Benchmark\WeightInitialization.cs" />
+    <Compile Include="Examples\CL\BenchmarkCL.cs" />
+    <Compile Include="Examples\CL\TuneCL.cs" />
     <Compile Include="Examples\CL\SimpleCL.cs" />
     <Compile Include="Examples\Forest\Constant.cs" />
     <Compile Include="Examples\Forest\Evaluate.cs" />
@@ -105,6 +107,7 @@
     <Compile Include="Examples\XOR\Backprop\XorBackprop.cs" />
     <Compile Include="Examples\XOR\Gaussian\XorGaussian.cs" />
     <Compile Include="Examples\XOR\Genetic\XorGenetic.cs" />
+    <Compile Include="Examples\XOR\LMA\XORLMA.cs" />
     <Compile Include="Examples\XOR\Manhattan\XORManhattan.cs" />
     <Compile Include="Examples\XOR\NEAT\XORNEAT.cs" />
     <Compile Include="Examples\XOR\Radial\XorRadial.cs" />

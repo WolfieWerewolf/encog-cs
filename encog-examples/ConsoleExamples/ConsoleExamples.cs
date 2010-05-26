@@ -83,16 +83,29 @@ namespace ConsoleExamples
             examples.Add(Encog.Examples.CL.SimpleCL.Info);
             examples.Add(Encog.Examples.Benchmark.WeightInitialization.Info);
             examples.Add(Encog.Examples.Benchmark.ThreadCount.Info);
+            examples.Add(Encog.Examples.XOR.LMA.XORLMA.Info);
+            examples.Add(Encog.Examples.CL.TuneCL.Info);
+            examples.Add(Encog.Examples.CL.BenchmarkCL.Info);
         }
 
         public void ListCommands()
         {
+            List<String> commands = new List<string>();
+
             Console.WriteLine("The following commands are available:");
+            
+            
             foreach (ExampleInfo info in examples)
             {
-                Console.WriteLine(info.Command);
+                commands.Add(info.Command.PadRight(20) + ": " + info.Title);
             }
 
+            commands.Sort();
+
+            foreach (String str in commands)
+            {
+                Console.WriteLine(str);
+            }
         }
 
         public void Execute(String[] args)
