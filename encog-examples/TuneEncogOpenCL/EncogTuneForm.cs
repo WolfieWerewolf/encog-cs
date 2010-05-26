@@ -34,7 +34,7 @@ namespace TuneEncogOpenCL
 
                 //Encog.Encog.Instance.InitCL();
 
-                //BenchmarkProc();
+                BenchmarkProc();
 
                 //this.textCLThreadCount.Text = ""+Encog.Encog.Instance.CL.CLThreads;
                 //this.textCLRatio.Text = "" + Encog.Encog.Instance.CL.EnforcedCLRatio;
