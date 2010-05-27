@@ -59,6 +59,8 @@
             this.btnBenchmark = new System.Windows.Forms.Button();
             this.statusBarText = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusBar = new System.Windows.Forms.StatusStrip();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textCalcCLRatio = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -281,6 +283,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.textCalcCLRatio);
+            this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.textTimedResult);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.btnBenchmark);
@@ -335,6 +339,24 @@
             this.statusBar.SizingGrip = false;
             this.statusBar.TabIndex = 4;
             this.statusBar.Text = "statusStrip1";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 48);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 13);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Calc CL Ratio:";
+            // 
+            // textCalcCLRatio
+            // 
+            this.textCalcCLRatio.Location = new System.Drawing.Point(85, 45);
+            this.textCalcCLRatio.Name = "textCalcCLRatio";
+            this.textCalcCLRatio.ReadOnly = true;
+            this.textCalcCLRatio.Size = new System.Drawing.Size(100, 20);
+            this.textCalcCLRatio.TabIndex = 4;
+            this.textCalcCLRatio.Text = "n/a";
             // 
             // EncogTuneForm
             // 
@@ -396,6 +418,8 @@
         private System.Windows.Forms.TextBox textTimedResult;
         private System.Windows.Forms.ToolStripStatusLabel statusBarText;
         private System.Windows.Forms.StatusStrip statusBar;
+        private System.Windows.Forms.TextBox textCalcCLRatio;
+        private System.Windows.Forms.Label label9;
     }
 }
 
