@@ -46,7 +46,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnAutoTune = new System.Windows.Forms.Button();
             this.textCLRatio = new System.Windows.Forms.TextBox();
             this.textWorkgroupSize = new System.Windows.Forms.TextBox();
             this.textCLThreadCount = new System.Windows.Forms.TextBox();
@@ -54,6 +53,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textPerf = new System.Windows.Forms.TextBox();
+            this.textNonCLResult = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.textCalcCLRatio = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textCLResult = new System.Windows.Forms.TextBox();
@@ -61,10 +64,7 @@
             this.btnBenchmark = new System.Windows.Forms.Button();
             this.statusBarText = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusBar = new System.Windows.Forms.StatusStrip();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textNonCLResult = new System.Windows.Forms.TextBox();
-            this.textPerf = new System.Windows.Forms.TextBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -211,7 +211,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnAutoTune);
+            this.groupBox2.Controls.Add(this.linkLabel1);
             this.groupBox2.Controls.Add(this.textCLRatio);
             this.groupBox2.Controls.Add(this.textWorkgroupSize);
             this.groupBox2.Controls.Add(this.textCLThreadCount);
@@ -224,16 +224,6 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "OpenCL Configuration";
-            // 
-            // btnAutoTune
-            // 
-            this.btnAutoTune.Location = new System.Drawing.Point(9, 116);
-            this.btnAutoTune.Name = "btnAutoTune";
-            this.btnAutoTune.Size = new System.Drawing.Size(205, 23);
-            this.btnAutoTune.TabIndex = 6;
-            this.btnAutoTune.Text = "Auto Tune";
-            this.btnAutoTune.UseVisualStyleBackColor = true;
-            this.btnAutoTune.Click += new System.EventHandler(this.btnAutoTune_Click);
             // 
             // textCLRatio
             // 
@@ -303,6 +293,42 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Benchmark Results";
             // 
+            // textPerf
+            // 
+            this.textPerf.Location = new System.Drawing.Point(85, 67);
+            this.textPerf.Name = "textPerf";
+            this.textPerf.ReadOnly = true;
+            this.textPerf.Size = new System.Drawing.Size(100, 20);
+            this.textPerf.TabIndex = 8;
+            this.textPerf.Text = "n/a";
+            // 
+            // textNonCLResult
+            // 
+            this.textNonCLResult.Location = new System.Drawing.Point(85, 45);
+            this.textNonCLResult.Name = "textNonCLResult";
+            this.textNonCLResult.ReadOnly = true;
+            this.textNonCLResult.Size = new System.Drawing.Size(100, 20);
+            this.textNonCLResult.TabIndex = 7;
+            this.textNonCLResult.Text = "n/a";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 72);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(53, 13);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "Perf. Inc.:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 48);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(79, 13);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Non-CL Result:";
+            // 
             // textCalcCLRatio
             // 
             this.textCalcCLRatio.Location = new System.Drawing.Point(85, 90);
@@ -366,41 +392,16 @@
             this.statusBar.TabIndex = 4;
             this.statusBar.Text = "statusStrip1";
             // 
-            // label10
+            // linkLabel1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 48);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 13);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "Non-CL Result:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 72);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 13);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "Perf. Inc.:";
-            // 
-            // textNonCLResult
-            // 
-            this.textNonCLResult.Location = new System.Drawing.Point(85, 45);
-            this.textNonCLResult.Name = "textNonCLResult";
-            this.textNonCLResult.ReadOnly = true;
-            this.textNonCLResult.Size = new System.Drawing.Size(100, 20);
-            this.textNonCLResult.TabIndex = 7;
-            this.textNonCLResult.Text = "n/a";
-            // 
-            // textPerf
-            // 
-            this.textPerf.Location = new System.Drawing.Point(85, 67);
-            this.textPerf.Name = "textPerf";
-            this.textPerf.ReadOnly = true;
-            this.textPerf.Size = new System.Drawing.Size(100, 20);
-            this.textPerf.TabIndex = 8;
-            this.textPerf.Text = "n/a";
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(6, 121);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(65, 13);
+            this.linkLabel1.TabIndex = 6;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "How to tune";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // EncogTuneForm
             // 
@@ -414,7 +415,7 @@
             this.Controls.Add(this.listGPU);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "EncogTuneForm";
-            this.Text = "Tune Encog OpenCL";
+            this.Text = "Tune Encog OpenCL v1.0";
             this.Load += new System.EventHandler(this.EncogTuneForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -449,7 +450,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnAutoTune;
         private System.Windows.Forms.TextBox textCLRatio;
         private System.Windows.Forms.TextBox textWorkgroupSize;
         private System.Windows.Forms.TextBox textCLThreadCount;
@@ -468,6 +468,7 @@
         private System.Windows.Forms.TextBox textNonCLResult;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 
