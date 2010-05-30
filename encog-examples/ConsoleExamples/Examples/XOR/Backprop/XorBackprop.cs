@@ -40,6 +40,7 @@ using Encog.Neural.Networks.Training;
 using Encog.Neural.Networks.Training.Propagation.Back;
 using Encog.Neural.Data;
 using ConsoleExamples.Examples;
+using Encog.Neural.Networks.Training.Strategy;
 
 namespace Encog.Examples.XOR.Backprop
 {
@@ -97,6 +98,9 @@ namespace Encog.Examples.XOR.Backprop
 		// train the neural network
 		 ITrain train = new Backpropagation(network, trainingSet,
 				0.7, 0.9);
+
+         // reset if improve is less than 1% over 5 cycles
+         train.AddStrategy(new RequiredImprovementStrategy(0.0005,10));
 
             int epoch = 1;
 

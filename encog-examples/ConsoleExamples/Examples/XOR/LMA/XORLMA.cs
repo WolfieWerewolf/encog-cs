@@ -42,6 +42,7 @@ using Encog.Neural.Networks.Training.Propagation.Resilient;
 using ConsoleExamples.Examples;
 using Encog.Util.Simple;
 using Encog.Neural.Networks.Training.LMA;
+using Encog.Neural.Networks.Training.Strategy;
 
 namespace Encog.Examples.XOR.LMA
 {
@@ -93,6 +94,9 @@ namespace Encog.Examples.XOR.LMA
             INeuralDataSet trainingSet = new BasicNeuralDataSet(XOR_INPUT, XOR_IDEAL);
 
             ITrain train = new LevenbergMarquardtTraining(network, trainingSet);
+            
+            // reset if improve is less than 1% over 5 cycles
+            train.AddStrategy(new RequiredImprovementStrategy(5));
 
             EncogUtility.TrainToError(train, trainingSet, 0.01);
 

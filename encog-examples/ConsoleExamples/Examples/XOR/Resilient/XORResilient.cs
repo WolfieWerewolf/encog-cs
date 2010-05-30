@@ -40,6 +40,7 @@ using Encog.Neural.Networks.Training;
 using Encog.Neural.Data;
 using Encog.Neural.Networks.Training.Propagation.Resilient;
 using ConsoleExamples.Examples;
+using Encog.Neural.Networks.Training.Strategy;
 
 namespace Encog.Examples.XOR.Resilient
 {
@@ -99,6 +100,10 @@ namespace Encog.Examples.XOR.Resilient
             // train the neural network
             // train the neural network
             ITrain train = new ResilientPropagation(network, trainingSet);
+
+            // reset if improve is less than 1% over 5 cycles
+            train.AddStrategy(new RequiredImprovementStrategy(5));
+
 
             int epoch = 1;
 
