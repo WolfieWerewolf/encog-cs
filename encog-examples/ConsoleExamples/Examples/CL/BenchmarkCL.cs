@@ -50,18 +50,6 @@ namespace Encog.Examples.CL
         public long benchmarkCL(BasicNetwork network, INeuralDataSet training)
         {
             ResilientPropagation train = new ResilientPropagation(network, training);
-            
-            // if there is ONLY a CPU OpenCL device, then use ONLY it
-            if (Encog.Instance.CL.AreCPUsPresent && Encog.Instance.CL.Devices.Count==1)
-            {
-                train.NumThreads = -1; // NO non-CL threads
-            }
-            else if (Encog.Instance.CL.AreCPUsPresent && Encog.Instance.CL.Devices.Count > 1)
-            {
-                // if there are CPU OpenCL devices and OpenCL GPU's then disable the CPU's
-                Encog.Instance.CL.DisableAllCPUs();
-                train.NumThreads = 0;
-            }
 
             train.Iteration();
 
