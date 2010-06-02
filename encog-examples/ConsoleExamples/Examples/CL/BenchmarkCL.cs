@@ -49,8 +49,15 @@ namespace Encog.Examples.CL
 
         public long benchmarkCL(BasicNetwork network, INeuralDataSet training)
         {
+            Console.WriteLine("Tuning OpenCL ratio.");
             ResilientPropagation train = new ResilientPropagation(network, training);
+            train.Iteration();
+            double ratio = train.FlatTraining.CalculatedCLRatio;
+            Console.WriteLine("Ratio is: " + ratio);
+            train.FinishTraining();
 
+            Encog.Instance.CL.EnforcedCLRatio = ratio;
+            train = new ResilientPropagation(network, training);
             train.Iteration();
 
             Stopwatch stopwatch = new Stopwatch();
@@ -60,6 +67,7 @@ namespace Encog.Examples.CL
                 train.Iteration();
             }
             stopwatch.Stop();
+            train.FinishTraining();
 
             return stopwatch.ElapsedMilliseconds;
         }
