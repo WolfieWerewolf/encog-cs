@@ -28,3 +28,16 @@ C:\shared\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\Silverlig
 C:\shared\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\XapCacheFile.xml
 D:\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\SilverlightExample.dll
 D:\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\SilverlightExample.pdb
+D:\encog-cs\encog-core-silverlight\SilverlightExample\Bin\Debug\SilverlightExample.dll
+D:\encog-cs\encog-core-silverlight\SilverlightExample\Bin\Debug\SilverlightExample.pdb
+D:\encog-cs\encog-core-silverlight\SilverlightExample\Bin\Debug\AppManifest.xaml
+D:\encog-cs\encog-core-silverlight\SilverlightExample\Bin\Debug\SilverlightExample.xap
+D:\encog-cs\encog-core-silverlight\SilverlightExample\Bin\Debug\TestPage.html
+D:\encog-cs\encog-core-silverlight\SilverlightExample\Bin\Debug\encog-core-silverlight.dll
+D:\encog-cs\encog-core-silverlight\SilverlightExample\Bin\Debug\encog-core-silverlight.pdb
+D:\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\ResolveAssemblyReference.cache
+D:\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\App.g.cs
+D:\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\MainPage.g.cs
+D:\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\SilverlightExample.g.resources
+D:\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\XapCacheFile.xml
+D:\encog-cs\encog-core-silverlight\SilverlightExample\Bin\Debug\Resources\classes.txt

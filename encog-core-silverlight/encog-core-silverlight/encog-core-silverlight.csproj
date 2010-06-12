@@ -457,6 +457,7 @@
     <Compile Include="Util\Time\DateUtil.cs" />
     <Compile Include="Util\Time\EnglishTimeUnitNames.cs" />
     <Compile Include="Util\Time\ITimeUnitNames.cs" />
+    <Compile Include="Util\Time\Stopwatch.cs" />
     <Compile Include="Util\Time\TimeSpanUtil.cs" />
     <Compile Include="Util\Time\TimeUnit.cs" />
     <Compile Include="Util\XMLUtil.cs" />
@@ -469,7 +470,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\classes.txt" />
+    <EmbeddedResource Include="Resources\classes.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
