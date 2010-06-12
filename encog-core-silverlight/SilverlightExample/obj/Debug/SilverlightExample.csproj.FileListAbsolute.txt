@@ -26,3 +26,5 @@ C:\shared\encog-cs\encog-core-silverlight\SilverlightExample\Bin\Debug\encog-cor
 C:\shared\encog-cs\encog-core-silverlight\SilverlightExample\Bin\Debug\encog-core-silverlight.pdb
 C:\shared\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\SilverlightExample.dll
 C:\shared\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\XapCacheFile.xml
+D:\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\SilverlightExample.dll
+D:\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\SilverlightExample.pdb

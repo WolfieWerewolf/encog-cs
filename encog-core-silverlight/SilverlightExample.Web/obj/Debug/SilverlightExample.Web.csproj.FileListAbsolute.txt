@@ -8,3 +8,8 @@ C:\shared\encog-cs\encog-core-silverlight\SilverlightExample.Web\bin\Silverlight
 C:\shared\encog-cs\encog-core-silverlight\SilverlightExample.Web\obj\Debug\ResolveAssemblyReference.cache
 C:\shared\encog-cs\encog-core-silverlight\SilverlightExample.Web\obj\Debug\SilverlightExample.Web.dll
 C:\shared\encog-cs\encog-core-silverlight\SilverlightExample.Web\obj\Debug\SilverlightExample.Web.pdb
+D:\encog-cs\encog-core-silverlight\SilverlightExample.Web\bin\SilverlightExample.Web.dll
+D:\encog-cs\encog-core-silverlight\SilverlightExample.Web\bin\SilverlightExample.Web.pdb
+D:\encog-cs\encog-core-silverlight\SilverlightExample.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\encog-cs\encog-core-silverlight\SilverlightExample.Web\obj\Debug\SilverlightExample.Web.dll
+D:\encog-cs\encog-core-silverlight\SilverlightExample.Web\obj\Debug\SilverlightExample.Web.pdb
