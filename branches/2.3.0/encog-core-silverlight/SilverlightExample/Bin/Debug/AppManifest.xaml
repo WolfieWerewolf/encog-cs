@@ -1,0 +1,6 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="SilverlightExample" EntryPointType="SilverlightExample.App" RuntimeVersion="3.0.40818.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="SilverlightExample" Source="SilverlightExample.dll" />
+    <AssemblyPart x:Name="encog-core-silverlight" Source="encog-core-silverlight.dll" />
+  </Deployment.Parts>
+</Deployment>

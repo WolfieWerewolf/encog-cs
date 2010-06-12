@@ -1,0 +1,14 @@
+C:\encog-cs\encog-examples\XORResilient\obj\Release\ResolveAssemblyReference.cache
+C:\encog-cs\encog-examples\XORResilient\bin\Release\XORResilient.exe
+C:\encog-cs\encog-examples\XORResilient\bin\Release\XORResilient.pdb
+C:\encog-cs\encog-examples\XORResilient\bin\Release\encog-core-cs.dll
+C:\encog-cs\encog-examples\XORResilient\bin\Release\log4net.dll
+C:\encog-cs\encog-examples\XORResilient\obj\Release\XORResilient.exe
+C:\encog-cs\encog-examples\XORResilient\obj\Release\XORResilient.pdb
+C:\shared\encog-cs\encog-examples\XORResilient\bin\Release\XORResilient.exe
+C:\shared\encog-cs\encog-examples\XORResilient\bin\Release\XORResilient.pdb
+C:\shared\encog-cs\encog-examples\XORResilient\bin\Release\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\XORResilient\bin\Release\log4net.dll
+C:\shared\encog-cs\encog-examples\XORResilient\obj\Release\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-examples\XORResilient\obj\Release\XORResilient.exe
+C:\shared\encog-cs\encog-examples\XORResilient\obj\Release\XORResilient.pdb

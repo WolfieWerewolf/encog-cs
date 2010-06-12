@@ -1,0 +1,7 @@
+C:\shared\encog-cs\encog-examples\ART1\obj\Release\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-examples\ART1\bin\Release\ART1.exe
+C:\shared\encog-cs\encog-examples\ART1\bin\Release\ART1.pdb
+C:\shared\encog-cs\encog-examples\ART1\bin\Release\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\ART1\bin\Release\log4net.dll
+C:\shared\encog-cs\encog-examples\ART1\obj\Release\ART1.exe
+C:\shared\encog-cs\encog-examples\ART1\obj\Release\ART1.pdb

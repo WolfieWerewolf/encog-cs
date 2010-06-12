@@ -1,0 +1,14 @@
+C:\encog-cs\encog-examples\JordanNetwork\bin\Debug\JordanNetwork.exe
+C:\encog-cs\encog-examples\JordanNetwork\bin\Debug\JordanNetwork.pdb
+C:\encog-cs\encog-examples\JordanNetwork\bin\Debug\encog-core-cs.dll
+C:\encog-cs\encog-examples\JordanNetwork\bin\Debug\log4net.dll
+C:\encog-cs\encog-examples\JordanNetwork\obj\Debug\ResolveAssemblyReference.cache
+C:\encog-cs\encog-examples\JordanNetwork\obj\Debug\JordanNetwork.exe
+C:\encog-cs\encog-examples\JordanNetwork\obj\Debug\JordanNetwork.pdb
+C:\shared\encog-cs\encog-examples\JordanNetwork\obj\Debug\JordanNetwork.exe
+C:\shared\encog-cs\encog-examples\JordanNetwork\obj\Debug\JordanNetwork.pdb
+C:\shared\encog-cs\encog-examples\JordanNetwork\bin\Debug\JordanNetwork.exe
+C:\shared\encog-cs\encog-examples\JordanNetwork\bin\Debug\JordanNetwork.pdb
+C:\shared\encog-cs\encog-examples\JordanNetwork\bin\Debug\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\JordanNetwork\bin\Debug\log4net.dll
+C:\shared\encog-cs\encog-examples\JordanNetwork\obj\Debug\ResolveAssemblyReference.cache

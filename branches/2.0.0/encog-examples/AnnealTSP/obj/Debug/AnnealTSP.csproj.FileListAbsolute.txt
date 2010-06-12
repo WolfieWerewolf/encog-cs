@@ -1,0 +1,14 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\AnnealTSP\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\AnnealTSP\bin\Debug\AnnealTSP.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\AnnealTSP\bin\Debug\AnnealTSP.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\AnnealTSP\bin\Debug\Encog.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\AnnealTSP\bin\Debug\Encog.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\AnnealTSP\obj\Debug\AnnealTSP.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\AnnealTSP\obj\Debug\AnnealTSP.pdb
+C:\encog-cs\encog-core\encog-examples\AnnealTSP\bin\Debug\AnnealTSP.exe
+C:\encog-cs\encog-core\encog-examples\AnnealTSP\bin\Debug\AnnealTSP.pdb
+C:\encog-cs\encog-core\encog-examples\AnnealTSP\bin\Debug\Encog.dll
+C:\encog-cs\encog-core\encog-examples\AnnealTSP\obj\Debug\ResolveAssemblyReference.cache
+C:\encog-cs\encog-core\encog-examples\AnnealTSP\obj\Debug\AnnealTSP.exe
+C:\encog-cs\encog-core\encog-examples\AnnealTSP\obj\Debug\AnnealTSP.pdb
+C:\encog-cs\encog-core\encog-examples\AnnealTSP\bin\Debug\Encog.pdb

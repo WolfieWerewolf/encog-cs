@@ -1,0 +1,7 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\XorGenetic\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\XorGenetic\bin\Release\XorGenetic.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\XorGenetic\bin\Release\XorGenetic.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\XorGenetic\bin\Release\Encog.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\XorGenetic\bin\Release\Encog.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\XorGenetic\obj\Release\XorGenetic.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\XorGenetic\obj\Release\XorGenetic.pdb

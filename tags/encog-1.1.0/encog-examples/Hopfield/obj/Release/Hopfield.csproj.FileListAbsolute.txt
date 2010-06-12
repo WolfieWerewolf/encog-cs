@@ -1,0 +1,7 @@
+C:\encog-cs\encog-core\encog-examples\Hopfield\obj\Release\ResolveAssemblyReference.cache
+C:\encog-cs\encog-core\encog-examples\Hopfield\bin\Release\Hopfield.exe
+C:\encog-cs\encog-core\encog-examples\Hopfield\bin\Release\Hopfield.pdb
+C:\encog-cs\encog-core\encog-examples\Hopfield\bin\Release\Encog.dll
+C:\encog-cs\encog-core\encog-examples\Hopfield\obj\Release\Hopfield.exe
+C:\encog-cs\encog-core\encog-examples\Hopfield\obj\Release\Hopfield.pdb
+C:\encog-cs\encog-core\encog-examples\Hopfield\bin\Release\Encog.pdb

@@ -1,0 +1,16 @@
+C:\shared\csharp\encog-core-silverlight\encog-core-silverlight\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\csharp\encog-core-silverlight\encog-core-silverlight\obj\Debug\ResGen.read.1.tlog
+C:\shared\csharp\encog-core-silverlight\encog-core-silverlight\obj\Debug\ResGen.write.1.tlog
+C:\shared\csharp\encog-core-silverlight\encog-core-silverlight\Bin\Debug\encog-core-silverlight.dll
+C:\shared\csharp\encog-core-silverlight\encog-core-silverlight\Bin\Debug\encog-core-silverlight.pdb
+C:\shared\csharp\encog-core-silverlight\encog-core-silverlight\obj\Debug\encog-core-silverlight.dll
+C:\shared\csharp\encog-core-silverlight\encog-core-silverlight\obj\Debug\encog-core-silverlight.pdb
+C:\shared\csharp\encog-core-silverlight\encog-core-silverlight\obj\Debug\Encog.encog-core-cs.resources
+C:\shared\encog-cs\encog-core-silverlight\encog-core-silverlight\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-core-silverlight\encog-core-silverlight\obj\Debug\ResGen.read.1.tlog
+C:\shared\encog-cs\encog-core-silverlight\encog-core-silverlight\obj\Debug\ResGen.write.1.tlog
+C:\shared\encog-cs\encog-core-silverlight\encog-core-silverlight\obj\Debug\encog-core-silverlight.dll
+C:\shared\encog-cs\encog-core-silverlight\encog-core-silverlight\obj\Debug\encog-core-silverlight.pdb
+C:\shared\encog-cs\encog-core-silverlight\encog-core-silverlight\obj\Debug\Encog.encog-core-cs.resources
+C:\shared\encog-cs\encog-core-silverlight\encog-core-silverlight\Bin\Debug\encog-core-silverlight.dll
+C:\shared\encog-cs\encog-core-silverlight\encog-core-silverlight\Bin\Debug\encog-core-silverlight.pdb

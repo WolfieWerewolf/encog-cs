@@ -1,0 +1,10 @@
+C:\encog-cs\encog-core\encog-examples\OCR\obj\Debug\ResolveAssemblyReference.cache
+C:\encog-cs\encog-core\encog-examples\OCR\obj\Debug\Chapter12OCR.OCRForm.resources
+C:\encog-cs\encog-core\encog-examples\OCR\obj\Debug\OCR.Properties.Resources.resources
+C:\encog-cs\encog-core\encog-examples\OCR\obj\Debug\OCR.csproj.GenerateResource.Cache
+C:\encog-cs\encog-core\encog-examples\OCR\bin\Debug\OCR.exe
+C:\encog-cs\encog-core\encog-examples\OCR\bin\Debug\OCR.pdb
+C:\encog-cs\encog-core\encog-examples\OCR\bin\Debug\Encog.dll
+C:\encog-cs\encog-core\encog-examples\OCR\obj\Debug\OCR.exe
+C:\encog-cs\encog-core\encog-examples\OCR\obj\Debug\OCR.pdb
+C:\encog-cs\encog-core\encog-examples\OCR\bin\Debug\Encog.pdb

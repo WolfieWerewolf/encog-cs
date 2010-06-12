@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XorAnneal", "EncogExamplesCS\XorAnneal.csproj", "{BC554CC1-F828-4D8C-B21D-CE009B161873}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XorBackprop", "XorBackprop\XorBackprop.csproj", "{38134296-EBC2-4344-B390-BEA4FF20655B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XorGenetic", "XorGenetic\XorGenetic.csproj", "{68F08E51-9B94-41C4-99F8-CA0B84F83773}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnnealTSP", "AnnealTSP\AnnealTSP.csproj", "{F1CF190F-9C82-437E-82FD-A1FB34380E06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneticTSP", "GeneticTSP\GeneticTSP.csproj", "{250867CF-A87E-4893-9416-1E1398567FB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC554CC1-F828-4D8C-B21D-CE009B161873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC554CC1-F828-4D8C-B21D-CE009B161873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC554CC1-F828-4D8C-B21D-CE009B161873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC554CC1-F828-4D8C-B21D-CE009B161873}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38134296-EBC2-4344-B390-BEA4FF20655B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38134296-EBC2-4344-B390-BEA4FF20655B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38134296-EBC2-4344-B390-BEA4FF20655B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38134296-EBC2-4344-B390-BEA4FF20655B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F08E51-9B94-41C4-99F8-CA0B84F83773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F08E51-9B94-41C4-99F8-CA0B84F83773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F08E51-9B94-41C4-99F8-CA0B84F83773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F08E51-9B94-41C4-99F8-CA0B84F83773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1CF190F-9C82-437E-82FD-A1FB34380E06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1CF190F-9C82-437E-82FD-A1FB34380E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1CF190F-9C82-437E-82FD-A1FB34380E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1CF190F-9C82-437E-82FD-A1FB34380E06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{250867CF-A87E-4893-9416-1E1398567FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250867CF-A87E-4893-9416-1E1398567FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250867CF-A87E-4893-9416-1E1398567FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{250867CF-A87E-4893-9416-1E1398567FB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

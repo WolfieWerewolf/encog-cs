@@ -1,0 +1,7 @@
+C:\encog-cs\encog-examples\Benchmark\bin\Debug\Benchmark.exe
+C:\encog-cs\encog-examples\Benchmark\bin\Debug\Benchmark.pdb
+C:\encog-cs\encog-examples\Benchmark\bin\Debug\encog-core-cs.dll
+C:\encog-cs\encog-examples\Benchmark\bin\Debug\log4net.dll
+C:\encog-cs\encog-examples\Benchmark\obj\Debug\ResolveAssemblyReference.cache
+C:\encog-cs\encog-examples\Benchmark\obj\Debug\Benchmark.exe
+C:\encog-cs\encog-examples\Benchmark\obj\Debug\Benchmark.pdb

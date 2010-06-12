@@ -1,0 +1,14 @@
+C:\encog-cs\encog-examples\Market\bin\Debug\Market.exe
+C:\encog-cs\encog-examples\Market\bin\Debug\Market.pdb
+C:\encog-cs\encog-examples\Market\bin\Debug\encog-core-cs.dll
+C:\encog-cs\encog-examples\Market\bin\Debug\log4net.dll
+C:\encog-cs\encog-examples\Market\obj\Debug\ResolveAssemblyReference.cache
+C:\encog-cs\encog-examples\Market\obj\Debug\Market.exe
+C:\encog-cs\encog-examples\Market\obj\Debug\Market.pdb
+C:\shared\encog-cs\encog-examples\Market\bin\Debug\Market.exe
+C:\shared\encog-cs\encog-examples\Market\bin\Debug\Market.pdb
+C:\shared\encog-cs\encog-examples\Market\bin\Debug\encog-core-cs.dll
+C:\shared\encog-cs\encog-examples\Market\bin\Debug\log4net.dll
+C:\shared\encog-cs\encog-examples\Market\obj\Debug\ResolveAssemblyReference.cache
+C:\shared\encog-cs\encog-examples\Market\obj\Debug\Market.exe
+C:\shared\encog-cs\encog-examples\Market\obj\Debug\Market.pdb

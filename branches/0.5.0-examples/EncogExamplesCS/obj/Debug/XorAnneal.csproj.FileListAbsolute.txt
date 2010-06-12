@@ -1,0 +1,7 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\EncogExamplesCS\bin\Debug\EncogExamplesCS.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\EncogExamplesCS\bin\Debug\EncogExamplesCS.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\EncogExamplesCS\bin\Debug\Encog.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\EncogExamplesCS\bin\Debug\Encog.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\EncogExamplesCS\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\EncogExamplesCS\obj\Debug\EncogExamplesCS.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\EncogExamplesCS\obj\Debug\EncogExamplesCS.pdb

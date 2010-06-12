@@ -1,0 +1,7 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\GeneticTSP\bin\Debug\GeneticTSP.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\GeneticTSP\bin\Debug\GeneticTSP.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\GeneticTSP\bin\Debug\Encog.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\GeneticTSP\bin\Debug\Encog.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\GeneticTSP\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\GeneticTSP\obj\Debug\GeneticTSP.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\EncogExamplesCS\GeneticTSP\obj\Debug\GeneticTSP.pdb

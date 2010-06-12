@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\shared\encog-cs\encog-test\Encog-test.nunit" total="88" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-01-25" time="10:30:49">
+  <environment nunit-version="2.5.1.9189" clr-version="2.0.50727.3053" os-version="Microsoft Windows NT 5.2.3790 Service Pack 2" platform="Win32NT" cwd="C:\shared\encog-cs\encog-test" machine-name="DEVELOPMENT-2" user="jheaton" user-domain="DEVELOPMENT-2" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite name="C:\shared\encog-cs\encog-test\Encog-test.nunit" executed="True" success="True" time="5.688" asserts="0">
+    <results>
+      <test-suite name="C:\shared\encog-cs\encog-test\encog-test\bin\Release\encog-test.dll" executed="True" success="True" time="5.641" asserts="0">
+        <results>
+          <test-suite name="encog_test" executed="True" success="True" time="5.641" asserts="0">
+            <results>
+              <test-suite name="Data" executed="True" success="True" time="2.125" asserts="0">
+                <results>
+                  <test-suite name="CSV" executed="True" success="True" time="0.156" asserts="0">
+                    <results>
+                      <test-suite name="TestCSVNeuralData" executed="True" success="True" time="0.125" asserts="0">
+                        <results>
+                          <test-case name="encog_test.Data.CSV.TestCSVNeuralData.CSVData" executed="True" success="True" time="0.125" asserts="12" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="Market" executed="True" success="True" time="1.125" asserts="0">
+                    <results>
+                      <test-suite name="TestMarketData" executed="True" success="True" time="1.047" asserts="0">
+                        <results>
+                          <test-case name="encog_test.Data.Market.TestMarketData.MarketData" executed="True" success="True" time="1.047" asserts="66" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="TestYahooLoader" executed="True" success="True" time="0.078" asserts="0">
+                        <results>
+                          <test-case name="encog_test.Data.Market.TestYahooLoader.Loader" executed="True" success="True" time="0.078" asserts="2" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="SQL" executed="True" success="True" time="0.734" asserts="0">
+                    <results>
+                      <test-suite name="TestSQLDataSet" executed="True" success="True" time="0.719" asserts="0">
+                        <results>
+                          <test-case name="encog_test.Data.SQL.TestSQLDataSet.SQLDataSet" executed="True" success="True" time="0.703" asserts="0" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="Temporal" executed="True" success="True" time="0.047" asserts="0">
+                    <results>
+                      <test-suite name="TestTemporal" executed="True" success="True" time="0.047" asserts="0">
+                        <results>
+                          <test-case name="encog_test.Data.Temporal.TestTemporal.ActivationTemporal" executed="True" success="True" time="0.016" asserts="6" />
+                          <test-case name="encog_test.Data.Temporal.TestTemporal.BasicTemporal" executed="True" success="True" time="0.016" asserts="55" />
+                          <test-case name="encog_test.Data.Temporal.TestTemporal.FormatTemporal" executed="True" success="True" time="0.000" asserts="13" />
+                          <test-case name="encog_test.Data.Temporal.TestTemporal.HiLowTemporal" executed="True" success="True" time="0.016" asserts="16" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="XML" executed="True" success="True" time="0.031" asserts="0">
+                    <results>
+                      <test-suite name="TestXMLNeuralData" executed="True" success="True" time="0.031" asserts="0">
+                        <results>
+                          <test-case name="encog_test.Data.XML.TestXMLNeuralData.XMLNeuralData" executed="True" success="True" time="0.031" asserts="14" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite name="Encog" executed="True" success="True" time="3.141" asserts="0">
+                <results>
+                  <test-suite name="Bot" executed="True" success="True" time="0.781" asserts="0">
+                    <results>
+                      <test-suite name="Browse" executed="True" success="True" time="0.469" asserts="0">
+                        <results>
+                          <test-suite name="TestAddress" executed="True" success="True" time="0.031" asserts="0">
+                            <results>
+                              <test-case name="encog_test.Encog.Bot.Browse.TestAddress.testAddressFunctions" executed="True" success="True" time="0.031" asserts="4" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="TestBrowse" executed="True" success="True" time="0.406" asserts="0">
+                            <results>
+                              <test-case name="encog_test.Encog.Bot.Browse.TestBrowse.testBrowse" executed="True" success="True" time="0.172" asserts="1" />
+                              <test-case name="encog_test.Encog.Bot.Browse.TestBrowse.testFormGET" executed="True" success="True" time="0.219" asserts="2" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="TestWebPageData" executed="True" success="True" time="0.016" asserts="0">
+                            <results>
+                              <test-case name="encog_test.Encog.Bot.Browse.TestWebPageData.testLink" executed="True" success="True" time="0.016" asserts="6" />
+                              <test-case name="encog_test.Encog.Bot.Browse.TestWebPageData.testSimple" executed="True" success="True" time="0.000" asserts="9" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite name="HTML" executed="True" success="True" time="0.047" asserts="0">
+                        <results>
+                          <test-suite name="TestParseHTML" executed="True" success="True" time="0.031" asserts="0">
+                            <results>
+                              <test-case name="encog_test.Encog.Bot.HTML.TestParseHTML.testAttributeLess" executed="True" success="True" time="0.000" asserts="12" />
+                              <test-case name="encog_test.Encog.Bot.HTML.TestParseHTML.testAttributes" executed="True" success="True" time="0.000" asserts="5" />
+                              <test-case name="encog_test.Encog.Bot.HTML.TestParseHTML.testAttributesNoDELIM" executed="True" success="True" time="0.000" asserts="5" />
+                              <test-case name="encog_test.Encog.Bot.HTML.TestParseHTML.testBoth" executed="True" success="True" time="0.000" asserts="7" />
+                              <test-case name="encog_test.Encog.Bot.HTML.TestParseHTML.testBothWithAttributes" executed="True" success="True" time="0.016" asserts="1" />
+                              <test-case name="encog_test.Encog.Bot.HTML.TestParseHTML.testComment" executed="True" success="True" time="0.000" asserts="3" />
+                              <test-case name="encog_test.Encog.Bot.HTML.TestParseHTML.testScript" executed="True" success="True" time="0.000" asserts="6" />
+                              <test-case name="encog_test.Encog.Bot.HTML.TestParseHTML.testScript2" executed="True" success="True" time="0.000" asserts="8" />
+                              <test-case name="encog_test.Encog.Bot.HTML.TestParseHTML.testSimpleAttribute" executed="True" success="True" time="0.000" asserts="2" />
+                              <test-case name="encog_test.Encog.Bot.HTML.TestParseHTML.testSpecialCharacter" executed="True" success="True" time="0.016" asserts="3" />
+                              <test-case name="encog_test.Encog.Bot.HTML.TestParseHTML.testTagToString" executed="True" success="True" time="0.000" asserts="1" />
+                              <test-case name="encog_test.Encog.Bot.HTML.TestParseHTML.testToString" executed="True" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite name="TestBotUtil" executed="True" success="True" time="0.250" asserts="0">
+                        <results>
+                          <test-case name="encog_test.Encog.Bot.TestBotUtil.testExtract" executed="True" success="True" time="0.016" asserts="4" />
+                          <test-case name="encog_test.Encog.Bot.TestBotUtil.testExtractFromIndex" executed="True" success="True" time="0.000" asserts="5" />
+                          <test-case name="encog_test.Encog.Bot.TestBotUtil.testLoadPage" executed="True" success="True" time="0.219" asserts="1" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="Neural" executed="True" success="True" time="2.297" asserts="0">
+                    <results>
+                      <test-suite name="Activation" executed="True" success="True" time="0.078" asserts="0">
+                        <results>
+                          <test-suite name="TestActivationBiPolar" executed="True" success="True" time="0.016" asserts="0">
+                            <results>
+                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationBiPolar.testBiPolar" executed="True" success="True" time="0.016" asserts="6" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="TestActivationGaussian" executed="True" success="True" time="0.000" asserts="0">
+                            <results>
+                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationGaussian.testGaussian" executed="True" success="True" time="0.000" asserts="6" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="TestActivationLinear" executed="True" success="True" time="0.000" asserts="0">
+                            <results>
+                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationLinear.testLinear" executed="True" success="True" time="0.000" asserts="7" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="TestActivationLOG" executed="True" success="True" time="0.000" asserts="0">
+                            <results>
+                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationLOG.testLog" executed="True" success="True" time="0.000" asserts="6" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="TestActivationSigmoid" executed="True" success="True" time="0.016" asserts="0">
+                            <results>
+                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationSigmoid.testSigmoid" executed="True" success="True" time="0.000" asserts="6" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="TestActivationSIN" executed="True" success="True" time="0.000" asserts="0">
+                            <results>
+                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationSIN.testSIN" executed="True" success="True" time="0.000" asserts="6" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="TestActivationSoftMax" executed="True" success="True" time="0.000" asserts="0">
+                            <results>
+                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationSoftMax.testSIN" executed="True" success="True" time="0.000" asserts="6" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="TestActivationTANH" executed="True" success="True" time="0.000" asserts="0">
+                            <results>
+                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationTANH.testTANH" executed="True" success="True" time="0.000" asserts="6" />
+                            </results>
+                          </test-suite>
+                          <test-suite name="TestActivationUtil" executed="True" success="True" time="0.016" asserts="0">
+                            <results>
+                              <test-case name="encog_test.Encog.Neural.Activation.TestActivationUtil.testActivationUtil" executed="True" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite name="Networks" executed="True" success="True" time="2.203" asserts="0">
+                        <results>
+                          <test-suite name="Training" executed="True" success="True" time="2.203" asserts="0">
+                            <results>
+                              <test-suite name="TestTraining" executed="True" success="True" time="2.203" asserts="0">
+                                <results>
+                                  <test-case name="encog_test.Encog.Neural.Networks.Training.TestTraining.TestAnneal" executed="True" success="True" time="0.172" asserts="1" />
+                                  <test-case name="encog_test.Encog.Neural.Networks.Training.TestTraining.TestBPROP" executed="True" success="True" time="0.047" asserts="1" />
+                                  <test-case name="encog_test.Encog.Neural.Networks.Training.TestTraining.TestCont" executed="True" success="True" time="0.000" asserts="1" />
+                                  <test-case name="encog_test.Encog.Neural.Networks.Training.TestTraining.TestGenetic" executed="True" success="True" time="1.875" asserts="1" />
+                                  <test-case name="encog_test.Encog.Neural.Networks.Training.TestTraining.TestManhattan" executed="True" success="True" time="0.031" asserts="1" />
+                                  <test-case name="encog_test.Encog.Neural.Networks.Training.TestTraining.TestRPROP" executed="True" success="True" time="0.016" asserts="1" />
+                                  <test-case name="encog_test.Encog.Neural.Networks.Training.TestTraining.TestSCG" executed="True" success="True" time="0.047" asserts="1" />
+                                </results>
+                              </test-suite>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="Parse" executed="True" success="True" time="0.016" asserts="0">
+                    <results>
+                      <test-suite name="Tags" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-suite name="Read" executed="True" success="True" time="0.000" asserts="0">
+                            <results>
+                              <test-suite name="TestXMLRead" executed="True" success="True" time="0.000" asserts="0">
+                                <results>
+                                  <test-case name="encog_test.Encog.Parse.Tags.Read.TestXMLRead.testRead" executed="True" success="True" time="0.000" asserts="7" />
+                                </results>
+                              </test-suite>
+                            </results>
+                          </test-suite>
+                          <test-suite name="Write" executed="True" success="True" time="0.016" asserts="0">
+                            <results>
+                              <test-suite name="TestXMLWrite" executed="True" success="True" time="0.000" asserts="0">
+                                <results>
+                                  <test-case name="encog_test.Encog.Parse.Tags.Write.TestXMLWrite.testXMLWrite" executed="True" success="True" time="0.000" asserts="1" />
+                                </results>
+                              </test-suite>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite name="Neural" executed="True" success="True" time="0.141" asserts="0">
+                <results>
+                  <test-suite name="Networks" executed="True" success="True" time="0.031" asserts="0">
+                    <results>
+                      <test-suite name="Training" executed="True" success="True" time="0.031" asserts="0">
+                        <results>
+                          <test-suite name="TestCompetitive" executed="True" success="True" time="0.031" asserts="0">
+                            <results>
+                              <test-case name="encog_test.Neural.Networks.Training.TestCompetitive.TestSOM" executed="True" success="True" time="0.031" asserts="1" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="Persist" executed="True" success="True" time="0.109" asserts="0">
+                    <results>
+                      <test-suite name="TestPersist" executed="True" success="True" time="0.109" asserts="0">
+                        <results>
+                          <test-case name="encog_test.Neural.Persist.TestPersist.testPersist" executed="True" success="True" time="0.109" asserts="2" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite name="TestMatrix" executed="True" success="True" time="0.156" asserts="0">
+                <results>
+                  <test-suite name="TestBiPolarUtil" executed="True" success="True" time="0.016" asserts="0">
+                    <results>
+                      <test-case name="encog_test.TestMatrix.TestBiPolarUtil.Binary" executed="True" success="True" time="0.000" asserts="5" />
+                      <test-case name="encog_test.TestMatrix.TestBiPolarUtil.Bipolar2double" executed="True" success="True" time="0.016" asserts="2" />
+                      <test-case name="encog_test.TestMatrix.TestBiPolarUtil.Double2bipolar" executed="True" success="True" time="0.000" asserts="8" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="TestMatrix" executed="True" success="True" time="0.078" asserts="0">
+                    <results>
+                      <test-case name="encog_test.TestMatrix.TestMatrix.Add" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.Boolean" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.Clear" executed="True" success="True" time="0.000" asserts="4" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.ColumnMatrix" executed="True" success="True" time="0.000" asserts="4" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.GetCol" executed="True" success="True" time="0.000" asserts="2" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.GetRow" executed="True" success="True" time="0.000" asserts="2" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.IsVector" executed="True" success="True" time="0.000" asserts="3" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.IsZero" executed="True" success="True" time="0.016" asserts="2" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.MatrixConstruct" executed="True" success="True" time="0.000" asserts="2" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.MatrixEquals" executed="True" success="True" time="0.000" asserts="2" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.MatrixEqualsPrecision" executed="True" success="True" time="0.000" asserts="4" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.MatrixMultiply" executed="True" success="True" time="0.016" asserts="2" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.PackedArray" executed="True" success="True" time="0.000" asserts="6" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.PackedArray2" executed="True" success="True" time="0.000" asserts="3" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.Randomize" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.RowAndColRangeOver" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.RowAndColRangeUnder" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.RowMatrix" executed="True" success="True" time="0.000" asserts="4" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.RowsAndCols" executed="True" success="True" time="0.000" asserts="3" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.Size" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.Sum" executed="True" success="True" time="0.016" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.VectorLength" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrix.Zero" executed="True" success="True" time="0.000" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="TestMatrixMath" executed="True" success="True" time="0.031" asserts="0">
+                    <results>
+                      <test-case name="encog_test.TestMatrix.TestMatrixMath.Copy" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrixMath.DeleteCol" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrixMath.DeleteRow" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrixMath.Divide" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrixMath.DotProduct" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrixMath.Identity" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrixMath.Inverse" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrixMath.Multiply" executed="True" success="True" time="0.016" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrixMath.MultiplyScalar" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="encog_test.TestMatrix.TestMatrixMath.VerifySame" executed="True" success="True" time="0.000" asserts="0" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite name="Util" executed="True" success="True" time="0.031" asserts="0">
+                <results>
+                  <test-suite name="TestSerializeObject" executed="True" success="True" time="0.031" asserts="0">
+                    <results>
+                      <test-case name="encog_test.Util.TestSerializeObject.testSerializeNetwork" executed="True" success="True" time="0.016" asserts="1" />
+                      <test-case name="encog_test.Util.TestSerializeObject.testSerializeNetwork2" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="encog_test.Util.TestSerializeObject.testSerializeXOR" executed="True" success="True" time="0.000" asserts="12" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
