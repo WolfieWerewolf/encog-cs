@@ -1,7 +1,0 @@
-C:\encog-cs\encog-core\encog-examples\DownloadSite\bin\Debug\DownloadSite.exe
-C:\encog-cs\encog-core\encog-examples\DownloadSite\bin\Debug\DownloadSite.pdb
-C:\encog-cs\encog-core\encog-examples\DownloadSite\bin\Debug\Encog.dll
-C:\encog-cs\encog-core\encog-examples\DownloadSite\obj\Debug\ResolveAssemblyReference.cache
-C:\encog-cs\encog-core\encog-examples\DownloadSite\obj\Debug\DownloadSite.exe
-C:\encog-cs\encog-core\encog-examples\DownloadSite\obj\Debug\DownloadSite.pdb
-C:\encog-cs\encog-core\encog-examples\DownloadSite\bin\Debug\Encog.pdb

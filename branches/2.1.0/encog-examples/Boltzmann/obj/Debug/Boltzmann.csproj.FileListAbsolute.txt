@@ -1,7 +1,0 @@
-C:\shared\encog-cs\encog-examples\Boltzmann\bin\Debug\Boltzmann.exe
-C:\shared\encog-cs\encog-examples\Boltzmann\bin\Debug\Boltzmann.pdb
-C:\shared\encog-cs\encog-examples\Boltzmann\bin\Debug\encog-core-cs.dll
-C:\shared\encog-cs\encog-examples\Boltzmann\bin\Debug\log4net.dll
-C:\shared\encog-cs\encog-examples\Boltzmann\obj\Debug\ResolveAssemblyReference.cache
-C:\shared\encog-cs\encog-examples\Boltzmann\obj\Debug\Boltzmann.exe
-C:\shared\encog-cs\encog-examples\Boltzmann\obj\Debug\Boltzmann.pdb

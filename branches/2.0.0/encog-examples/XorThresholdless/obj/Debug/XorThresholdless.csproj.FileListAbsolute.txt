@@ -1,7 +1,0 @@
-C:\encog-cs\encog-examples\XorThresholdless\bin\Debug\XorThresholdless.exe
-C:\encog-cs\encog-examples\XorThresholdless\bin\Debug\XorThresholdless.pdb
-C:\encog-cs\encog-examples\XorThresholdless\bin\Debug\encog-core-cs.dll
-C:\encog-cs\encog-examples\XorThresholdless\bin\Debug\log4net.dll
-C:\encog-cs\encog-examples\XorThresholdless\obj\Debug\ResolveAssemblyReference.cache
-C:\encog-cs\encog-examples\XorThresholdless\obj\Debug\XorThresholdless.exe
-C:\encog-cs\encog-examples\XorThresholdless\obj\Debug\XorThresholdless.pdb

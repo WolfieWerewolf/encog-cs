@@ -1,7 +1,0 @@
-C:\encog-cs\encog-examples\PersistEncogCollection\bin\Debug\PersistEncogCollection.exe
-C:\encog-cs\encog-examples\PersistEncogCollection\bin\Debug\PersistEncogCollection.pdb
-C:\encog-cs\encog-examples\PersistEncogCollection\bin\Debug\encog-core-cs.dll
-C:\encog-cs\encog-examples\PersistEncogCollection\bin\Debug\log4net.dll
-C:\encog-cs\encog-examples\PersistEncogCollection\obj\Debug\ResolveAssemblyReference.cache
-C:\encog-cs\encog-examples\PersistEncogCollection\obj\Debug\PersistEncogCollection.exe
-C:\encog-cs\encog-examples\PersistEncogCollection\obj\Debug\PersistEncogCollection.pdb

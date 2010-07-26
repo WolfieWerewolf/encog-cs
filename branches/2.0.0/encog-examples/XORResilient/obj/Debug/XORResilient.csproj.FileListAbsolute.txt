@@ -1,7 +1,0 @@
-C:\encog-cs\encog-examples\XORResilient\bin\Debug\XORResilient.exe
-C:\encog-cs\encog-examples\XORResilient\bin\Debug\XORResilient.pdb
-C:\encog-cs\encog-examples\XORResilient\bin\Debug\encog-core-cs.dll
-C:\encog-cs\encog-examples\XORResilient\bin\Debug\log4net.dll
-C:\encog-cs\encog-examples\XORResilient\obj\Debug\ResolveAssemblyReference.cache
-C:\encog-cs\encog-examples\XORResilient\obj\Debug\XORResilient.exe
-C:\encog-cs\encog-examples\XORResilient\obj\Debug\XORResilient.pdb

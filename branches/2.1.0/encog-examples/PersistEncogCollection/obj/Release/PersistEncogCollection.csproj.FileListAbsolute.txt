@@ -1,1 +1,0 @@
-C:\encog-cs\encog-examples\PersistEncogCollection\obj\Release\ResolveAssemblyReference.cache

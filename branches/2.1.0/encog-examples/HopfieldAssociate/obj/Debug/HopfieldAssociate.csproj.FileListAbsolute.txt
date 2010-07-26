@@ -1,7 +1,0 @@
-C:\shared\encog-cs\encog-examples\HopfieldAssociate\bin\Debug\HopfieldAssociate.exe
-C:\shared\encog-cs\encog-examples\HopfieldAssociate\bin\Debug\HopfieldAssociate.pdb
-C:\shared\encog-cs\encog-examples\HopfieldAssociate\bin\Debug\encog-core-cs.dll
-C:\shared\encog-cs\encog-examples\HopfieldAssociate\bin\Debug\log4net.dll
-C:\shared\encog-cs\encog-examples\HopfieldAssociate\obj\Debug\ResolveAssemblyReference.cache
-C:\shared\encog-cs\encog-examples\HopfieldAssociate\obj\Debug\HopfieldAssociate.exe
-C:\shared\encog-cs\encog-examples\HopfieldAssociate\obj\Debug\HopfieldAssociate.pdb
