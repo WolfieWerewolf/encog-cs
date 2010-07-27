@@ -78,6 +78,10 @@ namespace Encog.Util.Concurrency
                 this.task.Run();
                 owner.TaskFinished(this);
             }
+            catch (Exception ex)
+            {
+                EncogConcurrency.Instance.RegisterError(ex);
+            }
             finally
             {
                 if (this.group != null)

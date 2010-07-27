@@ -59,6 +59,8 @@ namespace Encog.Util.Concurrency
 
         private int currentTaskGroup;
 
+        private Exception thrownError;
+
         /// <summary>
         /// The instance to the singleton.
         /// </summary>
@@ -116,6 +118,14 @@ namespace Encog.Util.Concurrency
                 group.TaskStarting();
             PoolItem item = new PoolItem(this, task, group);
             ThreadPool.QueueUserWorkItem(item.ThreadPoolCallback);
+
+            if (this.thrownError != null)
+            {
+                Exception t = this.thrownError;
+                this.thrownError = null;
+                throw new EncogError(t);
+            }
+
         }
 
         /// <summary>
@@ -192,6 +202,24 @@ namespace Encog.Util.Concurrency
             {
                 this.activeTasks--;
             }
+        }
+
+        /// <summary>
+        /// Check to see if one of the threads has thrown an error, if so, throw that error.
+        /// </summary>
+        public void CheckError()
+        {
+            if (this.thrownError != null)
+                throw this.thrownError;
+        }
+
+        /// <summary>
+        /// Allow a thread to register an error.  This error will be thrown later.
+        /// </summary>
+        /// <param name="ex">The error.</param>
+        public void RegisterError(Exception ex)
+        {
+            this.thrownError = ex;
         }
     }
 
