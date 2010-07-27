@@ -39,6 +39,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Encog.Util.Concurrency;
 
 
 namespace Encog
@@ -147,6 +148,14 @@ namespace Encog
             {
                 return this.properties;
             }
+        }
+
+        /// <summary>
+        /// Shutdown Encog
+        /// </summary>
+        public void Shutdown()
+        {
+
         }
 
 #if !SILVERLIGHT
