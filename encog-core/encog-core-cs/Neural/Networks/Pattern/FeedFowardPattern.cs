@@ -74,9 +74,9 @@ namespace Encog.Neural.Networks.Pattern
         }
 
         /// <summary>
-        /// Generate the Elman neural network.
+        /// Generate the Feedforward neural network.
         /// </summary>
-        /// <returns>The Elman neural network.</returns>
+        /// <returns>The Feedforward neural network.</returns>
         public BasicNetwork Generate()
         {
             int y = PatternConst.START_Y;

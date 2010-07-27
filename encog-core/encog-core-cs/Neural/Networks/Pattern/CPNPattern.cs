@@ -86,7 +86,7 @@ namespace Encog.Neural.Networks.Pattern
         public void AddHiddenLayer(int count)
         {
             String str =
-               "A CPN already has a predefined hidden layer.  No additiona" +
+               "A CPN already has a predefined hidden layer.  No additional" +
                "specification is needed.";
 #if logging
             if (this.logger.IsErrorEnabled)

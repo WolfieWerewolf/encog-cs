@@ -125,7 +125,7 @@ namespace Encog.Neural.Networks.Pattern
         {
             set
             {
-                String str = "A BAM network can't specify a custom activation function.";
+                String str = "An adaline network can't specify a custom activation function.";
 #if logging
                 if (this.logger.IsErrorEnabled)
                 {
@@ -136,7 +136,7 @@ namespace Encog.Neural.Networks.Pattern
             }
             get
             {
-                String str = "A BAM network can't specify a custom activation function.";
+                String str = "An adaline network can't specify a custom activation function.";
 #if logging
                 if (this.logger.IsErrorEnabled)
                 {
