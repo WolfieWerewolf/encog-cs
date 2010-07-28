@@ -52,31 +52,34 @@ namespace Encog.Util.CSV
         /// <returns>An array of doubles parsed from the string.</returns>
         public static double[] FromList(CSVFormat format, String str)
         {
-            // first count the numbers
-
-            String[] tok = str.Split(format.Separator);
-            int count = tok.Length;
-
-            // now allocate an object to hold that many numbers
-            double[] result = new double[count];
-
-            // and finally parse the numbers
-            for (int index = 0; index < tok.Length; index++)
+            lock (typeof(NumberList) )
             {
-                try
+                // first count the numbers
+
+                String[] tok = str.Split(format.Separator);
+                int count = tok.Length;
+
+                // now allocate an object to hold that many numbers
+                double[] result = new double[count];
+
+                // and finally parse the numbers
+                for (int index = 0; index < tok.Length; index++)
                 {
-                    String num = tok[index];
-                    double value = format.Parse(num);
-                    result[index] = value;
-                }
-                catch (Exception e)
-                {
-                    throw new PersistError(e);
+                    try
+                    {
+                        String num = tok[index];
+                        double value = format.Parse(num);
+                        result[index] = value;
+                    }
+                    catch (Exception e)
+                    {
+                        throw new PersistError(e);
+                    }
+
                 }
 
+                return result;
             }
-
-            return result;
         }
 
         /// <summary>

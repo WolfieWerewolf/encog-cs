@@ -141,11 +141,13 @@ namespace Encog.Util
         /// <returns>The class requested.</returns>
         public static String ResolveEncogClass(String name)
         {
-            if (ReflectionUtil.classMap.Count == 0)
+            lock (typeof(ReflectionUtil))
             {
-                ReflectionUtil.LoadClassmap();
+                if (ReflectionUtil.classMap.Count == 0)
+                {
+                    ReflectionUtil.LoadClassmap();
+                }
             }
-
             if (!ReflectionUtil.classMap.ContainsKey(name))
                 return null;
             else
