@@ -75,23 +75,44 @@ namespace Encog.Neural.Networks.Prune
 
             ILayer layer = network.GetLayer(BasicNetwork.TAG_INPUT);
 
+            ILayer[] prevlayer = new ILayer[network.Structure.Layers.Count]; // E.F. Added 7/14/2010
+            bool dupfound = false; // E.F. Added 7/24/2010
+
             // display only hidden layers
-            while (layer.Next.Count > 0)
-            {
+            while (layer.Next.Count > 0 && !dupfound)
+            { // E.F. Changed 7/14/2010
                 layer = layer.Next[0].ToLayer;
 
-                if (result.Length > 0)
+                // E.F. Added dup search 7/14/2010
+                for (int j = 0; j < prevlayer.Length; j++)
                 {
-                    result.Append(",");
+                    if (layer == prevlayer[j])
+                    {
+                        dupfound = true;
+                        break;
+                    }
+                    else if (prevlayer[j] == null)
+                    {
+                        prevlayer[j] = layer;
+                        break;
+                    }
                 }
-                result.Append("H");
-                result.Append(num++);
-                result.Append("=");
-                result.Append(layer.NeuronCount);
+                // E.F. end of dup search
+
+                if (layer.Next.Count > 0 && !dupfound)
+                { // E.F. Changed 7/14/2010
+                    if (result.Length > 0)
+                    {
+                        result.Append(",");
+                    }
+                    result.Append("H");
+                    result.Append(num++);
+                    result.Append("=");
+                    result.Append(layer.NeuronCount);
+                }
             }
 
             return result.ToString();
-
         }
 
         /**
