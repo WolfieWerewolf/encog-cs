@@ -151,6 +151,17 @@ namespace Encog.Util.CL.Kernels
 
             try
             {
+                // Calculate the work-item dimensions
+			    int localWork = Math.Max(Encog.Instance.CL.CLWorkloadSize, 1);
+			    int globalWork = workload.MaxUnits;
+			
+			    // don't create more than we have work for
+			    localWork = Math.Min(localWork, workload.MaxUnits);
+					
+			    // Set the work-item dimensions
+			    long[] global_work_size = new long[] { globalWork };
+			    long[] local_work_size = new long[] { localWork };
+
                 ComputeCommandQueue commands = workload.Device.Commands;
                 long workItems = Math.Max( 1, Encog.Instance.CL.CLWorkloadSize);
 
