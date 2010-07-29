@@ -243,5 +243,23 @@ namespace Encog.Util
             return null;
         }
 
+        /// <summary>
+        /// Create a new instance of the specified object.  You can either specify the full 
+        /// path to the class, or just the name, if it is an Encog object.
+        /// </summary>
+        /// <param name="name">The name of the class to create the new instance of.</param>
+        /// <returns>An object of the specified type.</returns>
+        public static Object NewInstance(String name)
+        {
+            String c = ResolveEncogClass(name);
+            if (c != null)
+            {
+                return Assembly.GetExecutingAssembly().CreateInstance(c);
+            }
+            else
+            {
+                return Assembly.GetExecutingAssembly().CreateInstance(name);
+            }
+        }
     }
 }

@@ -36,6 +36,7 @@ using Encog.Neural.Networks.Layers;
 using Encog.Neural.Networks.Synapse;
 #if logging
 using log4net;
+using Encog.Neural.Networks.Logic;
 #endif
 namespace Encog.Neural.Networks.Pattern
 {
@@ -113,7 +114,7 @@ namespace Encog.Neural.Networks.Pattern
 
             output.X = PatternConst.START_X;
             output.Y = y;
-
+            network.Logic = new SOMLogic();
             network.Structure.FinalizeStructure();
             network.Reset();
             return network;

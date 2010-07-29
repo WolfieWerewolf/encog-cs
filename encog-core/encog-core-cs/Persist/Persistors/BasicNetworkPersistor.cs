@@ -38,6 +38,7 @@ using Encog.Parse.Tags.Read;
 using Encog.Neural.Networks;
 using Encog.Neural.Networks.Logic;
 using System.Reflection;
+using Encog.Util;
 
 namespace Encog.Persist.Persistors
 {
@@ -330,9 +331,13 @@ namespace Encog.Persist.Persistors
             {
                 this.currentNetwork.Logic = new SimpleRecurrentLogic();
             }
+            else if (value.Equals("SOMLogic"))
+            {    // E.F. Added 7/19/2010
+                this.currentNetwork.Logic = new SOMLogic(); // E.F. Added 7/19/2010
+            }
             else
             {
-                INeuralLogic logic = (INeuralLogic)Assembly.GetExecutingAssembly().CreateInstance(value);
+                INeuralLogic logic = (INeuralLogic)ReflectionUtil.NewInstance(value);
                 this.currentNetwork.Logic = logic;
             }
         }
