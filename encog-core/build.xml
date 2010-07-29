@@ -40,7 +40,7 @@
 	<target name="checkout" depends="init">
 		<exec executable="svn">
 			<arg value="checkout" />
-			<arg value="http://encog-cs.googlecode.com/svn/branches/2.4.0/encog-core" />
+			<arg value="http://encog-cs.googlecode.com/svn/branches/2.4.0/encog-core" />			
 			<arg value="${basedir}" />
 		</exec>
 	</target>
