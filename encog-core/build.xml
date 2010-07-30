@@ -88,10 +88,6 @@
 
 		<copy todir="${path.stage}" file="${basedir}/copyright.txt" />
 		<copy todir="${path.stage}" file="${basedir}/build.xml" />
-		<copy todir="${path.stage}" file="${basedir}/encog-core-cs.sln" />
-		<copy todir="${path.stage}" file="${basedir}/encog-core-cs.suo" />
-		<copy todir="${path.stage}" file="${basedir}/log4net.dll" />
-
 
 		<copy todir="${path.stage}/src">
 			<fileset dir="${basedir}" />
