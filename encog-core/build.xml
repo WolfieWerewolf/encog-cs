@@ -119,6 +119,9 @@
 		<delete>
 			<fileset dir="${basedir}" excludes="build.xml" />
 		</delete>
+		<delete dir="${basedir}/OCR" />
+		<delete dir="${basedir}/SOMColors" />
+		<delete dir="${basedir}/TuneEncogOpenCL" />
 	</target>
 
 	<target name="clean" description="clean up">
