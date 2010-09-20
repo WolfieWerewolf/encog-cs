@@ -99,7 +99,10 @@ namespace Encog.Util.Concurrency
         {
             while (!NoTasks)
             {
-                this.completeEvent.WaitOne();
+                if (!NoTasks)
+                {
+                    this.completeEvent.WaitOne();
+                }
                 this.completeEvent.Reset();
             }
         }
