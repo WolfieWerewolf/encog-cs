@@ -6,8 +6,8 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("encog_core_silverlight")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Encog for Silverlight 2.5")]
+[assembly: AssemblyDescription("Encog for Silverlight 2.5")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Heaton Research, Inc")]
 [assembly: AssemblyProduct("encog_core_silverlight")]
@@ -32,6 +32,6 @@ using System.Resources;
 //
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion("2.4.0")]
-[assembly: AssemblyFileVersion("2.4.0")]
+[assembly: AssemblyVersion("2.5.0")]
+[assembly: AssemblyFileVersion("2.5.0")]
 [assembly: NeutralResourcesLanguageAttribute("en-US")]
