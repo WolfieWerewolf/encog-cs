@@ -40,4 +40,3 @@ D:\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\App.g.cs
 D:\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\MainPage.g.cs
 D:\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\SilverlightExample.g.resources
 D:\encog-cs\encog-core-silverlight\SilverlightExample\obj\Debug\XapCacheFile.xml
-D:\encog-cs\encog-core-silverlight\SilverlightExample\Bin\Debug\Resources\classes.txt

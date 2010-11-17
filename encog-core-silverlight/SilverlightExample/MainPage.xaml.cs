@@ -12,6 +12,7 @@ using System.Windows.Shapes;
 using Encog;
 using Encog.Util.Banchmark;
 using System.Threading;
+using Encog.Engine;
 
 namespace SilverlightExample
 {
@@ -25,7 +26,7 @@ namespace SilverlightExample
         public void BackgroundThread()
         {
             EncogBenchmark benchmark = new EncogBenchmark(this);
-            double result = benchmark.Process();
+            string result = benchmark.Process();
             Dispatcher.BeginInvoke(() => this.List.Items.Add("Final benchmark score(lower is better): " + result));
         }
 
