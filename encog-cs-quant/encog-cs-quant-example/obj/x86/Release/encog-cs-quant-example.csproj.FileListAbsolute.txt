@@ -1,0 +1,11 @@
+D:\encog-cs\encog-cs-quant\encog-cs-quant-example\bin\Release\encog-cs-quant-example.exe.config
+D:\encog-cs\encog-cs-quant\encog-cs-quant-example\bin\Release\encog-cs-quant-example.exe
+D:\encog-cs\encog-cs-quant\encog-cs-quant-example\bin\Release\encog-cs-quant-example.pdb
+D:\encog-cs\encog-cs-quant\encog-cs-quant-example\bin\Release\Cloo.dll
+D:\encog-cs\encog-cs-quant\encog-cs-quant-example\bin\Release\encog-core-cs.dll
+D:\encog-cs\encog-cs-quant\encog-cs-quant-example\bin\Release\encog-cs-quant.dll
+D:\encog-cs\encog-cs-quant\encog-cs-quant-example\bin\Release\log4net.dll
+D:\encog-cs\encog-cs-quant\encog-cs-quant-example\bin\Release\encog-cs-quant.pdb
+D:\encog-cs\encog-cs-quant\encog-cs-quant-example\obj\x86\Release\ResolveAssemblyReference.cache
+D:\encog-cs\encog-cs-quant\encog-cs-quant-example\obj\x86\Release\encog-cs-quant-example.exe
+D:\encog-cs\encog-cs-quant\encog-cs-quant-example\obj\x86\Release\encog-cs-quant-example.pdb
