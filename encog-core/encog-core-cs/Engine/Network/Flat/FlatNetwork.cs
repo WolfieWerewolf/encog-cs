@@ -150,6 +150,11 @@ namespace Encog.Engine.Network.Flat
         private double connectionLimit;
 
         /// <summary>
+        /// Does this network have context.
+        /// </summary>
+        private bool hasContext;
+
+        /// <summary>
         /// Default constructor.
         /// </summary>
         ///
@@ -613,6 +618,7 @@ namespace Encog.Engine.Network.Flat
         {
             int layerCount = layers.Length;
 
+            this.hasContext = false;
             this.inputCount = layers[0].Count;
             this.outputCount = layers[layerCount - 1].Count;
 
@@ -632,7 +638,6 @@ namespace Encog.Engine.Network.Flat
 
             for (int i = layers.Length - 1; i >= 0; i--)
             {
-
                 FlatLayer layer = layers[i];
                 FlatLayer nextLayer = null;
 
@@ -672,6 +677,7 @@ namespace Encog.Engine.Network.Flat
                 {
                     if (layers[j].ContextFedBy == layer)
                     {
+                        this.hasContext = true;
                         this.contextTargetSize[i] = layers[j].ContectCount;
                         this.contextTargetOffset[i] = neuronIndex
                                 + layers[j].TotalCount
@@ -802,6 +808,12 @@ namespace Encog.Engine.Network.Flat
             }
         }
 
-
+        public bool HasContext
+        {
+            get
+            {
+                return this.hasContext;
+            }
+        }
     }
 }
