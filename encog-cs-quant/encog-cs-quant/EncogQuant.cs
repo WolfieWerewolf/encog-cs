@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Encog.Util.CSV;
 using System.IO;
+using Encog.App.Quant.Indicators;
 
 namespace Encog.App.Quant
 {
@@ -14,54 +15,80 @@ namespace Encog.App.Quant
         public int MaxHistory { get; set; }
         
         private IList<Field> data = new List<Field>();
-        private History history;
+        private BarMapping mapping;
+        private BarBuffer future;
+        private ReadCSV inCSV;
+        public bool Headers { get; set; }
 
 
         public EncogQuant()
         {
             Format = CSVFormat.ENGLISH;
             MaxHistory = 200;
-            history = new History(this, MaxHistory);
+            mapping = new BarMapping(this);
+            Headers = true;
+            future = new BarBuffer(200);
         }
 
-        public void Process(String input, String output)
+        private void FillFuture()
         {
-            ReadCSV inCSV = new ReadCSV(input, true, Format);
-            TextWriter tw = new StreamWriter(output);
-            double[] historyBar = new double[data.Count];
-
-            history.Init();
-
-            while (inCSV.Next())
+            while( !future.Full && inCSV.Next() )
             {
-                StringBuilder line = new StringBuilder();
-
-                int itemIndex;
+                // create future bar
+                double[] futureBar = new double[data.Count];
 
                 // read from file
-                itemIndex = 0;
+                int itemIndex = 0;
                 foreach (Field item in data)
                 {
                     if (item is FileData)
                     {
-                        historyBar[itemIndex] = inCSV.GetDouble(item.Index);
+                        futureBar[itemIndex] = inCSV.GetDouble(item.Index);
                     }
                     itemIndex++;
                 }
+
+                // add to future
+                this.future.Add(futureBar);
+            }
+        }
+
+        private double []ReadNextBar()
+        {
+            FillFuture();
+            if (future.Data.Count > 0)
+            {
+                return future.Pop();
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public void Process(String input, String output)
+        {
+            this.inCSV = new ReadCSV(input, Headers, Format);
+            TextWriter tw = new StreamWriter(output);
+            double[] currentBar = null;
+
+            mapping.Init();
+
+            while ( (currentBar=ReadNextBar())!=null )
+            {
+                StringBuilder line = new StringBuilder();
 
                 // calculate indicators
-                itemIndex = 0;
+                int itemIndex = 0;
                 foreach (Field item in data)
                 {
-                    if (item is MovingAverage)
+                    if (item is IIndicator)
                     {
-                        MovingAverage ind = (MovingAverage)item;
-                        historyBar[itemIndex] = ind.Calculate(history);
+                        IIndicator ind = (IIndicator)item;
+                        currentBar[itemIndex] = ind.Calculate(mapping, currentBar, this.future);
                     }
                     itemIndex++;
                 }
-
-                history.Add(historyBar);
 
                
                 // output
@@ -70,7 +97,7 @@ namespace Encog.App.Quant
                 {
                     if (item.Output)
                     {
-                        double d = historyBar[itemIndex];
+                        double d = currentBar[itemIndex];
                         if (line.Length > 0)
                             line.Append(',');
                         line.Append(d);
