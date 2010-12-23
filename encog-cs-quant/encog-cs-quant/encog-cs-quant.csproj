@@ -58,10 +58,14 @@
     <Compile Include="Indicators\MovingAverage.cs" />
     <Compile Include="Indicators\Predictive\BestClose.cs" />
     <Compile Include="Indicators\Predictive\BestReturn.cs" />
+    <Compile Include="Normalize\EncogNormalize.cs" />
+    <Compile Include="Normalize\NormalizationDesired.cs" />
+    <Compile Include="Normalize\NormalizedFieldStats.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Indicators\RelativeStrengthIndex.cs" />
     <Compile Include="Indicators\StochasticOscillator.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

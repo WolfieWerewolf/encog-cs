@@ -5,6 +5,8 @@ using System.Text;
 using Encog.App.Quant;
 using Encog.App.Quant.Indicators;
 using Encog.App.Quant.Indicators.Predictive;
+using Encog.App.Quant.Normalize;
+using Encog.Util.CSV;
 
 namespace encog_cs_quant_example
 {
@@ -35,7 +37,14 @@ namespace encog_cs_quant_example
             quant.Data.Add(new RelativeStrengthIndex(14, true));
             quant.Data.Add(new StochasticOscillator(14, true));
             quant.Data.Add(new BestClose(3,true));
-            quant.Process("d:\\data\\ge.csv", "d:\\data\\ge2.csv");
+            quant.Process("c:\\data\\ge.csv", "c:\\data\\ge2.csv");
+
+            EncogNormalize norm = new EncogNormalize();
+            norm.Analyze("c:\\data\\ge.csv",true,CSVFormat.ENGLISH);
+            norm.WriteStatsFile("c:\\data\\ge.norm");
+            norm.ReadStatsFile("c:\\data\\ge.norm");
+            norm.WriteStatsFile("c:\\data\\ge.norm2");
+            norm.Normalize("c:\\data\\ge_norm.csv");
         }
 
         static void CalculateTest()
