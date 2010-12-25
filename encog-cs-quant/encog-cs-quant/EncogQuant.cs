@@ -68,47 +68,79 @@ namespace Encog.App.Quant
 
         public void Process(String input, String output)
         {
-            this.inCSV = new ReadCSV(input, Headers, Format);
-            TextWriter tw = new StreamWriter(output);
-            double[] currentBar = null;
+            TextWriter tw = null;
 
-            mapping.Init();
-
-            while ( (currentBar=ReadNextBar())!=null )
+            try
             {
-                StringBuilder line = new StringBuilder();
+                this.inCSV = new ReadCSV(input, Headers, Format);
+                tw = new StreamWriter(output);
+                double[] currentBar = null;
 
-                // calculate indicators
-                int itemIndex = 0;
-                foreach (Field item in data)
-                {
-                    if (item is IIndicator)
-                    {
-                        IIndicator ind = (IIndicator)item;
-                        currentBar[itemIndex] = ind.Calculate(mapping, currentBar, this.future);
-                    }
-                    itemIndex++;
-                }
+                mapping.Init();
 
-               
-                // output
-                itemIndex = 0;
-                foreach (Field item in Data)
+                while ((currentBar = ReadNextBar()) != null)
                 {
-                    if (item.Output)
+                    StringBuilder line = new StringBuilder();
+
+                    // calculate indicators
+                    int itemIndex = 0;
+                    foreach (Field item in data)
                     {
-                        double d = currentBar[itemIndex];
-                        if (line.Length > 0)
-                            line.Append(',');
-                        line.Append(d);
+                        if (item is IIndicator)
+                        {
+                            IIndicator ind = (IIndicator)item;
+                            currentBar[itemIndex] = ind.Calculate(mapping, currentBar, this.future);
+                        }
+                        itemIndex++;
                     }
-                    itemIndex++;
+
+
+                    // output
+                    itemIndex = 0;
+                    foreach (Field item in Data)
+                    {
+                        if (item.Output)
+                        {
+                            double d = currentBar[itemIndex];
+                            if (line.Length > 0)
+                                line.Append(',');
+                            line.Append(d);
+                        }
+                        itemIndex++;
+                    }
+
+                    tw.WriteLine(line.ToString());
                 }
-                
-                tw.WriteLine(line.ToString());
             }
+            catch (IOException ex)
+            {
+                throw new EncogError(ex);
+            }
+            finally
+            {
+                if (tw != null)
+                {
+                    try
+                    {
+                        tw.Close();
+                    }
+                    catch (Exception)
+                    {
+                    }
+                }
 
-            tw.Close();
+                if (inCSV != null)
+                {
+                    try
+                    {
+                        this.inCSV.Close();
+                    }
+                    catch (Exception)
+                    {
+                    }
+                    this.inCSV = null;
+                }
+            }            
         }
     }
 }

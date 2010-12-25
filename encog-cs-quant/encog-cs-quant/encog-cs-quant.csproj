@@ -64,6 +64,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Indicators\RelativeStrengthIndex.cs" />
     <Compile Include="Indicators\StochasticOscillator.cs" />
+    <Compile Include="Temporal\TemporalWindow.cs" />
+    <Compile Include="Temporal\TemporalWindowField.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
