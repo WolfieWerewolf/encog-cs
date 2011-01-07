@@ -144,5 +144,19 @@ namespace Encog.Normalize.Output
         public override void RowInit()
         {
         }
+
+        /// <summary>
+        /// Convert a number back after its been normalized.
+        /// </summary>
+        /// <param name="data">The number to convert back.</param>
+        /// <returns>The result.</returns>
+        public double ConvertBack(double data)
+        {
+            double result = ((field.Min - field.Max) * data - high
+                    * field.Min + field.Max * low)
+                    / (low - high);
+            return result;
+        }
+
     }
 }
