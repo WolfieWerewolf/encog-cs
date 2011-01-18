@@ -197,7 +197,7 @@ namespace Encog.Persist.Persistors
             if (activationFunction != null)
             {
                 xmlOut.BeginTag(BasicLayerPersistor.TAG_ACTIVATION);
-                xmlOut.BeginTag(activationFunction.GetType().Name);
+                
                 String[] names = activationFunction.ParamNames;
                 for (int i = 0; i < names.Length; i++)
                 {
@@ -205,6 +205,8 @@ namespace Encog.Persist.Persistors
                     double d = activationFunction.Params[i];
                     xmlOut.AddAttribute(str, "" + CSVFormat.EG_FORMAT.Format(d, 10));
                 }
+
+                xmlOut.BeginTag(activationFunction.GetType().Name);
                 xmlOut.EndTag();
                 xmlOut.EndTag();
             }
@@ -241,13 +243,13 @@ namespace Encog.Persist.Persistors
                             index = i;
                             break;
                         }
+                    }
 
-                        if (index != -1)
-                        {
-                            String str = xmlIn.LastTag.GetAttributeValue(key);
-                            double d = CSVFormat.EG_FORMAT.Parse(str);
-                            result.SetParam(index, d);
-                        }
+                    if (index != -1)
+                    {
+                        String str = xmlIn.LastTag.GetAttributeValue(key);
+                        double d = CSVFormat.EG_FORMAT.Parse(str);
+                        result.SetParam(index, d);
                     }
                 }
 
