@@ -145,7 +145,7 @@ namespace Encog.Neural.Networks.Training.Strategy
 
             if (this.ready)
             {
-                if (Math.Abs(this.bestError
+                if ((this.bestError
                         - this.train.Error) < this.minImprovement)
                 {
                     this.badCycles++;
