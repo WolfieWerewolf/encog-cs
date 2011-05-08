@@ -1,0 +1,8 @@
+D:\encog-cs\encog-cs-quant\encog-cs-quant\bin\Release\encog-cs-quant.dll
+D:\encog-cs\encog-cs-quant\encog-cs-quant\bin\Release\encog-cs-quant.pdb
+D:\encog-cs\encog-cs-quant\encog-cs-quant\bin\Release\Cloo.dll
+D:\encog-cs\encog-cs-quant\encog-cs-quant\bin\Release\encog-core-cs.dll
+D:\encog-cs\encog-cs-quant\encog-cs-quant\bin\Release\log4net.dll
+D:\encog-cs\encog-cs-quant\encog-cs-quant\obj\Release\ResolveAssemblyReference.cache
+D:\encog-cs\encog-cs-quant\encog-cs-quant\obj\Release\encog-cs-quant.dll
+D:\encog-cs\encog-cs-quant\encog-cs-quant\obj\Release\encog-cs-quant.pdb
